@@ -1,0 +1,338 @@
+[
+ {
+  "id": "mc-01",
+  "category": "technology",
+  "mood": "notice",
+  "title": "Count your taps",
+  "detail": "Pick one app you open out of habit. Next time, pause for one breath and decide whether you actually want to.",
+  "minutes": 1
+ },
+ {
+  "id": "mc-02",
+  "category": "technology",
+  "mood": "learn",
+  "title": "Read one setting",
+  "detail": "Open Settings and read one screen you've never looked at. What does it do?",
+  "minutes": 3
+ },
+ {
+  "id": "mc-03",
+  "category": "technology",
+  "mood": "make",
+  "title": "Tidy one screen",
+  "detail": "Remove or file three apps from your Home Screen that you haven't opened this month.",
+  "minutes": 3
+ },
+ {
+  "id": "mc-04",
+  "category": "technology",
+  "mood": "notice",
+  "title": "Spot the oldest idea",
+  "detail": "Find an icon on your phone that pictures an object nobody uses any more.",
+  "minutes": 2
+ },
+ {
+  "id": "mc-05",
+  "category": "design",
+  "mood": "notice",
+  "title": "Find a typeface you'd change",
+  "detail": "Look at one sign near you. What would you change about its lettering, and why?",
+  "minutes": 2
+ },
+ {
+  "id": "mc-06",
+  "category": "design",
+  "mood": "notice",
+  "title": "Door detective",
+  "detail": "Notice the next door you use. Did its handle tell you whether to push or pull?",
+  "minutes": 1
+ },
+ {
+  "id": "mc-07",
+  "category": "design",
+  "mood": "make",
+  "title": "Redraw an icon",
+  "detail": "Sketch a simpler version of any icon you can see. Thirty seconds, no erasing.",
+  "minutes": 3
+ },
+ {
+  "id": "mc-08",
+  "category": "design",
+  "mood": "notice",
+  "title": "Three colours",
+  "detail": "Name the three colours that dominate the room you're in. Do they work together?",
+  "minutes": 2
+ },
+ {
+  "id": "mc-09",
+  "category": "books",
+  "mood": "learn",
+  "title": "One page",
+  "detail": "Open any book near you to a random page and read just that page.",
+  "minutes": 3
+ },
+ {
+  "id": "mc-10",
+  "category": "books",
+  "mood": "make",
+  "title": "First line",
+  "detail": "Write the opening sentence of a novel you'll never write.",
+  "minutes": 3
+ },
+ {
+  "id": "mc-11",
+  "category": "books",
+  "mood": "notice",
+  "title": "Shelf check",
+  "detail": "Find a book you own but haven't read. Read its first paragraph.",
+  "minutes": 3
+ },
+ {
+  "id": "mc-12",
+  "category": "books",
+  "mood": "learn",
+  "title": "Borrowed words",
+  "detail": "Look up where one word you used today comes from.",
+  "minutes": 3
+ },
+ {
+  "id": "mc-13",
+  "category": "science",
+  "mood": "notice",
+  "title": "Sky report",
+  "detail": "Look up. What kind of clouds are there, and which way are they moving?",
+  "minutes": 2
+ },
+ {
+  "id": "mc-14",
+  "category": "science",
+  "mood": "learn",
+  "title": "Kitchen physics",
+  "detail": "Drop a little oil into a glass of water and watch what it does. Why?",
+  "minutes": 3
+ },
+ {
+  "id": "mc-15",
+  "category": "science",
+  "mood": "notice",
+  "title": "Shadow length",
+  "detail": "Notice your shadow. Is it longer or shorter than you? What does that say about the sun?",
+  "minutes": 1
+ },
+ {
+  "id": "mc-16",
+  "category": "science",
+  "mood": "learn",
+  "title": "Estimate it",
+  "detail": "Guess how many steps it is to the nearest door. Then count.",
+  "minutes": 2
+ },
+ {
+  "id": "mc-17",
+  "category": "history",
+  "mood": "notice",
+  "title": "Oldest thing here",
+  "detail": "Find the oldest object within reach. How old do you think it is?",
+  "minutes": 2
+ },
+ {
+  "id": "mc-18",
+  "category": "history",
+  "mood": "learn",
+  "title": "This day",
+  "detail": "Ask someone older than you what they remember about a year you choose.",
+  "minutes": 5
+ },
+ {
+  "id": "mc-19",
+  "category": "history",
+  "mood": "notice",
+  "title": "Street name",
+  "detail": "Read the name of a nearby street. Who or what is it named after?",
+  "minutes": 3
+ },
+ {
+  "id": "mc-20",
+  "category": "history",
+  "mood": "make",
+  "title": "Tiny time capsule",
+  "detail": "Write one sentence about today that you'd want to read in ten years.",
+  "minutes": 2
+ },
+ {
+  "id": "mc-21",
+  "category": "art",
+  "mood": "notice",
+  "title": "Thirty-second gallery",
+  "detail": "Look at one picture on a wall near you for a full thirty seconds. What did you miss before?",
+  "minutes": 1
+ },
+ {
+  "id": "mc-22",
+  "category": "art",
+  "mood": "make",
+  "title": "Blind contour",
+  "detail": "Draw your hand without looking at the paper.",
+  "minutes": 3
+ },
+ {
+  "id": "mc-23",
+  "category": "art",
+  "mood": "learn",
+  "title": "One whole song",
+  "detail": "Listen to one song from start to finish and do nothing else.",
+  "minutes": 5
+ },
+ {
+  "id": "mc-24",
+  "category": "art",
+  "mood": "notice",
+  "title": "Frame it",
+  "detail": "Make a frame with your fingers and find one view worth keeping.",
+  "minutes": 1
+ },
+ {
+  "id": "mc-25",
+  "category": "sports",
+  "mood": "move",
+  "title": "Balance test",
+  "detail": "Stand on one leg for thirty seconds, then switch. Hold onto something if you need to.",
+  "minutes": 2
+ },
+ {
+  "id": "mc-26",
+  "category": "sports",
+  "mood": "move",
+  "title": "Stairs, once",
+  "detail": "Take the stairs once today where you'd usually take the lift.",
+  "minutes": 3
+ },
+ {
+  "id": "mc-27",
+  "category": "sports",
+  "mood": "learn",
+  "title": "One rule",
+  "detail": "Look up one rule of a sport you watch but have never really understood.",
+  "minutes": 4
+ },
+ {
+  "id": "mc-28",
+  "category": "sports",
+  "mood": "move",
+  "title": "Stretch tall",
+  "detail": "Reach both arms overhead, breathe slowly five times, and let your shoulders drop.",
+  "minutes": 1
+ },
+ {
+  "id": "mc-29",
+  "category": "nature",
+  "mood": "notice",
+  "title": "Name a tree",
+  "detail": "Find the nearest tree. What shape are its leaves? Do you know its name?",
+  "minutes": 3
+ },
+ {
+  "id": "mc-30",
+  "category": "nature",
+  "mood": "notice",
+  "title": "Birdsong minute",
+  "detail": "Stand still outside or by a window for one minute and count the different bird calls.",
+  "minutes": 1
+ },
+ {
+  "id": "mc-31",
+  "category": "nature",
+  "mood": "rest",
+  "title": "Sky break",
+  "detail": "Look at the sky for a full minute without your phone in your hand.",
+  "minutes": 1
+ },
+ {
+  "id": "mc-32",
+  "category": "nature",
+  "mood": "notice",
+  "title": "Small world",
+  "detail": "Look closely at one square foot of ground. What's living there?",
+  "minutes": 3
+ },
+ {
+  "id": "mc-33",
+  "category": "health",
+  "mood": "rest",
+  "title": "Five slow breaths",
+  "detail": "Breathe in for four counts and out for six, five times.",
+  "minutes": 1
+ },
+ {
+  "id": "mc-34",
+  "category": "health",
+  "mood": "rest",
+  "title": "Glass of water",
+  "detail": "Pour a glass of water and drink it sitting down.",
+  "minutes": 2
+ },
+ {
+  "id": "mc-35",
+  "category": "health",
+  "mood": "move",
+  "title": "Look far away",
+  "detail": "Look at something at least twenty feet away for twenty seconds.",
+  "minutes": 1
+ },
+ {
+  "id": "mc-36",
+  "category": "health",
+  "mood": "rest",
+  "title": "Unclench",
+  "detail": "Notice your jaw and shoulders. Let them go.",
+  "minutes": 1
+ },
+ {
+  "id": "mc-37",
+  "category": "general",
+  "mood": "notice",
+  "title": "One good thing",
+  "detail": "Name one thing that went well today, however small.",
+  "minutes": 1
+ },
+ {
+  "id": "mc-38",
+  "category": "general",
+  "mood": "make",
+  "title": "Send it",
+  "detail": "Send one message you've been meaning to send.",
+  "minutes": 3
+ },
+ {
+  "id": "mc-39",
+  "category": "general",
+  "mood": "rest",
+  "title": "Clear one surface",
+  "detail": "Tidy a single shelf, corner or tabletop.",
+  "minutes": 5
+ },
+ {
+  "id": "mc-40",
+  "category": "general",
+  "mood": "move",
+  "title": "Walk to a window",
+  "detail": "Stand up, walk to a window and look out for a minute.",
+  "minutes": 1
+ },
+ {
+  "id": "mc-41",
+  "category": "general",
+  "mood": "learn",
+  "title": "Ask a question",
+  "detail": "Ask someone a question you don't know the answer to — and listen.",
+  "minutes": 4
+ },
+ {
+  "id": "mc-42",
+  "category": "general",
+  "mood": "make",
+  "title": "Six words",
+  "detail": "Describe today in exactly six words.",
+  "minutes": 2
+ }
+]

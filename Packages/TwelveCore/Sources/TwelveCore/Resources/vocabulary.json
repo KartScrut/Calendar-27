@@ -1,0 +1,278 @@
+[
+ {
+  "id": "es",
+  "name": "Spanish",
+  "nativeName": "Español",
+  "speechCode": "es-ES",
+  "words": [
+   {
+    "id": "es-01",
+    "word": "hola",
+    "meaning": "hello",
+    "example": "Hola, ¿cómo estás?",
+    "exampleMeaning": "Hello, how are you?"
+   },
+   {
+    "id": "es-02",
+    "word": "gracias",
+    "meaning": "thank you",
+    "example": "Muchas gracias.",
+    "exampleMeaning": "Thank you very much."
+   },
+   {
+    "id": "es-03",
+    "word": "por favor",
+    "meaning": "please",
+    "example": "Un café, por favor.",
+    "exampleMeaning": "A coffee, please."
+   },
+   {
+    "id": "es-04",
+    "word": "agua",
+    "meaning": "water",
+    "example": "Un vaso de agua.",
+    "exampleMeaning": "A glass of water."
+   },
+   {
+    "id": "es-05",
+    "word": "pan",
+    "meaning": "bread",
+    "example": "El pan está caliente.",
+    "exampleMeaning": "The bread is warm."
+   },
+   {
+    "id": "es-06",
+    "word": "amigo",
+    "meaning": "friend",
+    "example": "Es mi amigo.",
+    "exampleMeaning": "He is my friend."
+   },
+   {
+    "id": "es-07",
+    "word": "casa",
+    "meaning": "house",
+    "example": "Mi casa es pequeña.",
+    "exampleMeaning": "My house is small."
+   },
+   {
+    "id": "es-08",
+    "word": "libro",
+    "meaning": "book",
+    "example": "Leo un libro.",
+    "exampleMeaning": "I am reading a book."
+   },
+   {
+    "id": "es-09",
+    "word": "día",
+    "meaning": "day",
+    "example": "Buenos días.",
+    "exampleMeaning": "Good morning."
+   },
+   {
+    "id": "es-10",
+    "word": "noche",
+    "meaning": "night",
+    "example": "Buenas noches.",
+    "exampleMeaning": "Good night."
+   },
+   {
+    "id": "es-11",
+    "word": "sí",
+    "meaning": "yes",
+    "example": "Sí, claro.",
+    "exampleMeaning": "Yes, of course."
+   },
+   {
+    "id": "es-12",
+    "word": "adiós",
+    "meaning": "goodbye",
+    "example": "Adiós, hasta mañana.",
+    "exampleMeaning": "Goodbye, see you tomorrow."
+   }
+  ]
+ },
+ {
+  "id": "fr",
+  "name": "French",
+  "nativeName": "Français",
+  "speechCode": "fr-FR",
+  "words": [
+   {
+    "id": "fr-01",
+    "word": "bonjour",
+    "meaning": "hello",
+    "example": "Bonjour, ça va ?",
+    "exampleMeaning": "Hello, how are you?"
+   },
+   {
+    "id": "fr-02",
+    "word": "merci",
+    "meaning": "thank you",
+    "example": "Merci beaucoup.",
+    "exampleMeaning": "Thank you very much."
+   },
+   {
+    "id": "fr-03",
+    "word": "s'il vous plaît",
+    "meaning": "please",
+    "example": "Un café, s'il vous plaît.",
+    "exampleMeaning": "A coffee, please."
+   },
+   {
+    "id": "fr-04",
+    "word": "eau",
+    "meaning": "water",
+    "example": "Un verre d'eau.",
+    "exampleMeaning": "A glass of water."
+   },
+   {
+    "id": "fr-05",
+    "word": "pain",
+    "meaning": "bread",
+    "example": "Le pain est chaud.",
+    "exampleMeaning": "The bread is warm."
+   },
+   {
+    "id": "fr-06",
+    "word": "ami",
+    "meaning": "friend",
+    "example": "C'est mon ami.",
+    "exampleMeaning": "He is my friend."
+   },
+   {
+    "id": "fr-07",
+    "word": "maison",
+    "meaning": "house",
+    "example": "Ma maison est petite.",
+    "exampleMeaning": "My house is small."
+   },
+   {
+    "id": "fr-08",
+    "word": "livre",
+    "meaning": "book",
+    "example": "Je lis un livre.",
+    "exampleMeaning": "I am reading a book."
+   },
+   {
+    "id": "fr-09",
+    "word": "jour",
+    "meaning": "day",
+    "example": "Quel beau jour !",
+    "exampleMeaning": "What a beautiful day!"
+   },
+   {
+    "id": "fr-10",
+    "word": "nuit",
+    "meaning": "night",
+    "example": "Bonne nuit.",
+    "exampleMeaning": "Good night."
+   },
+   {
+    "id": "fr-11",
+    "word": "oui",
+    "meaning": "yes",
+    "example": "Oui, bien sûr.",
+    "exampleMeaning": "Yes, of course."
+   },
+   {
+    "id": "fr-12",
+    "word": "au revoir",
+    "meaning": "goodbye",
+    "example": "Au revoir, à demain.",
+    "exampleMeaning": "Goodbye, see you tomorrow."
+   }
+  ]
+ },
+ {
+  "id": "it",
+  "name": "Italian",
+  "nativeName": "Italiano",
+  "speechCode": "it-IT",
+  "words": [
+   {
+    "id": "it-01",
+    "word": "ciao",
+    "meaning": "hello",
+    "example": "Ciao, come stai?",
+    "exampleMeaning": "Hello, how are you?"
+   },
+   {
+    "id": "it-02",
+    "word": "grazie",
+    "meaning": "thank you",
+    "example": "Grazie mille.",
+    "exampleMeaning": "Thank you very much."
+   },
+   {
+    "id": "it-03",
+    "word": "per favore",
+    "meaning": "please",
+    "example": "Un caffè, per favore.",
+    "exampleMeaning": "A coffee, please."
+   },
+   {
+    "id": "it-04",
+    "word": "acqua",
+    "meaning": "water",
+    "example": "Un bicchiere d'acqua.",
+    "exampleMeaning": "A glass of water."
+   },
+   {
+    "id": "it-05",
+    "word": "pane",
+    "meaning": "bread",
+    "example": "Il pane è caldo.",
+    "exampleMeaning": "The bread is warm."
+   },
+   {
+    "id": "it-06",
+    "word": "amico",
+    "meaning": "friend",
+    "example": "È il mio amico.",
+    "exampleMeaning": "He is my friend."
+   },
+   {
+    "id": "it-07",
+    "word": "casa",
+    "meaning": "house",
+    "example": "La mia casa è piccola.",
+    "exampleMeaning": "My house is small."
+   },
+   {
+    "id": "it-08",
+    "word": "libro",
+    "meaning": "book",
+    "example": "Leggo un libro.",
+    "exampleMeaning": "I am reading a book."
+   },
+   {
+    "id": "it-09",
+    "word": "giorno",
+    "meaning": "day",
+    "example": "Buongiorno.",
+    "exampleMeaning": "Good morning."
+   },
+   {
+    "id": "it-10",
+    "word": "notte",
+    "meaning": "night",
+    "example": "Buonanotte.",
+    "exampleMeaning": "Good night."
+   },
+   {
+    "id": "it-11",
+    "word": "sì",
+    "meaning": "yes",
+    "example": "Sì, certo.",
+    "exampleMeaning": "Yes, of course."
+   },
+   {
+    "id": "it-12",
+    "word": "arrivederci",
+    "meaning": "goodbye",
+    "example": "Arrivederci, a domani.",
+    "exampleMeaning": "Goodbye, see you tomorrow."
+   }
+  ]
+ }
+]

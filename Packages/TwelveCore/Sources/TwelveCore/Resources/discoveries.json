@@ -1,0 +1,3547 @@
+[
+ {
+  "category": "technology",
+  "subcategory": "ai",
+  "headline": "The test that started the conversation",
+  "body": "In 1950 Alan Turing opened a paper with a blunt question: can machines think? Rather than argue about definitions, he proposed a game. A judge exchanges typed messages with a person and a machine, without knowing which is which. If the judge cannot reliably tell them apart, Turing suggested, the machine deserves to be taken seriously. He called it the imitation game. We now call it the Turing test, and people still argue about what passing it would really mean.",
+  "sourceTitle": "Wikipedia: Turing test",
+  "sourceURL": "https://en.wikipedia.org/wiki/Turing_test",
+  "quiz": {
+   "question": "What did Turing originally call his test?",
+   "options": [
+    "The Enigma trial",
+    "The imitation game",
+    "The thinking test"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "technology-001"
+ },
+ {
+  "category": "technology",
+  "subcategory": "ai",
+  "headline": "The chatbot from 1966",
+  "body": "ELIZA was a program written at MIT by Joseph Weizenbaum in the mid-1960s. Its best-known script, DOCTOR, imitated a psychotherapist by turning a person's own statements back into questions. It understood nothing; it simply matched patterns. Yet Weizenbaum was startled to find that people confided in it and grew attached to it, even when they knew how it worked. The tendency to read understanding into a machine's words is still called the ELIZA effect.",
+  "sourceTitle": "Wikipedia: ELIZA",
+  "sourceURL": "https://en.wikipedia.org/wiki/ELIZA",
+  "quiz": {
+   "question": "What kind of person did ELIZA's DOCTOR script imitate?",
+   "options": [
+    "A librarian",
+    "A chess master",
+    "A psychotherapist"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "technology-002"
+ },
+ {
+  "category": "technology",
+  "subcategory": "ai",
+  "headline": "When a computer beat the world champion",
+  "body": "In May 1997, IBM's chess computer Deep Blue defeated the reigning world champion, Garry Kasparov, in a six-game match played under standard tournament time controls. Kasparov had beaten an earlier version of the machine the year before. The 1997 result, three and a half points to two and a half, was the first time a reigning champion lost a match to a computer under those conditions, and it became a landmark in the public story of computing.",
+  "sourceTitle": "Wikipedia: Deep Blue versus Garry Kasparov",
+  "sourceURL": "https://en.wikipedia.org/wiki/Deep_Blue_versus_Garry_Kasparov",
+  "quiz": {
+   "question": "In which year did Deep Blue win its match against Kasparov?",
+   "options": [
+    "1997",
+    "1987",
+    "2007"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "technology-003"
+ },
+ {
+  "category": "technology",
+  "subcategory": "ai",
+  "headline": "A summer workshop named a field",
+  "body": "The phrase \"artificial intelligence\" comes from a funding proposal. In 1955 John McCarthy and a few colleagues proposed a summer research project at Dartmouth College, to be held in 1956, on the conjecture that every aspect of learning could in principle be described so precisely that a machine could simulate it. The workshop itself was loose and informal, but the name stuck, and the meeting is widely regarded as the founding event of AI as a field.",
+  "sourceTitle": "Wikipedia: Dartmouth workshop",
+  "sourceURL": "https://en.wikipedia.org/wiki/Dartmouth_workshop",
+  "quiz": {
+   "question": "Where was the 1956 workshop that gave AI its name?",
+   "options": [
+    "Stanford University",
+    "Bell Labs",
+    "Dartmouth College"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "technology-004"
+ },
+ {
+  "category": "technology",
+  "subcategory": "ai",
+  "headline": "A program written before computers existed",
+  "body": "In 1843 Ada Lovelace published a translation of an article about Charles Babbage's proposed Analytical Engine, and added notes of her own that were longer than the article. One of them, Note G, set out step by step how the machine could calculate a sequence called the Bernoulli numbers. It is often described as the first published computer program. The engine was never completed, so the program was never run in her lifetime.",
+  "sourceTitle": "Wikipedia: Ada Lovelace",
+  "sourceURL": "https://en.wikipedia.org/wiki/Ada_Lovelace",
+  "quiz": {
+   "question": "Which machine was Ada Lovelace writing about?",
+   "options": [
+    "ENIAC",
+    "The Analytical Engine",
+    "The Enigma machine"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "technology-005"
+ },
+ {
+  "category": "technology",
+  "subcategory": "ai",
+  "headline": "The machine that learned from mistakes",
+  "body": "In 1958 the psychologist Frank Rosenblatt demonstrated the perceptron, a simple model of a neuron that could learn to sort inputs into two groups by adjusting its own weights after each error. Newspapers of the day predicted thinking machines within years. The perceptron turned out to have real limits, and enthusiasm faded for a time. But the core idea — learning by nudging numbers after mistakes — sits underneath the neural networks used today.",
+  "sourceTitle": "Wikipedia: Perceptron",
+  "sourceURL": "https://en.wikipedia.org/wiki/Perceptron",
+  "quiz": null,
+  "prompt": "Think of something you learned by trial and error. How many tries did it take?",
+  "evergreen": false,
+  "version": 1,
+  "id": "technology-006"
+ },
+ {
+  "category": "technology",
+  "subcategory": "products",
+  "headline": "Why the save icon is still a floppy disk",
+  "body": "Floppy disks were once how most people stored and moved their files, so early software used a picture of one to mean \"save\". The disks themselves have long since disappeared from everyday computers, yet the little square with a notch survives in toolbars. Many people who press it have never held the real thing. It's a reminder that an icon can outlive the object it was drawn from.",
+  "sourceTitle": "Wikipedia: Floppy disk",
+  "sourceURL": "https://en.wikipedia.org/wiki/Floppy_disk",
+  "quiz": null,
+  "prompt": "Look at your phone. Which other icons picture an object you no longer use?",
+  "evergreen": true,
+  "version": 1,
+  "id": "technology-007"
+ },
+ {
+  "category": "technology",
+  "subcategory": "products",
+  "headline": "The mouse was made of wood",
+  "body": "The first computer mouse was built in 1964 by Bill English from a design by Douglas Engelbart at the Stanford Research Institute. It was a small wooden block with two metal wheels and a single button. Engelbart showed it to the public in December 1968, in a demonstration that also introduced on-screen windows, hypertext and video conferencing. That session is now remembered as \"the Mother of All Demos\".",
+  "sourceTitle": "Wikipedia: Computer mouse",
+  "sourceURL": "https://en.wikipedia.org/wiki/Computer_mouse",
+  "quiz": {
+   "question": "What was the first mouse's casing made from?",
+   "options": [
+    "Aluminium",
+    "Wood",
+    "Bakelite"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "technology-008"
+ },
+ {
+  "category": "technology",
+  "subcategory": "products",
+  "headline": "Music you could carry",
+  "body": "Sony released the first Walkman, the TPS-L2, in Japan in July 1979. It was a cassette player that could not record and had no speaker, which some inside the company thought would doom it. Instead it sold in huge numbers and changed where music was heard: on trains, on pavements, on runs. For the first time a personal soundtrack could follow someone through a public space.",
+  "sourceTitle": "Wikipedia: Walkman",
+  "sourceURL": "https://en.wikipedia.org/wiki/Walkman",
+  "quiz": {
+   "question": "What did the first Walkman play?",
+   "options": [
+    "Cassette tapes",
+    "Compact discs",
+    "Vinyl singles"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "technology-009"
+ },
+ {
+  "category": "technology",
+  "subcategory": "products",
+  "headline": "A king's name on your headphones",
+  "body": "Bluetooth is named after Harald Bluetooth, a tenth-century king who united parts of Denmark and Norway. An engineer suggested the name in 1997 as a temporary code name for a technology meant to unite different devices, and it was never replaced. The logo is a bind-rune that merges the king's initials: the runes Hagall and Bjarkan.",
+  "sourceTitle": "Wikipedia: Bluetooth",
+  "sourceURL": "https://en.wikipedia.org/wiki/Bluetooth",
+  "quiz": {
+   "question": "What does the Bluetooth logo combine?",
+   "options": [
+    "Two runes",
+    "Two Greek letters",
+    "A B and a T"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "technology-010"
+ },
+ {
+  "category": "technology",
+  "subcategory": "products",
+  "headline": "The keyboard layout from the 1870s",
+  "body": "The QWERTY layout was developed in the early 1870s for the Sholes and Glidden typewriter, and became standard after the success of the Remington typewriters that followed. Exactly why the letters were arranged this way is still debated; one long-standing account says it helped keep the machine's metal type bars from jamming. Whatever the reason, the layout outlasted the mechanism entirely and moved onto glass screens.",
+  "sourceTitle": "Wikipedia: QWERTY",
+  "sourceURL": "https://en.wikipedia.org/wiki/QWERTY",
+  "quiz": null,
+  "prompt": "Type a sentence slowly and notice which hand does more of the work.",
+  "evergreen": false,
+  "version": 1,
+  "id": "technology-011"
+ },
+ {
+  "category": "technology",
+  "subcategory": "products",
+  "headline": "The phone announced in 2007",
+  "body": "Steve Jobs introduced the first iPhone on 9 January 2007, describing it as three products in one: a widescreen iPod with touch controls, a mobile phone, and an internet communicator. It went on sale in the United States on 29 June that year. It had no App Store at launch — that arrived in 2008 — and it could not copy and paste text until a later software update.",
+  "sourceTitle": "Wikipedia: iPhone (1st generation)",
+  "sourceURL": "https://en.wikipedia.org/wiki/IPhone_(1st_generation)",
+  "quiz": {
+   "question": "What was missing from the first iPhone at launch?",
+   "options": [
+    "An App Store",
+    "A touchscreen",
+    "A camera"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "technology-012"
+ },
+ {
+  "category": "technology",
+  "subcategory": "internet",
+  "headline": "The first message was \"LO\"",
+  "body": "On 29 October 1969 a student programmer at UCLA, Charley Kline, tried to log in to a computer at the Stanford Research Institute over the brand-new ARPANET. He meant to type LOGIN. The system crashed after the first two letters, so the first message ever sent on the network that grew into the internet was \"LO\". The full login worked about an hour later.",
+  "sourceTitle": "Wikipedia: ARPANET",
+  "sourceURL": "https://en.wikipedia.org/wiki/ARPANET",
+  "quiz": {
+   "question": "What word was the sender trying to type?",
+   "options": [
+    "LOGIN",
+    "LOOK",
+    "LOAD"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "technology-013"
+ },
+ {
+  "category": "technology",
+  "subcategory": "internet",
+  "headline": "Why email addresses have an @",
+  "body": "In 1971 the programmer Ray Tomlinson sent the first email between two different computers on the ARPANET. He needed a way to separate a person's name from the name of their machine, and chose the @ sign from the keyboard because it was unlikely to appear in anyone's name and already read as \"at\". He later said he could not remember what the first message said — probably something like a row of keys.",
+  "sourceTitle": "Wikipedia: Ray Tomlinson",
+  "sourceURL": "https://en.wikipedia.org/wiki/Ray_Tomlinson",
+  "quiz": {
+   "question": "Who chose the @ sign for email?",
+   "options": [
+    "Vint Cerf",
+    "Ray Tomlinson",
+    "Tim Berners-Lee"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "technology-014"
+ },
+ {
+  "category": "technology",
+  "subcategory": "internet",
+  "headline": "The web was given away",
+  "body": "Tim Berners-Lee proposed the World Wide Web in 1989 while working at CERN, the European physics laboratory, as a way for researchers to share linked documents. The first website went live there in 1991. In April 1993 CERN made the web's underlying software freely available to everyone, with no fees. That decision is a large part of why the web spread so quickly instead of remaining one product among many.",
+  "sourceTitle": "Wikipedia: World Wide Web",
+  "sourceURL": "https://en.wikipedia.org/wiki/World_Wide_Web",
+  "quiz": {
+   "question": "At which institution was the web invented?",
+   "options": [
+    "MIT",
+    "NASA",
+    "CERN"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "technology-015"
+ },
+ {
+  "category": "technology",
+  "subcategory": "internet",
+  "headline": "The first webcam watched a coffee pot",
+  "body": "In 1991 researchers at the University of Cambridge's computer laboratory pointed a camera at the coffee pot in a room called the Trojan Room, so that people working elsewhere in the building could check whether there was any coffee before making the walk. In 1993 the image was connected to the web, where it became an early online curiosity. The camera was finally switched off in 2001.",
+  "sourceTitle": "Wikipedia: Trojan Room coffee pot",
+  "sourceURL": "https://en.wikipedia.org/wiki/Trojan_Room_coffee_pot",
+  "quiz": {
+   "question": "What was the first webcam pointed at?",
+   "options": [
+    "A car park",
+    "A fish tank",
+    "A coffee pot"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "technology-016"
+ },
+ {
+  "category": "technology",
+  "subcategory": "internet",
+  "headline": "Emoji began as a set of 176",
+  "body": "In 1999 Shigetaka Kurita designed a set of 176 small pictures for a Japanese mobile internet service run by NTT DoCoMo. Each was drawn on a grid just twelve pixels square, and they covered weather, transport, phases of the moon and a handful of faces. The word emoji comes from the Japanese for \"picture\" and \"character\"; its resemblance to the English word emotion is a coincidence.",
+  "sourceTitle": "Wikipedia: Emoji",
+  "sourceURL": "https://en.wikipedia.org/wiki/Emoji",
+  "quiz": {
+   "question": "Where does the word \"emoji\" come from?",
+   "options": [
+    "A company name",
+    "Japanese for picture + character",
+    "English emotion + icon"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "technology-017"
+ },
+ {
+  "category": "technology",
+  "subcategory": "general",
+  "headline": "The bug that was a moth",
+  "body": "On 9 September 1947, operators of the Harvard Mark II computer traced a fault to a moth trapped in a relay. They taped the insect into the logbook with the note \"First actual case of bug being found\". The joke only works because engineers were already calling faults \"bugs\" — Thomas Edison used the word that way in the 1870s. The logbook page, moth included, is kept by the Smithsonian.",
+  "sourceTitle": "Wikipedia: Bug (engineering)",
+  "sourceURL": "https://en.wikipedia.org/wiki/Bug_(engineering)",
+  "quiz": {
+   "question": "What insect was taped into the logbook?",
+   "options": [
+    "A beetle",
+    "A moth",
+    "A fly"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "technology-018"
+ },
+ {
+  "category": "technology",
+  "subcategory": "general",
+  "headline": "A prediction that steered an industry",
+  "body": "In 1965 Gordon Moore, later a co-founder of Intel, observed that the number of components on an integrated circuit had been doubling every year, and predicted that this would continue for a decade. In 1975 he revised the pace to a doubling about every two years. Moore's law was never a law of nature. It was an observation that became a target, and chip makers planned around it for decades.",
+  "sourceTitle": "Wikipedia: Moore's law",
+  "sourceURL": "https://en.wikipedia.org/wiki/Moore%27s_law",
+  "quiz": {
+   "question": "What does Moore's law describe doubling?",
+   "options": [
+    "Internet speed",
+    "Components on a chip",
+    "Battery life"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "technology-019"
+ },
+ {
+  "category": "technology",
+  "subcategory": "general",
+  "headline": "Your map needs Einstein",
+  "body": "GPS receivers work out where they are by comparing time signals from satellites. The clocks on those satellites do not tick at quite the same rate as clocks on the ground: moving fast slows them slightly, while weaker gravity at altitude speeds them up by more. The net effect is that they run ahead by about 38 microseconds a day. Without correcting for relativity, positions would drift by kilometres within a day.",
+  "sourceTitle": "Wikipedia: Error analysis for the Global Positioning System",
+  "sourceURL": "https://en.wikipedia.org/wiki/Error_analysis_for_the_Global_Positioning_System",
+  "quiz": {
+   "question": "Left uncorrected, satellite clocks would run…",
+   "options": [
+    "Exactly in step",
+    "Behind ground clocks",
+    "Ahead of ground clocks"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "technology-020"
+ },
+ {
+  "category": "design",
+  "subcategory": null,
+  "headline": "The typeface that tried to say nothing",
+  "body": "Helvetica was created in 1957 by Max Miedinger with Eduard Hoffmann at the Haas type foundry in Switzerland. It was first sold as Neue Haas Grotesk and renamed a few years later, after the Latin name for Switzerland, to help it sell abroad. Its designers wanted a clear, neutral typeface with no particular character of its own. That neutrality made it one of the most widely used typefaces of the twentieth century.",
+  "sourceTitle": "Wikipedia: Helvetica",
+  "sourceURL": "https://en.wikipedia.org/wiki/Helvetica",
+  "quiz": {
+   "question": "What was Helvetica first called?",
+   "options": [
+    "Swiss Modern",
+    "Neue Haas Grotesk",
+    "Akzidenz"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "design-001"
+ },
+ {
+  "category": "design",
+  "subcategory": null,
+  "headline": "The map that ignored geography",
+  "body": "Harry Beck was a draughtsman who, in 1931, redrew the London Underground map as a diagram. He straightened the lines, allowed only horizontal, vertical and 45-degree angles, and spaced the stations evenly regardless of the real distances between them. His reasoning was that passengers underground only need to know the order of stations and where to change. First printed for the public in 1933, it became the model for transit maps around the world.",
+  "sourceTitle": "Wikipedia: Tube map",
+  "sourceURL": "https://en.wikipedia.org/wiki/Tube_map",
+  "quiz": null,
+  "prompt": "Next time you read a transit map, notice what it leaves out.",
+  "evergreen": true,
+  "version": 1,
+  "id": "design-002"
+ },
+ {
+  "category": "design",
+  "subcategory": null,
+  "headline": "As little design as possible",
+  "body": "Dieter Rams led design at the German company Braun for decades and summed up his approach in ten principles of good design. Good design, he wrote, is innovative, useful, aesthetic, understandable, unobtrusive, honest, long-lasting, thorough down to the last detail, environmentally friendly — and, finally, as little design as possible. His calculators, radios and shelving have been cited as an influence by many later product designers.",
+  "sourceTitle": "Wikipedia: Dieter Rams",
+  "sourceURL": "https://en.wikipedia.org/wiki/Dieter_Rams",
+  "quiz": null,
+  "prompt": "Pick up an object near you. Which of its details could be removed without loss?",
+  "evergreen": true,
+  "version": 1,
+  "id": "design-003"
+ },
+ {
+  "category": "design",
+  "subcategory": null,
+  "headline": "A school that lasted fourteen years",
+  "body": "The Bauhaus was a German school of art and design founded by the architect Walter Gropius in Weimar in 1919. It set out to bring fine art, craft and industry together, and its students worked in workshops as well as studios. The school moved to Dessau and then Berlin before closing under pressure from the Nazi regime in 1933. Its teachers scattered across the world, and carried its ideas with them.",
+  "sourceTitle": "Wikipedia: Bauhaus",
+  "sourceURL": "https://en.wikipedia.org/wiki/Bauhaus",
+  "quiz": {
+   "question": "In which city was the Bauhaus founded?",
+   "options": [
+    "Zurich",
+    "Vienna",
+    "Weimar"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "design-004"
+ },
+ {
+  "category": "design",
+  "subcategory": null,
+  "headline": "Why screen corners are easy to hit",
+  "body": "In 1954 the psychologist Paul Fitts described a relationship now known as Fitts's law: the time it takes to move to a target depends on how far away it is and how big it is. Large, close targets are fastest. Interface designers lean on this constantly. On a computer, the edges and corners of the screen stop the pointer, which in effect makes targets placed there very large — and very quick to reach.",
+  "sourceTitle": "Wikipedia: Fitts's law",
+  "sourceURL": "https://en.wikipedia.org/wiki/Fitts%27s_law",
+  "quiz": {
+   "question": "According to Fitts's law, which target is quickest to reach?",
+   "options": [
+    "A small, nearby one",
+    "A large, nearby one",
+    "A large, distant one"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "design-005"
+ },
+ {
+  "category": "design",
+  "subcategory": null,
+  "headline": "The paths people actually take",
+  "body": "A desire path is the worn track that appears where people repeatedly walk across grass rather than follow the paved route. It usually marks the shortest or easiest way between two points. Some planners treat these tracks as a nuisance; others treat them as free research, waiting to see where paths appear before deciding where to lay paving. Either way, they are a record of what people actually do.",
+  "sourceTitle": "Wikipedia: Desire path",
+  "sourceURL": "https://en.wikipedia.org/wiki/Desire_path",
+  "quiz": null,
+  "prompt": "Look for a desire path on your next walk. Where does it lead?",
+  "evergreen": true,
+  "version": 1,
+  "id": "design-006"
+ },
+ {
+  "category": "design",
+  "subcategory": null,
+  "headline": "A sign you can read from behind",
+  "body": "The stop sign's eight-sided shape was chosen in the United States in the early 1920s. An unusual outline has practical advantages: the sign can be recognised at night or when its face is obscured, and drivers approaching from the opposite direction can identify it from the back and know that others have to stop. The signs were not always red; yellow was common until a 1954 standard changed the colour.",
+  "sourceTitle": "Wikipedia: Stop sign",
+  "sourceURL": "https://en.wikipedia.org/wiki/Stop_sign",
+  "quiz": {
+   "question": "What colour were many early stop signs?",
+   "options": [
+    "Yellow",
+    "Blue",
+    "Green"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "design-007"
+ },
+ {
+  "category": "design",
+  "subcategory": null,
+  "headline": "Designs that remember their past",
+  "body": "A skeuomorph is a feature carried over from an older version of an object, where it was necessary, into a newer one, where it is only decoration. Rivets printed on jeans pockets, a camera shutter sound on a phone, and a notes app styled like yellow lined paper are all examples. Such cues can make something new feel familiar, which is why early touchscreen software used so many of them.",
+  "sourceTitle": "Wikipedia: Skeuomorph",
+  "sourceURL": "https://en.wikipedia.org/wiki/Skeuomorph",
+  "quiz": null,
+  "prompt": "Find one skeuomorph within arm's reach.",
+  "evergreen": false,
+  "version": 1,
+  "id": "design-008"
+ },
+ {
+  "category": "design",
+  "subcategory": null,
+  "headline": "A common language for colour",
+  "body": "In 1963 Lawrence Herbert introduced the Pantone Matching System, a book of standardised, numbered colours. Before it, a designer and a printer could easily disagree about what \"the same red\" meant. With a shared reference, a colour could be specified by number and reproduced by different printers in different places. The system is still used to keep brand colours consistent across packaging, print and products.",
+  "sourceTitle": "Wikipedia: Pantone",
+  "sourceURL": "https://en.wikipedia.org/wiki/Pantone",
+  "quiz": {
+   "question": "What problem did Pantone's system solve?",
+   "options": [
+    "Mixing paint cheaply",
+    "Matching colours between printers",
+    "Naming new colours"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "design-009"
+ },
+ {
+  "category": "design",
+  "subcategory": null,
+  "headline": "Pictures instead of words",
+  "body": "In 1920s Vienna the social scientist Otto Neurath, working with Marie Reidemeister and the artist Gerd Arntz, developed Isotype, a method of showing statistics with rows of simple repeated pictograms. A larger quantity was shown by more symbols rather than by a bigger symbol, so that amounts could be compared at a glance. Its clean figures are an ancestor of the pictograms used on signs in airports and stations today.",
+  "sourceTitle": "Wikipedia: Isotype (picture language)",
+  "sourceURL": "https://en.wikipedia.org/wiki/Isotype_(picture_language)",
+  "quiz": {
+   "question": "How did Isotype show a larger quantity?",
+   "options": [
+    "More symbols",
+    "A darker symbol",
+    "A bigger symbol"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "design-010"
+ },
+ {
+  "category": "design",
+  "subcategory": null,
+  "headline": "The Olympic figures on a grid",
+  "body": "For the 1972 Olympic Games in Munich, the German designer Otl Aicher led a team that created a complete visual identity, including a set of pictograms for each sport. The figures were built on a strict grid of horizontal, vertical and diagonal lines, which made them consistent and easy to read without any language. They became one of the most influential pictogram systems ever made.",
+  "sourceTitle": "Wikipedia: Otl Aicher",
+  "sourceURL": "https://en.wikipedia.org/wiki/Otl_Aicher",
+  "quiz": null,
+  "prompt": "Spot a pictogram today. Could you understand it with no words at all?",
+  "evergreen": false,
+  "version": 1,
+  "id": "design-011"
+ },
+ {
+  "category": "design",
+  "subcategory": null,
+  "headline": "A logo sketched in a taxi",
+  "body": "The I ♥ NY logo was created by the graphic designer Milton Glaser in the mid-1970s for a campaign to promote tourism in New York State. He is said to have sketched the idea in the back of a taxi, and he did the work without a fee, expecting the campaign to run for only a few months. It became one of the most imitated designs in the world.",
+  "sourceTitle": "Wikipedia: I Love New York",
+  "sourceURL": "https://en.wikipedia.org/wiki/I_Love_New_York",
+  "quiz": {
+   "question": "Who designed the I ♥ NY logo?",
+   "options": [
+    "Paul Rand",
+    "Milton Glaser",
+    "Saul Bass"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "design-012"
+ },
+ {
+  "category": "design",
+  "subcategory": null,
+  "headline": "Doors that need instructions",
+  "body": "In The Design of Everyday Things, first published in 1988, Don Norman argued that when people struggle to use an object, the fault usually lies with the design and not with them. A door that needs a \"push\" sign has failed to show how it works. Such doors are now nicknamed Norman doors. A flat plate suggests pushing; a handle suggests pulling. Good design makes the right action the obvious one.",
+  "sourceTitle": "Wikipedia: The Design of Everyday Things",
+  "sourceURL": "https://en.wikipedia.org/wiki/The_Design_of_Everyday_Things",
+  "quiz": null,
+  "prompt": "Notice the next door that confuses you. What would fix it?",
+  "evergreen": true,
+  "version": 1,
+  "id": "design-013"
+ },
+ {
+  "category": "design",
+  "subcategory": null,
+  "headline": "Why A4 folds so neatly",
+  "body": "The A series of paper sizes is built on one ratio: the long side is the short side multiplied by the square root of two. That is the only proportion where cutting a sheet in half across its length gives two sheets with the same shape as the original. The largest size, A0, has an area of one square metre. Halve it four times and you arrive at A4.",
+  "sourceTitle": "Wikipedia: ISO 216",
+  "sourceURL": "https://en.wikipedia.org/wiki/ISO_216",
+  "quiz": {
+   "question": "What is the area of a sheet of A0?",
+   "options": [
+    "Half a square metre",
+    "One square metre",
+    "Two square metres"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "design-014"
+ },
+ {
+  "category": "design",
+  "subcategory": null,
+  "headline": "The typeface made for a cartoon dog",
+  "body": "Comic Sans was designed by Vincent Connare at Microsoft in 1994. He had seen a test version of a friendly software guide in which a cartoon dog spoke in speech bubbles set in Times New Roman, and thought the formal typeface looked wrong. He drew a casual alternative based on the lettering in comic books. It was finished too late for that program but shipped with Windows soon afterwards.",
+  "sourceTitle": "Wikipedia: Comic Sans",
+  "sourceURL": "https://en.wikipedia.org/wiki/Comic_Sans",
+  "quiz": {
+   "question": "What inspired the letterforms of Comic Sans?",
+   "options": [
+    "Children's handwriting",
+    "Chalkboard menus",
+    "Comic book lettering"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "design-015"
+ },
+ {
+  "category": "design",
+  "subcategory": null,
+  "headline": "Three lines from 1981",
+  "body": "The three stacked lines known as the hamburger icon were drawn by the designer Norm Cox for the Xerox Star, a pioneering office computer released in 1981. It marked a menu and was meant to resemble a small list. The symbol then largely vanished for decades before returning on smartphone screens, where space is tight and a tiny, recognisable menu button became valuable again.",
+  "sourceTitle": "Wikipedia: Hamburger button",
+  "sourceURL": "https://en.wikipedia.org/wiki/Hamburger_button",
+  "quiz": {
+   "question": "Which computer first used the hamburger icon?",
+   "options": [
+    "Commodore 64",
+    "Xerox Star",
+    "Apple Lisa"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "design-016"
+ },
+ {
+  "category": "design",
+  "subcategory": null,
+  "headline": "The space between two letters",
+  "body": "Kerning is the adjustment of space between particular pairs of letters so that text looks evenly spaced. Some pairs, such as A and V, leave an awkward gap if each letter simply sits in its own box, so type designers build in corrections for them. Good kerning is invisible. Bad kerning can make one word read as two, which is why designers adjust large headlines by eye.",
+  "sourceTitle": "Wikipedia: Kerning",
+  "sourceURL": "https://en.wikipedia.org/wiki/Kerning",
+  "quiz": null,
+  "prompt": "Look at a shop sign or headline. Are any two letters too far apart?",
+  "evergreen": false,
+  "version": 1,
+  "id": "design-017"
+ },
+ {
+  "category": "design",
+  "subcategory": null,
+  "headline": "A lamp balanced on springs",
+  "body": "The Anglepoise lamp was designed in 1932 by George Carwardine, an English engineer who specialised in vehicle suspension. He had developed a spring mechanism that could hold a jointed arm in any position without clamps, working rather like the tension of muscles in a human arm, and went looking for a use for it. A desk lamp that stays exactly where it is put turned out to be the answer.",
+  "sourceTitle": "Wikipedia: Anglepoise lamp",
+  "sourceURL": "https://en.wikipedia.org/wiki/Anglepoise_lamp",
+  "quiz": {
+   "question": "What was the designer's specialism?",
+   "options": [
+    "Aircraft wings",
+    "Watchmaking",
+    "Vehicle suspension"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "design-018"
+ },
+ {
+  "category": "design",
+  "subcategory": null,
+  "headline": "A student drew the recycling symbol",
+  "body": "The three chasing arrows of the recycling symbol were designed in 1970 by Gary Anderson, then a 23-year-old student, for a competition run by a packaging company around the time of the first Earth Day. His design is based on the Möbius strip, a loop with a single continuous side. The symbol was placed in the public domain, which is why it appears freely on products everywhere.",
+  "sourceTitle": "Wikipedia: Recycling symbol",
+  "sourceURL": "https://en.wikipedia.org/wiki/Recycling_symbol",
+  "quiz": {
+   "question": "Which shape is the recycling symbol based on?",
+   "options": [
+    "A Möbius strip",
+    "A spiral",
+    "A triangle knot"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "design-019"
+ },
+ {
+  "category": "design",
+  "subcategory": null,
+  "headline": "A chair meant to feel like a baseball glove",
+  "body": "Charles and Ray Eames released their lounge chair and ottoman in 1956. Made of moulded plywood shells and leather cushions, it was a departure for designers known for affordable, mass-produced furniture. Charles Eames said he wanted it to have the warm, receptive look of a well-used first baseman's mitt. The chair has been in continuous production ever since and is held in the collection of the Museum of Modern Art.",
+  "sourceTitle": "Wikipedia: Eames Lounge Chair",
+  "sourceURL": "https://en.wikipedia.org/wiki/Eames_Lounge_Chair",
+  "quiz": {
+   "question": "What did Charles Eames compare the chair's look to?",
+   "options": [
+    "An armchair in a club",
+    "A sailing boat",
+    "A baseball mitt"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "design-020"
+ },
+ {
+  "category": "design",
+  "subcategory": null,
+  "headline": "Grouping without boxes",
+  "body": "In the early twentieth century a group of German psychologists described how people naturally organise what they see. Their Gestalt principles are still taught to designers. Things placed close together are seen as a group, which is the principle of proximity. Things that look alike are seen as related, which is similarity. A designer can therefore show that items belong together using only space and likeness, without drawing a single border.",
+  "sourceTitle": "Wikipedia: Principles of grouping",
+  "sourceURL": "https://en.wikipedia.org/wiki/Principles_of_grouping",
+  "quiz": null,
+  "prompt": "Open any app. What tells you which items belong together — lines, or just space?",
+  "evergreen": false,
+  "version": 1,
+  "id": "design-021"
+ },
+ {
+  "category": "books",
+  "subcategory": "fiction",
+  "headline": "A monster born from a rainy summer",
+  "body": "In the cold, wet summer of 1816, a group of writers staying near Lake Geneva passed the time by challenging each other to write a ghost story. One of them was Mary Godwin, soon to be Mary Shelley, who was eighteen. Her idea grew into Frankenstein; or, The Modern Prometheus, published anonymously in 1818. It is often described as one of the first works of science fiction.",
+  "sourceTitle": "Wikipedia: Frankenstein",
+  "sourceURL": "https://en.wikipedia.org/wiki/Frankenstein",
+  "quiz": {
+   "question": "How did Frankenstein begin?",
+   "options": [
+    "A stage play",
+    "A newspaper serial",
+    "A ghost-story challenge"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "books-001"
+ },
+ {
+  "category": "books",
+  "subcategory": "fiction",
+  "headline": "The knight who read too much",
+  "body": "Don Quixote, by Miguel de Cervantes, was published in two parts, in 1605 and 1615. Its hero is a gentleman who reads so many tales of chivalry that he decides to become a knight himself, riding out with a farmer, Sancho Panza, as his squire. It is frequently called the first modern novel, and it gave English the word quixotic for ideals that are noble and impractical.",
+  "sourceTitle": "Wikipedia: Don Quixote",
+  "sourceURL": "https://en.wikipedia.org/wiki/Don_Quixote",
+  "quiz": {
+   "question": "Who is Don Quixote's squire?",
+   "options": [
+    "Sancho Panza",
+    "Dulcinea",
+    "Rocinante"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "books-002"
+ },
+ {
+  "category": "books",
+  "subcategory": "fiction",
+  "headline": "A novel a thousand years old",
+  "body": "The Tale of Genji was written in the early eleventh century by Murasaki Shikibu, a lady-in-waiting at the Japanese imperial court. Across fifty-four chapters it follows the life and loves of a prince and the generation after him, with close attention to its characters' inner feelings. It is often described as the world's first novel, and it is still read, studied and adapted in Japan today.",
+  "sourceTitle": "Wikipedia: The Tale of Genji",
+  "sourceURL": "https://en.wikipedia.org/wiki/The_Tale_of_Genji",
+  "quiz": {
+   "question": "Who wrote The Tale of Genji?",
+   "options": [
+    "Murasaki Shikibu",
+    "Sei Shōnagon",
+    "Matsuo Bashō"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "books-003"
+ },
+ {
+  "category": "books",
+  "subcategory": "fiction",
+  "headline": "A first line written on an exam paper",
+  "body": "J. R. R. Tolkien was a professor at Oxford, marking examination papers one summer, when he came across a page a student had left blank. On it he wrote: \"In a hole in the ground there lived a hobbit.\" He did not yet know what a hobbit was. The story that grew from that sentence was published as The Hobbit in 1937.",
+  "sourceTitle": "Wikipedia: The Hobbit",
+  "sourceURL": "https://en.wikipedia.org/wiki/The_Hobbit",
+  "quiz": null,
+  "prompt": "Write one opening sentence today, with no idea what comes next.",
+  "evergreen": true,
+  "version": 1,
+  "id": "books-004"
+ },
+ {
+  "category": "books",
+  "subcategory": "fiction",
+  "headline": "A classic written with fifty words",
+  "body": "Green Eggs and Ham, published in 1960, uses just fifty different words. Its author, Theodor Geisel — Dr. Seuss — wrote it after his publisher, Bennett Cerf, bet him that he could not write a book with so small a vocabulary. His earlier book The Cat in the Hat had used 236. The restriction did the story no harm: it became one of the best-selling children's books in English.",
+  "sourceTitle": "Wikipedia: Green Eggs and Ham",
+  "sourceURL": "https://en.wikipedia.org/wiki/Green_Eggs_and_Ham",
+  "quiz": {
+   "question": "How many different words are in Green Eggs and Ham?",
+   "options": [
+    "50",
+    "150",
+    "236"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "books-005"
+ },
+ {
+  "category": "books",
+  "subcategory": "fiction",
+  "headline": "A book to try: The Remains of the Day",
+  "body": "Kazuo Ishiguro's 1989 novel is narrated by Stevens, an English butler taking a rare motoring holiday in the 1950s. As he drives, he looks back over decades of loyal service and what it may have cost him. Very little is said outright; the story lives in what Stevens cannot quite admit. The novel won the Booker Prize, and Ishiguro was awarded the Nobel Prize in Literature in 2017.",
+  "sourceTitle": "Wikipedia: The Remains of the Day",
+  "sourceURL": "https://en.wikipedia.org/wiki/The_Remains_of_the_Day",
+  "quiz": null,
+  "prompt": "If it sounds like your kind of book, add it to your list.",
+  "evergreen": false,
+  "version": 1,
+  "id": "books-006"
+ },
+ {
+  "category": "books",
+  "subcategory": "fiction",
+  "headline": "The line Holmes never said",
+  "body": "\"Elementary, my dear Watson\" is perhaps the most famous thing Sherlock Holmes says. Yet the phrase does not appear in any of the sixty Holmes stories written by Arthur Conan Doyle. Holmes does say \"Elementary\" and he does say \"my dear Watson\", but never together. The combined line became attached to the character later, through stage and screen versions.",
+  "sourceTitle": "Wikipedia: Sherlock Holmes",
+  "sourceURL": "https://en.wikipedia.org/wiki/Sherlock_Holmes",
+  "quiz": {
+   "question": "How many Holmes stories did Conan Doyle write?",
+   "options": [
+    "24",
+    "112",
+    "60"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "books-007"
+ },
+ {
+  "category": "books",
+  "subcategory": "fiction",
+  "headline": "By the author of Sense and Sensibility",
+  "body": "Pride and Prejudice appeared in 1813 without Jane Austen's name on it. The title page said only that it was by the author of Sense and Sensibility — a book that had itself been credited simply to \"A Lady\". Austen had drafted an early version in the 1790s under the title First Impressions. None of her novels carried her name during her lifetime.",
+  "sourceTitle": "Wikipedia: Pride and Prejudice",
+  "sourceURL": "https://en.wikipedia.org/wiki/Pride_and_Prejudice",
+  "quiz": {
+   "question": "What was the novel's early working title?",
+   "options": [
+    "Pemberley",
+    "Elizabeth",
+    "First Impressions"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "books-008"
+ },
+ {
+  "category": "books",
+  "subcategory": "fiction",
+  "headline": "A village where it rains for years",
+  "body": "One Hundred Years of Solitude, by the Colombian writer Gabriel García Márquez, was published in 1967. It follows seven generations of the Buendía family in the invented town of Macondo, where extraordinary events are told in the same calm voice as ordinary ones. The novel is a landmark of the style known as magic realism. García Márquez received the Nobel Prize in Literature in 1982.",
+  "sourceTitle": "Wikipedia: One Hundred Years of Solitude",
+  "sourceURL": "https://en.wikipedia.org/wiki/One_Hundred_Years_of_Solitude",
+  "quiz": {
+   "question": "What is the name of the novel's town?",
+   "options": [
+    "Macondo",
+    "Comala",
+    "Santa Teresa"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "books-009"
+ },
+ {
+  "category": "books",
+  "subcategory": "fiction",
+  "headline": "A library containing every book",
+  "body": "In 1941 the Argentine writer Jorge Luis Borges published a short story called The Library of Babel. It imagines a universe made of hexagonal rooms lined with books that contain every possible combination of letters. Somewhere on its shelves is every book that could ever be written — and an overwhelming amount of nonsense. Its librarians spend their lives searching. The story runs to only a few pages.",
+  "sourceTitle": "Wikipedia: The Library of Babel",
+  "sourceURL": "https://en.wikipedia.org/wiki/The_Library_of_Babel",
+  "quiz": null,
+  "prompt": "Short stories fit into small gaps. Could you read one this week?",
+  "evergreen": false,
+  "version": 1,
+  "id": "books-010"
+ },
+ {
+  "category": "books",
+  "subcategory": "nonfiction",
+  "headline": "A book to try: The Making of Prince of Persia",
+  "body": "In the 1980s Jordan Mechner, just out of university, kept a journal while he designed and programmed the game Prince of Persia. He later published those journals, covering 1985 to 1993. They record the doubts, false starts and small breakthroughs of making something new, including filming his younger brother running and jumping so that he could trace the footage into the game's lifelike animation.",
+  "sourceTitle": "Wikipedia: Prince of Persia (1989 video game)",
+  "sourceURL": "https://en.wikipedia.org/wiki/Prince_of_Persia_(1989_video_game)",
+  "quiz": null,
+  "prompt": "Would a creator's diary interest you? Add it to your list.",
+  "evergreen": true,
+  "version": 1,
+  "id": "books-011"
+ },
+ {
+  "category": "books",
+  "subcategory": "nonfiction",
+  "headline": "About 180 copies changed everything",
+  "body": "In the 1450s, in the German city of Mainz, Johannes Gutenberg completed a Bible printed with movable metal type. Around 180 copies are thought to have been made, some on paper and some on vellum. It was the first major book produced in Europe by this method, and it showed that books could be made in quantity. Forty-nine copies, complete or partial, are known to survive.",
+  "sourceTitle": "Wikipedia: Gutenberg Bible",
+  "sourceURL": "https://en.wikipedia.org/wiki/Gutenberg_Bible",
+  "quiz": {
+   "question": "In which city was the Gutenberg Bible printed?",
+   "options": [
+    "Venice",
+    "Paris",
+    "Mainz"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "books-012"
+ },
+ {
+  "category": "books",
+  "subcategory": "nonfiction",
+  "headline": "The dictionary that took generations",
+  "body": "Work on what became the Oxford English Dictionary began in the 1850s, and its first edition was not completed until 1928. It was built from millions of quotation slips posted in by volunteer readers. One of the most prolific contributors, William Chester Minor, was a retired American army surgeon who sent his slips from Broadmoor, a secure psychiatric hospital where he was a patient.",
+  "sourceTitle": "Wikipedia: Oxford English Dictionary",
+  "sourceURL": "https://en.wikipedia.org/wiki/Oxford_English_Dictionary",
+  "quiz": {
+   "question": "How was the dictionary's evidence gathered?",
+   "options": [
+    "Slips from volunteer readers",
+    "Royal archives",
+    "Interviews"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "books-013"
+ },
+ {
+  "category": "books",
+  "subcategory": "nonfiction",
+  "headline": "Good books for the price of cigarettes",
+  "body": "In 1935 the publisher Allen Lane launched Penguin Books with ten paperback reprints priced at sixpence each. The story goes that he had found nothing worth reading at a railway station bookstall. Paperbacks existed already, but they were mostly of low quality. Penguin's idea was that good writing, cleanly designed, could be sold cheaply and in places other than bookshops. It sold millions within a year.",
+  "sourceTitle": "Wikipedia: Penguin Books",
+  "sourceURL": "https://en.wikipedia.org/wiki/Penguin_Books",
+  "quiz": {
+   "question": "How much did the first Penguins cost?",
+   "options": [
+    "Sixpence",
+    "Half a crown",
+    "One shilling"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "books-014"
+ },
+ {
+  "category": "books",
+  "subcategory": "nonfiction",
+  "headline": "A book to try: Silent Spring",
+  "body": "Rachel Carson was a marine biologist and a gifted writer. Her 1962 book Silent Spring described how synthetic pesticides, used widely and with little caution, were moving through the natural world and harming birds, fish and other wildlife. It was attacked by chemical companies and read by millions. The book is widely credited with helping to start the modern environmental movement.",
+  "sourceTitle": "Wikipedia: Silent Spring",
+  "sourceURL": "https://en.wikipedia.org/wiki/Silent_Spring",
+  "quiz": {
+   "question": "What was Rachel Carson's profession?",
+   "options": [
+    "Marine biologist",
+    "Journalist",
+    "Chemist"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "books-015"
+ },
+ {
+  "category": "books",
+  "subcategory": "nonfiction",
+  "headline": "A diary in shorthand",
+  "body": "Samuel Pepys, a naval administrator in London, kept a private diary from 1660 to 1669. He wrote it in shorthand, and it was not deciphered and published until the nineteenth century. It is one of the best eyewitness accounts of its age, covering the plague of 1665 and the Great Fire of 1666 — during which Pepys buried his wine and a Parmesan cheese in the garden to keep them safe.",
+  "sourceTitle": "Wikipedia: Samuel Pepys",
+  "sourceURL": "https://en.wikipedia.org/wiki/Samuel_Pepys",
+  "quiz": {
+   "question": "What did Pepys bury during the Great Fire?",
+   "options": [
+    "His diary",
+    "Gold coins",
+    "Wine and cheese"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "books-016"
+ },
+ {
+  "category": "books",
+  "subcategory": "nonfiction",
+  "headline": "The numbers on the spine",
+  "body": "In 1876 the American librarian Melvil Dewey published a system that divides knowledge into ten main classes, each given a range of numbers, with decimals for ever finer subjects. Because a book's number describes its subject and not its position on a particular shelf, a library can grow without renumbering anything. The Dewey Decimal Classification is still used by libraries in many countries.",
+  "sourceTitle": "Wikipedia: Dewey Decimal Classification",
+  "sourceURL": "https://en.wikipedia.org/wiki/Dewey_Decimal_Classification",
+  "quiz": null,
+  "prompt": "Next time you're in a library, find where your favourite subject lives.",
+  "evergreen": false,
+  "version": 1,
+  "id": "books-017"
+ },
+ {
+  "category": "books",
+  "subcategory": "nonfiction",
+  "headline": "A birthday present became a record",
+  "body": "Anne Frank was given a red-and-white checked autograph book for her thirteenth birthday in June 1942, and began using it as a diary. Weeks later her family went into hiding in Amsterdam, and she kept writing for just over two years. Her father, Otto, the only member of the family to survive, arranged for the diary to be published in 1947. It has since been translated into dozens of languages.",
+  "sourceTitle": "Wikipedia: The Diary of a Young Girl",
+  "sourceURL": "https://en.wikipedia.org/wiki/The_Diary_of_a_Young_Girl",
+  "quiz": {
+   "question": "When was the diary first published?",
+   "options": [
+    "1947",
+    "1942",
+    "1960"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "books-018"
+ },
+ {
+  "category": "books",
+  "subcategory": "nonfiction",
+  "headline": "The man who invented the essay",
+  "body": "In 1580 the French writer Michel de Montaigne published a collection of short prose pieces on subjects from friendship to thumbs. He called them Essais — attempts, or trials — because each was a try at thinking something through, with himself as the test case. The form and its name both stuck. Whenever someone writes a personal, exploratory piece of prose, they are following Montaigne.",
+  "sourceTitle": "Wikipedia: Essays (Montaigne)",
+  "sourceURL": "https://en.wikipedia.org/wiki/Essays_(Montaigne)",
+  "quiz": {
+   "question": "What does the French word \"essai\" mean?",
+   "options": [
+    "A letter",
+    "An attempt",
+    "A lesson"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "books-019"
+ },
+ {
+  "category": "books",
+  "subcategory": "nonfiction",
+  "headline": "A book to try: A Short History of Nearly Everything",
+  "body": "Bill Bryson is best known as a travel writer. In 2003 he published a book born of his own curiosity about how scientists know what they know: the age of the universe, the weight of the Earth, what is inside an atom. He tells the story through the often eccentric people who worked these things out. It won the Aventis Prize for general science books in 2004.",
+  "sourceTitle": "Wikipedia: A Short History of Nearly Everything",
+  "sourceURL": "https://en.wikipedia.org/wiki/A_Short_History_of_Nearly_Everything",
+  "quiz": null,
+  "prompt": "Curious about how we know what we know? Add it to your list.",
+  "evergreen": false,
+  "version": 1,
+  "id": "books-020"
+ },
+ {
+  "category": "science",
+  "subcategory": null,
+  "headline": "Why the sky is blue",
+  "body": "Sunlight looks white but is a mixture of every colour. As it passes through the air, it is scattered in all directions by the gas molecules it meets, and shorter wavelengths are scattered far more strongly than longer ones. Blue light therefore reaches your eyes from every part of the sky. At sunset the light travels through much more air, most of the blue is scattered away, and what remains looks orange and red.",
+  "sourceTitle": "Wikipedia: Rayleigh scattering",
+  "sourceURL": "https://en.wikipedia.org/wiki/Rayleigh_scattering",
+  "quiz": {
+   "question": "Which light is scattered most by air?",
+   "options": [
+    "Longer, redder wavelengths",
+    "Shorter, bluer wavelengths",
+    "All equally"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "science-001"
+ },
+ {
+  "category": "science",
+  "subcategory": null,
+  "headline": "Why onions make you cry",
+  "body": "Cutting an onion breaks open its cells and lets enzymes mix with sulphur compounds that were stored separately. A quick chain of reactions produces a gas called syn-propanethial-S-oxide. When the gas drifts up and reaches your eyes, it stimulates nerves there, and your tear glands respond by trying to wash the irritant away. Chilling the onion first, or using a sharper knife that crushes fewer cells, reduces the effect.",
+  "sourceTitle": "Wikipedia: Onion",
+  "sourceURL": "https://en.wikipedia.org/wiki/Onion",
+  "quiz": {
+   "question": "What triggers the tears?",
+   "options": [
+    "A gas released by cut cells",
+    "The smell alone",
+    "Onion juice splashing"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "science-002"
+ },
+ {
+  "category": "science",
+  "subcategory": null,
+  "headline": "Bananas are very slightly radioactive",
+  "body": "Bananas are rich in potassium, and a tiny fraction of all natural potassium is the radioactive form potassium-40. So a banana gives off a minute amount of radiation — as do potatoes, beans, nuts and your own body. The dose is far too small to matter, and the body keeps its potassium level steady however many bananas you eat. Scientists sometimes use the \"banana equivalent dose\" as an informal way to put small exposures in perspective.",
+  "sourceTitle": "Wikipedia: Banana equivalent dose",
+  "sourceURL": "https://en.wikipedia.org/wiki/Banana_equivalent_dose",
+  "quiz": {
+   "question": "Which element makes bananas slightly radioactive?",
+   "options": [
+    "Calcium",
+    "Iron",
+    "Potassium"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "science-003"
+ },
+ {
+  "category": "science",
+  "subcategory": null,
+  "headline": "Counting the distance to lightning",
+  "body": "Light from a lightning flash reaches you almost instantly, but its sound travels at roughly 343 metres per second in air. That gap is why thunder arrives late. Count the seconds between the flash and the rumble and divide by three: the answer is roughly the distance in kilometres. If the gap is getting shorter with each flash, the storm is moving towards you.",
+  "sourceTitle": "Wikipedia: Thunder",
+  "sourceURL": "https://en.wikipedia.org/wiki/Thunder",
+  "quiz": {
+   "question": "A six-second gap means the lightning was about…",
+   "options": [
+    "2 km away",
+    "6 km away",
+    "600 m away"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "science-004"
+ },
+ {
+  "category": "science",
+  "subcategory": null,
+  "headline": "Why ice floats",
+  "body": "Most substances shrink and become denser when they freeze. Water does the opposite. As it freezes, its molecules lock into an open, hexagonal arrangement that takes up about nine per cent more space than the liquid did. Ice is therefore less dense than water and floats on it. That oddity matters: lakes freeze from the top down, and the layer of ice insulates the liquid water — and the life — below.",
+  "sourceTitle": "Wikipedia: Ice",
+  "sourceURL": "https://en.wikipedia.org/wiki/Ice",
+  "quiz": {
+   "question": "About how much does water expand when it freezes?",
+   "options": [
+    "9%",
+    "1%",
+    "25%"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "science-005"
+ },
+ {
+  "category": "science",
+  "subcategory": null,
+  "headline": "Eight-minute-old sunlight",
+  "body": "Light travels at exactly 299,792,458 metres per second in a vacuum. The figure is exact because, since 1983, the metre has been defined by it. Even at that speed, light takes about eight minutes and twenty seconds to cross the 150 million kilometres from the Sun to the Earth. When you look at the Sun's light on a wall, you are seeing light that left its surface before you started reading this card — probably.",
+  "sourceTitle": "Wikipedia: Speed of light",
+  "sourceURL": "https://en.wikipedia.org/wiki/Speed_of_light",
+  "quiz": {
+   "question": "Roughly how long does sunlight take to reach Earth?",
+   "options": [
+    "8 hours",
+    "8 minutes",
+    "8 seconds"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "science-006"
+ },
+ {
+  "category": "science",
+  "subcategory": null,
+  "headline": "The photograph behind the double helix",
+  "body": "In 1953 James Watson and Francis Crick proposed that DNA has the shape of a double helix, two strands twisted round each other. Their model drew on X-ray images made at King's College London, in particular an image known as Photo 51, taken in 1952 by Raymond Gosling working under Rosalind Franklin. The picture's X-shaped pattern was strong evidence for a helix. Franklin died in 1958, four years before the Nobel Prize for the discovery was awarded.",
+  "sourceTitle": "Wikipedia: Photo 51",
+  "sourceURL": "https://en.wikipedia.org/wiki/Photo_51",
+  "quiz": {
+   "question": "What technique produced Photo 51?",
+   "options": [
+    "Radio imaging",
+    "Electron microscopy",
+    "X-ray diffraction"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "science-007"
+ },
+ {
+  "category": "science",
+  "subcategory": null,
+  "headline": "A discovery left on a windowsill",
+  "body": "In 1928 the Scottish scientist Alexander Fleming returned from a holiday to his laboratory in London and found that a mould had contaminated one of his dishes of bacteria. Around the mould, the bacteria had been killed. He identified the mould as Penicillium and named its active substance penicillin. Turning it into a usable medicine took another decade and the work of other scientists, notably Howard Florey and Ernst Chain.",
+  "sourceTitle": "Wikipedia: Penicillin",
+  "sourceURL": "https://en.wikipedia.org/wiki/Penicillin",
+  "quiz": {
+   "question": "What contaminated Fleming's dish?",
+   "options": [
+    "A mould",
+    "A virus",
+    "Dust"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "science-008"
+ },
+ {
+  "category": "science",
+  "subcategory": null,
+  "headline": "The coldest anything can be",
+  "body": "Temperature is a measure of how much the particles in a substance are moving. Cool something and they slow down. Absolute zero is the limit at which they would have the least motion that the laws of physics allow: zero kelvin, or minus 273.15 degrees Celsius. Nothing can be cooled all the way there, though laboratories have reached within a tiny fraction of a degree of it.",
+  "sourceTitle": "Wikipedia: Absolute zero",
+  "sourceURL": "https://en.wikipedia.org/wiki/Absolute_zero",
+  "quiz": {
+   "question": "What is absolute zero in Celsius?",
+   "options": [
+    "−100 °C",
+    "−273.15 °C",
+    "−459.67 °C"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "science-009"
+ },
+ {
+  "category": "science",
+  "subcategory": null,
+  "headline": "Two tides a day",
+  "body": "The Moon's gravity pulls more strongly on the side of the Earth nearest to it than on the far side. That difference stretches the oceans slightly into two bulges, one facing the Moon and one facing away. As the Earth rotates, most coasts pass through both bulges, giving two high tides a day. When the Sun and Moon line up, at new and full moon, their effects add together into extra-high spring tides.",
+  "sourceTitle": "Wikipedia: Tide",
+  "sourceURL": "https://en.wikipedia.org/wiki/Tide",
+  "quiz": {
+   "question": "When do the strongest (spring) tides occur?",
+   "options": [
+    "Only in spring",
+    "At new and full moon",
+    "At half moon"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "science-010"
+ },
+ {
+  "category": "science",
+  "subcategory": null,
+  "headline": "The Moon keeps one face towards us",
+  "body": "The Moon takes the same time to spin once on its axis as it takes to orbit the Earth, a little over 27 days. As a result, the same side always faces us. This is not a coincidence. Over a very long time, the Earth's gravity slowed the Moon's rotation until the two periods matched, an arrangement called tidal locking. The far side was not seen until a Soviet probe photographed it in 1959.",
+  "sourceTitle": "Wikipedia: Tidal locking",
+  "sourceURL": "https://en.wikipedia.org/wiki/Tidal_locking",
+  "quiz": {
+   "question": "When was the Moon's far side first photographed?",
+   "options": [
+    "1935",
+    "1969",
+    "1959"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "science-011"
+ },
+ {
+  "category": "science",
+  "subcategory": null,
+  "headline": "A table with gaps left on purpose",
+  "body": "In 1869 the Russian chemist Dmitri Mendeleev arranged the known elements by atomic weight and noticed that their properties repeated in a regular pattern. Where no known element fitted, he left a gap, and he predicted the properties of the elements that should fill them. Gallium, discovered in 1875, and germanium, discovered in 1886, matched his predictions closely — strong evidence that his periodic table reflected something real.",
+  "sourceTitle": "Wikipedia: Dmitri Mendeleev",
+  "sourceURL": "https://en.wikipedia.org/wiki/Dmitri_Mendeleev",
+  "quiz": {
+   "question": "What did Mendeleev do where no element fitted?",
+   "options": [
+    "Invented a name",
+    "Rearranged the table",
+    "Left a gap and predicted one"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "science-012"
+ },
+ {
+  "category": "science",
+  "subcategory": null,
+  "headline": "Why a siren changes pitch",
+  "body": "As an ambulance approaches, each sound wave from its siren is emitted from a little closer to you than the last, so the waves arrive bunched together and the pitch sounds higher. As it moves away, the waves are stretched out and the pitch drops. This is the Doppler effect, described by the Austrian physicist Christian Doppler in 1842. Astronomers use the same effect in light to measure how fast stars and galaxies are moving.",
+  "sourceTitle": "Wikipedia: Doppler effect",
+  "sourceURL": "https://en.wikipedia.org/wiki/Doppler_effect",
+  "quiz": null,
+  "prompt": "Listen for it the next time a vehicle with a siren passes you.",
+  "evergreen": true,
+  "version": 1,
+  "id": "science-013"
+ },
+ {
+  "category": "science",
+  "subcategory": null,
+  "headline": "Nobody else sees your rainbow",
+  "body": "A rainbow forms when sunlight enters raindrops, bends, reflects off the inside of each drop, and bends again on the way out, spreading into colours. The light returns at an angle of about 42 degrees from the direction opposite the Sun. Because that angle is measured from your own eyes, the rainbow you see is made by a particular set of drops. Someone standing beside you sees a slightly different one.",
+  "sourceTitle": "Wikipedia: Rainbow",
+  "sourceURL": "https://en.wikipedia.org/wiki/Rainbow",
+  "quiz": {
+   "question": "Where is the Sun when you see a rainbow?",
+   "options": [
+    "Directly overhead",
+    "Behind you",
+    "In front of you"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "science-014"
+ },
+ {
+  "category": "science",
+  "subcategory": null,
+  "headline": "The smell of rain has a name",
+  "body": "The earthy scent that rises when rain falls on dry ground is called petrichor. The word was coined in 1964 by two Australian researchers, Isabel Bear and Richard Thomas. Part of the smell comes from oils released by plants during dry spells, and part from geosmin, a compound made by soil bacteria. Human noses are remarkably sensitive to geosmin and can detect it at extremely low concentrations.",
+  "sourceTitle": "Wikipedia: Petrichor",
+  "sourceURL": "https://en.wikipedia.org/wiki/Petrichor",
+  "quiz": {
+   "question": "Which organisms produce geosmin?",
+   "options": [
+    "Tree roots",
+    "Earthworms",
+    "Soil bacteria"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "science-015"
+ },
+ {
+  "category": "science",
+  "subcategory": null,
+  "headline": "Why some years have an extra day",
+  "body": "The Earth takes about 365.2422 days to go round the Sun, not a neat 365. Adding a leap day every four years overcorrects slightly, so the Gregorian calendar has a refinement: century years are leap years only if they can be divided by 400. That is why 2000 was a leap year but 1900 was not, and 2100 will not be. The year 2027 is an ordinary one, with 365 days.",
+  "sourceTitle": "Wikipedia: Leap year",
+  "sourceURL": "https://en.wikipedia.org/wiki/Leap_year",
+  "quiz": {
+   "question": "Which of these was NOT a leap year?",
+   "options": [
+    "2000",
+    "2024",
+    "1900"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "science-016"
+ },
+ {
+  "category": "science",
+  "subcategory": null,
+  "headline": "Where Celsius and Fahrenheit agree",
+  "body": "The Celsius and Fahrenheit scales use different zero points and different sizes of degree, so they almost never show the same number. There is exactly one exception. At minus forty, the two scales cross: minus 40 degrees Celsius is the same temperature as minus 40 degrees Fahrenheit. You can check it with the conversion: multiply by nine fifths, then add thirty-two.",
+  "sourceTitle": "Wikipedia: Fahrenheit",
+  "sourceURL": "https://en.wikipedia.org/wiki/Fahrenheit",
+  "quiz": {
+   "question": "At what temperature do the two scales match?",
+   "options": [
+    "−40",
+    "−273",
+    "0"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "science-017"
+ },
+ {
+  "category": "science",
+  "subcategory": null,
+  "headline": "Space is silent",
+  "body": "Sound is a vibration passed along from particle to particle, through air, water or a solid. In the near-vacuum of space there are far too few particles to carry it, so there is nothing to hear. Astronauts on spacewalks talk by radio, which uses electromagnetic waves and needs no medium at all. The roaring spaceships of the cinema are an artistic choice.",
+  "sourceTitle": "Wikipedia: Sound",
+  "sourceURL": "https://en.wikipedia.org/wiki/Sound",
+  "quiz": {
+   "question": "How do astronauts talk during spacewalks?",
+   "options": [
+    "By radio",
+    "By sign language only",
+    "By shouting"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "science-018"
+ },
+ {
+  "category": "science",
+  "subcategory": null,
+  "headline": "You are mostly not the same cells",
+  "body": "An adult human body is made of tens of trillions of cells; careful estimates put the figure at roughly thirty to forty trillion. They do not all last a lifetime. Cells lining the gut are replaced within days, red blood cells circulate for about four months, and skin is continually shed and renewed. Others, such as most of the neurons in the brain, are with you for life.",
+  "sourceTitle": "Wikipedia: Cell (biology)",
+  "sourceURL": "https://en.wikipedia.org/wiki/Cell_(biology)",
+  "quiz": {
+   "question": "About how long does a red blood cell last?",
+   "options": [
+    "Four days",
+    "Four years",
+    "Four months"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "science-019"
+ },
+ {
+  "category": "science",
+  "subcategory": null,
+  "headline": "A number that never ends",
+  "body": "Pi is the ratio of a circle's circumference to its diameter, a little more than 3.14159. It is an irrational number: its decimal digits go on for ever without settling into a repeating pattern. Archimedes trapped its value between two fractions more than two thousand years ago by drawing polygons inside and outside a circle. Computers have now calculated trillions of digits, far more than any practical task needs.",
+  "sourceTitle": "Wikipedia: Pi",
+  "sourceURL": "https://en.wikipedia.org/wiki/Pi",
+  "quiz": null,
+  "prompt": "Measure around a mug and across it. Divide one by the other. How close did you get?",
+  "evergreen": false,
+  "version": 1,
+  "id": "science-020"
+ },
+ {
+  "category": "history",
+  "subcategory": null,
+  "headline": "Cleopatra and the pyramids",
+  "body": "The Great Pyramid of Giza was completed around 2560 BC. Cleopatra, the last active ruler of Ptolemaic Egypt, was born in 69 BC — about two and a half thousand years later. The first Moon landing came in 1969, roughly two thousand years after her death. Cleopatra therefore lived closer in time to the Moon landing than to the building of the Great Pyramid. Ancient Egypt lasted a very long time.",
+  "sourceTitle": "Wikipedia: Great Pyramid of Giza",
+  "sourceURL": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza",
+  "quiz": {
+   "question": "Cleopatra lived closer in time to…",
+   "options": [
+    "Neither; they're equal",
+    "The building of the Great Pyramid",
+    "The Moon landing"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "history-001"
+ },
+ {
+  "category": "history",
+  "subcategory": null,
+  "headline": "A university older than an empire",
+  "body": "There is evidence of teaching at Oxford as early as 1096, which makes it the oldest university in the English-speaking world. The Aztec capital, Tenochtitlan, is traditionally dated to 1325, and the alliance usually called the Aztec Empire formed about a century after that. Students had been attending lectures in Oxford for more than two hundred years before the city at the heart of that empire was founded.",
+  "sourceTitle": "Wikipedia: University of Oxford",
+  "sourceURL": "https://en.wikipedia.org/wiki/University_of_Oxford",
+  "quiz": {
+   "question": "Which is older?",
+   "options": [
+    "They began together",
+    "Teaching at Oxford",
+    "Tenochtitlan"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "history-002"
+ },
+ {
+  "category": "history",
+  "subcategory": null,
+  "headline": "The fire that began in a bakery",
+  "body": "The Great Fire of London broke out in the early hours of 2 September 1666 in Thomas Farriner's bakery on Pudding Lane. Driven by a strong east wind through tightly packed timber buildings, it burned for four days. It destroyed more than thirteen thousand houses and the medieval St Paul's Cathedral. The official death toll was remarkably small, though historians note that many deaths may simply not have been recorded.",
+  "sourceTitle": "Wikipedia: Great Fire of London",
+  "sourceURL": "https://en.wikipedia.org/wiki/Great_Fire_of_London",
+  "quiz": {
+   "question": "Where did the Great Fire start?",
+   "options": [
+    "Drury Lane",
+    "Pudding Lane",
+    "Fleet Street"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "history-003"
+ },
+ {
+  "category": "history",
+  "subcategory": null,
+  "headline": "One stone, three scripts",
+  "body": "The Rosetta Stone was found in 1799 by French soldiers in Egypt. It carries a decree from 196 BC written three times: in Egyptian hieroglyphs, in the everyday Demotic script, and in ancient Greek. Because scholars could read the Greek, the stone offered a way into the other two. In 1822 Jean-François Champollion announced that he had worked out how hieroglyphs functioned, opening up three thousand years of writing.",
+  "sourceTitle": "Wikipedia: Rosetta Stone",
+  "sourceURL": "https://en.wikipedia.org/wiki/Rosetta_Stone",
+  "quiz": {
+   "question": "Which language on the stone could scholars already read?",
+   "options": [
+    "Latin",
+    "Ancient Greek",
+    "Hieroglyphs"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "history-004"
+ },
+ {
+  "category": "history",
+  "subcategory": null,
+  "headline": "The shortest war on record",
+  "body": "On the morning of 27 August 1896, British warships opened fire on the palace of the Sultan of Zanzibar, after a new sultan took power without British approval and refused to step down. The bombardment began at about two minutes past nine. By around twenty to ten, the palace was in ruins and the flag had been shot down. The Anglo-Zanzibar War, lasting between 38 and 45 minutes, is generally considered the shortest in recorded history.",
+  "sourceTitle": "Wikipedia: Anglo-Zanzibar War",
+  "sourceURL": "https://en.wikipedia.org/wiki/Anglo-Zanzibar_War",
+  "quiz": {
+   "question": "About how long did the war last?",
+   "options": [
+    "Under an hour",
+    "One day",
+    "One week"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "history-005"
+ },
+ {
+  "category": "history",
+  "subcategory": null,
+  "headline": "Eleven days that never happened",
+  "body": "In 1752 Britain and its colonies switched from the Julian calendar to the Gregorian one, which much of Europe had adopted long before. To catch up, eleven days were dropped. People went to bed on Wednesday 2 September and woke up on Thursday 14 September. The same law also moved the start of the legal year from 25 March to 1 January.",
+  "sourceTitle": "Wikipedia: Calendar (New Style) Act 1750",
+  "sourceURL": "https://en.wikipedia.org/wiki/Calendar_(New_Style)_Act_1750",
+  "quiz": {
+   "question": "What date followed 2 September 1752 in Britain?",
+   "options": [
+    "1 October",
+    "3 September",
+    "14 September"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "history-006"
+ },
+ {
+  "category": "history",
+  "subcategory": null,
+  "headline": "A town stopped in a day",
+  "body": "In AD 79 Mount Vesuvius erupted and buried the Roman town of Pompeii under several metres of ash and pumice. The town lay largely forgotten for centuries until excavations began in 1748. Because it was sealed so suddenly, Pompeii preserves everyday Roman life in unusual detail: bakeries with loaves still in the oven, election slogans painted on walls, and graffiti scratched by ordinary people.",
+  "sourceTitle": "Wikipedia: Pompeii",
+  "sourceURL": "https://en.wikipedia.org/wiki/Pompeii",
+  "quiz": {
+   "question": "When did excavations at Pompeii begin?",
+   "options": [
+    "1748",
+    "1901",
+    "1492"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "history-007"
+ },
+ {
+  "category": "history",
+  "subcategory": null,
+  "headline": "The road that had no name",
+  "body": "For centuries, goods, ideas and religions moved along a web of trade routes linking China, Central Asia, India, Persia and the Mediterranean. Nobody travelling them called them the Silk Road. That name was coined in 1877 by the German geographer Ferdinand von Richthofen. Silk was only one of many things carried; paper, spices, glass, horses and diseases travelled the same routes.",
+  "sourceTitle": "Wikipedia: Silk Road",
+  "sourceURL": "https://en.wikipedia.org/wiki/Silk_Road",
+  "quiz": {
+   "question": "When was the term \"Silk Road\" coined?",
+   "options": [
+    "200 BC",
+    "1271",
+    "1877"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "history-008"
+ },
+ {
+  "category": "history",
+  "subcategory": null,
+  "headline": "The army that lost to birds",
+  "body": "In late 1932, farmers in Western Australia asked for help with some twenty thousand emus that were eating their wheat. The government sent soldiers with two machine guns. The birds proved fast, scattered widely and were hard to hit; after several weeks and thousands of rounds, the operation was withdrawn with the emu population largely intact. The episode became known, with some irony, as the Emu War.",
+  "sourceTitle": "Wikipedia: Emu War",
+  "sourceURL": "https://en.wikipedia.org/wiki/Emu_War",
+  "quiz": {
+   "question": "In which country did the Emu War take place?",
+   "options": [
+    "New Zealand",
+    "South Africa",
+    "Australia"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "history-009"
+ },
+ {
+  "category": "history",
+  "subcategory": null,
+  "headline": "When tulips cost as much as houses",
+  "body": "In the Dutch Republic of the 1630s, tulips were a fashionable luxury, and rare varieties with streaked petals were especially prized. Contracts to buy bulbs changed hands at ever higher prices until, in February 1637, the market abruptly collapsed. Tulip mania is often cited as the first recorded speculative bubble, though modern historians think its effect on the wider Dutch economy was much smaller than legend suggests.",
+  "sourceTitle": "Wikipedia: Tulip mania",
+  "sourceURL": "https://en.wikipedia.org/wiki/Tulip_mania",
+  "quiz": {
+   "question": "In which year did the tulip market collapse?",
+   "options": [
+    "1720",
+    "1929",
+    "1637"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "history-010"
+ },
+ {
+  "category": "history",
+  "subcategory": null,
+  "headline": "A computer from a shipwreck",
+  "body": "In 1901 sponge divers recovered a lump of corroded bronze from an ancient shipwreck off the Greek island of Antikythera. Inside were the remains of at least thirty interlocking gear wheels. The Antikythera mechanism, made around two thousand years ago, was a hand-cranked device for modelling the movements of the Sun and Moon and predicting eclipses. Nothing of comparable mechanical complexity is known from the following thousand years.",
+  "sourceTitle": "Wikipedia: Antikythera mechanism",
+  "sourceURL": "https://en.wikipedia.org/wiki/Antikythera_mechanism",
+  "quiz": {
+   "question": "What was the mechanism used for?",
+   "options": [
+    "Grinding grain",
+    "Modelling the heavens",
+    "Telling the time at sea"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "history-011"
+ },
+ {
+  "category": "history",
+  "subcategory": null,
+  "headline": "Twelve seconds in the air",
+  "body": "On 17 December 1903, near Kitty Hawk in North Carolina, Orville Wright flew a powered aeroplane for twelve seconds and covered 37 metres — less than the wingspan of many modern airliners. He and his brother Wilbur made four flights that day; the longest lasted 59 seconds. Just under sixty-six years later, people walked on the Moon.",
+  "sourceTitle": "Wikipedia: Wright Flyer",
+  "sourceURL": "https://en.wikipedia.org/wiki/Wright_Flyer",
+  "quiz": {
+   "question": "How long did the first flight last?",
+   "options": [
+    "12 minutes",
+    "2 minutes",
+    "12 seconds"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "history-012"
+ },
+ {
+  "category": "history",
+  "subcategory": null,
+  "headline": "A city in the clouds",
+  "body": "Machu Picchu stands on a mountain ridge in the Andes of Peru, about 2,400 metres above sea level. It was built in the fifteenth century, probably as an estate for the Inca emperor Pachacuti, and was abandoned around the time of the Spanish conquest. Its stone walls were fitted together without mortar. The site was little known outside the region until the American explorer Hiram Bingham publicised it in 1911.",
+  "sourceTitle": "Wikipedia: Machu Picchu",
+  "sourceURL": "https://en.wikipedia.org/wiki/Machu_Picchu",
+  "quiz": {
+   "question": "Which civilisation built Machu Picchu?",
+   "options": [
+    "The Aztecs",
+    "The Maya",
+    "The Inca"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "history-013"
+ },
+ {
+  "category": "history",
+  "subcategory": null,
+  "headline": "Laws carved in stone",
+  "body": "Around 1754 BC, Hammurabi, king of Babylon, had a set of 282 laws inscribed on a black stone pillar more than two metres tall. They cover trade, property, family and injury, each written as a case: if this happens, then that follows. It is one of the oldest long legal texts to survive. The stone was rediscovered in 1901 and now stands in the Louvre in Paris.",
+  "sourceTitle": "Wikipedia: Code of Hammurabi",
+  "sourceURL": "https://en.wikipedia.org/wiki/Code_of_Hammurabi",
+  "quiz": {
+   "question": "Where is the stone kept today?",
+   "options": [
+    "The British Museum",
+    "The Louvre",
+    "Baghdad"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "history-014"
+ },
+ {
+  "category": "history",
+  "subcategory": null,
+  "headline": "Vikings in America, dated to the year",
+  "body": "At L'Anse aux Meadows in Newfoundland, Canada, archaeologists in the 1960s uncovered the remains of a Norse settlement — proof that Europeans reached the Americas centuries before Columbus. In 2021 researchers dated wood cut there with metal tools by finding the trace of a known solar storm in its tree rings. Counting outward gave an exact felling year: 1021.",
+  "sourceTitle": "Wikipedia: L'Anse aux Meadows",
+  "sourceURL": "https://en.wikipedia.org/wiki/L%27Anse_aux_Meadows",
+  "quiz": {
+   "question": "In which modern country is L'Anse aux Meadows?",
+   "options": [
+    "Canada",
+    "Greenland",
+    "United States"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "history-015"
+ },
+ {
+  "category": "history",
+  "subcategory": null,
+  "headline": "The first postage stamp",
+  "body": "Before 1840, the person receiving a letter in Britain usually paid for it, and the cost depended on distance. A reform proposed by Rowland Hill replaced this with a low, uniform rate paid in advance by the sender. Proof of payment was a small adhesive label: the Penny Black, issued in May 1840 and bearing a profile of Queen Victoria. It was the world's first adhesive postage stamp.",
+  "sourceTitle": "Wikipedia: Penny Black",
+  "sourceURL": "https://en.wikipedia.org/wiki/Penny_Black",
+  "quiz": {
+   "question": "Who usually paid for a letter before 1840?",
+   "options": [
+    "The recipient",
+    "The sender",
+    "The parish"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "history-016"
+ },
+ {
+  "category": "history",
+  "subcategory": null,
+  "headline": "A wall that fell in one night",
+  "body": "The Berlin Wall was built in August 1961 by East Germany to stop its citizens leaving for the West, and it divided the city for twenty-eight years. On the evening of 9 November 1989, after an East German spokesman mistakenly announced that new travel rules took effect immediately, crowds gathered at the checkpoints. Overwhelmed guards opened the gates, and people began crossing freely and climbing onto the wall.",
+  "sourceTitle": "Wikipedia: Berlin Wall",
+  "sourceURL": "https://en.wikipedia.org/wiki/Berlin_Wall",
+  "quiz": {
+   "question": "In which year was the Berlin Wall built?",
+   "options": [
+    "1961",
+    "1949",
+    "1975"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "history-017"
+ },
+ {
+  "category": "history",
+  "subcategory": null,
+  "headline": "Rules for nothing",
+  "body": "A symbol for an empty place in a number was used in several ancient cultures. Treating zero as a number in its own right was a further step. In AD 628 the Indian mathematician Brahmagupta wrote down rules for arithmetic with zero — for example, that a number minus itself is zero, and that a number multiplied by zero is zero. The idea travelled west through the Islamic world and reached Europe centuries later.",
+  "sourceTitle": "Wikipedia: 0",
+  "sourceURL": "https://en.wikipedia.org/wiki/0",
+  "quiz": {
+   "question": "Who set out early rules for arithmetic with zero?",
+   "options": [
+    "Brahmagupta",
+    "Fibonacci",
+    "Euclid"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "history-018"
+ },
+ {
+  "category": "history",
+  "subcategory": null,
+  "headline": "Mammoths outlived the first pyramids",
+  "body": "Woolly mammoths disappeared from the mainland of Eurasia and North America around ten thousand years ago. But a small population survived on Wrangel Island, in the Arctic Ocean off Siberia, until roughly four thousand years ago. By then the Great Pyramid of Giza had already been standing for centuries. The last mammoths and the pharaohs shared a planet.",
+  "sourceTitle": "Wikipedia: Woolly mammoth",
+  "sourceURL": "https://en.wikipedia.org/wiki/Woolly_mammoth",
+  "quiz": {
+   "question": "Where did the last woolly mammoths live?",
+   "options": [
+    "Wrangel Island",
+    "Iceland",
+    "Alaska"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "history-019"
+ },
+ {
+  "category": "history",
+  "subcategory": null,
+  "headline": "A charter sealed in a meadow",
+  "body": "In June 1215, at Runnymede beside the River Thames, King John of England agreed to a charter demanded by rebellious barons. Most of its clauses dealt with specific feudal grievances. But Magna Carta also set down the principle that the king was not above the law, and promised that no free man would be imprisoned except by lawful judgment. Four copies of the 1215 text survive.",
+  "sourceTitle": "Wikipedia: Magna Carta",
+  "sourceURL": "https://en.wikipedia.org/wiki/Magna_Carta",
+  "quiz": {
+   "question": "How many copies of the 1215 Magna Carta survive?",
+   "options": [
+    "One",
+    "Twelve",
+    "Four"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "history-020"
+ },
+ {
+  "category": "art",
+  "subcategory": "visual",
+  "headline": "The theft that made the Mona Lisa famous",
+  "body": "On 21 August 1911 the Mona Lisa was stolen from the Louvre by Vincenzo Peruggia, an Italian workman who had helped build its glass case. He hid in the museum and walked out with the painting under his coat. It was missing for more than two years, during which newspapers around the world printed its picture. The painting was recovered in Florence in 1913 — by then far more famous than before.",
+  "sourceTitle": "Wikipedia: Mona Lisa",
+  "sourceURL": "https://en.wikipedia.org/wiki/Mona_Lisa",
+  "quiz": {
+   "question": "How long was the Mona Lisa missing?",
+   "options": [
+    "Two weeks",
+    "Twenty years",
+    "Over two years"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "art-001"
+ },
+ {
+  "category": "art",
+  "subcategory": "visual",
+  "headline": "A night sky painted from memory",
+  "body": "Vincent van Gogh painted The Starry Night in June 1889 while staying at an asylum in Saint-Rémy-de-Provence. The view is based on the one from his window just before sunrise, but he painted it during the day, from memory, and added the village. He considered the picture a failure. It is now one of the most recognised paintings in the world, and hangs in the Museum of Modern Art in New York.",
+  "sourceTitle": "Wikipedia: The Starry Night",
+  "sourceURL": "https://en.wikipedia.org/wiki/The_Starry_Night",
+  "quiz": {
+   "question": "Where does The Starry Night hang today?",
+   "options": [
+    "The Louvre, Paris",
+    "MoMA, New York",
+    "Van Gogh Museum, Amsterdam"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "art-002"
+ },
+ {
+  "category": "art",
+  "subcategory": "visual",
+  "headline": "The wave made with imported blue",
+  "body": "The Great Wave off Kanagawa is a woodblock print by the Japanese artist Hokusai, published around 1831 as part of his series Thirty-six Views of Mount Fuji. The mountain sits small and calm beneath a towering wave. Hokusai was about seventy when he made it. The print's deep colour comes from Prussian blue, a synthetic pigment then newly available in Japan.",
+  "sourceTitle": "Wikipedia: The Great Wave off Kanagawa",
+  "sourceURL": "https://en.wikipedia.org/wiki/The_Great_Wave_off_Kanagawa",
+  "quiz": {
+   "question": "What small shape sits beneath the wave?",
+   "options": [
+    "A temple",
+    "Mount Fuji",
+    "The moon"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "art-003"
+ },
+ {
+  "category": "art",
+  "subcategory": "visual",
+  "headline": "A movement named by an insult",
+  "body": "In 1874 a group of painters who had been rejected by the official Paris Salon held their own exhibition. Among the works was Claude Monet's hazy harbour scene Impression, Sunrise. The critic Louis Leroy seized on the title to mock the whole show as mere \"impressions\", unfinished sketches. The painters adopted the name. Impressionism became one of the most loved movements in the history of art.",
+  "sourceTitle": "Wikipedia: Impression, Sunrise",
+  "sourceURL": "https://en.wikipedia.org/wiki/Impression,_Sunrise",
+  "quiz": {
+   "question": "Whose painting gave Impressionism its name?",
+   "options": [
+    "Claude Monet",
+    "Édouard Manet",
+    "Edgar Degas"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "art-004"
+ },
+ {
+  "category": "art",
+  "subcategory": "visual",
+  "headline": "The painter of a few dozen pictures",
+  "body": "Johannes Vermeer worked slowly in the Dutch city of Delft in the seventeenth century, and only around thirty-five paintings are generally attributed to him today. Most show quiet domestic rooms lit from a window on the left. Girl with a Pearl Earring, painted around 1665, is not a portrait of a known person but a tronie — a study of a face and expression. He was little known for two centuries after his death.",
+  "sourceTitle": "Wikipedia: Johannes Vermeer",
+  "sourceURL": "https://en.wikipedia.org/wiki/Johannes_Vermeer",
+  "quiz": null,
+  "prompt": "Notice how light from a window falls across a room today.",
+  "evergreen": false,
+  "version": 1,
+  "id": "art-005"
+ },
+ {
+  "category": "art",
+  "subcategory": "film",
+  "headline": "The first night at the pictures",
+  "body": "On 28 December 1895, in a basement room of the Grand Café in Paris, the brothers Auguste and Louis Lumière showed ten short films to a paying audience. Each lasted under a minute. The first showed workers leaving the Lumière factory. The programme is usually regarded as the birth of cinema as a shared public experience, although others had been experimenting with moving pictures too.",
+  "sourceTitle": "Wikipedia: Auguste and Louis Lumière",
+  "sourceURL": "https://en.wikipedia.org/wiki/Auguste_and_Louis_Lumi%C3%A8re",
+  "quiz": {
+   "question": "In which city was the Lumières' first paid screening?",
+   "options": [
+    "London",
+    "Lyon",
+    "Paris"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "art-006"
+ },
+ {
+  "category": "art",
+  "subcategory": "film",
+  "headline": "\"You ain't heard nothin' yet\"",
+  "body": "The Jazz Singer, released in October 1927, was the first feature-length film with synchronised spoken dialogue. Most of it is still silent, with title cards, but in a few sequences the star, Al Jolson, sings and speaks, including the line \"You ain't heard nothin' yet\". Audiences were astonished. Within a few years, the silent film had all but disappeared from Hollywood.",
+  "sourceTitle": "Wikipedia: The Jazz Singer",
+  "sourceURL": "https://en.wikipedia.org/wiki/The_Jazz_Singer",
+  "quiz": {
+   "question": "When was The Jazz Singer released?",
+   "options": [
+    "1939",
+    "1927",
+    "1915"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "art-007"
+ },
+ {
+  "category": "art",
+  "subcategory": "film",
+  "headline": "A feature film drawn by hand",
+  "body": "Snow White and the Seven Dwarfs, released by Walt Disney in 1937, was the first full-length animated feature made with traditional hand-painted cels. During its three years in production, many in Hollywood called it \"Disney's Folly\", doubting that audiences would sit through a feature-length cartoon. It became a huge success and established the animated feature as a form.",
+  "sourceTitle": "Wikipedia: Snow White and the Seven Dwarfs (1937 film)",
+  "sourceURL": "https://en.wikipedia.org/wiki/Snow_White_and_the_Seven_Dwarfs_(1937_film)",
+  "quiz": {
+   "question": "What was the film nicknamed during production?",
+   "options": [
+    "Disney's Folly",
+    "Walt's Dream",
+    "The Long Cartoon"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "art-008"
+ },
+ {
+  "category": "art",
+  "subcategory": "film",
+  "headline": "The first feature made entirely by computer",
+  "body": "Toy Story, released in November 1995, was the first feature-length film made entirely with computer animation. It was produced by Pixar and directed by John Lasseter. Toys were a practical subject: the technology of the time handled smooth plastic surfaces far better than skin, hair or cloth. Each frame could take hours to render, and the film contains well over a hundred thousand of them.",
+  "sourceTitle": "Wikipedia: Toy Story",
+  "sourceURL": "https://en.wikipedia.org/wiki/Toy_Story",
+  "quiz": {
+   "question": "Why were toys a practical subject in 1995?",
+   "options": [
+    "Toys were cheap to license",
+    "Children were the only audience",
+    "Plastic was easier to render"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "art-009"
+ },
+ {
+  "category": "art",
+  "subcategory": "film",
+  "headline": "The same face, three meanings",
+  "body": "Around 1920 the Soviet film-maker Lev Kuleshov ran an editing experiment. He cut the same shot of an actor's expressionless face together with a bowl of soup, a child in a coffin, and a woman on a sofa. Audiences are said to have praised the actor's subtle hunger, grief and desire. The Kuleshov effect shows that viewers build meaning from the join between two shots, not just from each shot alone.",
+  "sourceTitle": "Wikipedia: Kuleshov effect",
+  "sourceURL": "https://en.wikipedia.org/wiki/Kuleshov_effect",
+  "quiz": null,
+  "prompt": "In the next film you watch, notice a cut. What does the second shot make you assume?",
+  "evergreen": false,
+  "version": 1,
+  "id": "art-010"
+ },
+ {
+  "category": "art",
+  "subcategory": "music",
+  "headline": "The composer who couldn't hear the applause",
+  "body": "Beethoven's Ninth Symphony was first performed in Vienna on 7 May 1824. By then the composer was almost completely deaf. He stood on stage beating time, though the musicians had been told to follow another conductor. According to accounts of the evening, when the piece ended he was still facing the orchestra, and one of the soloists gently turned him round so that he could see the audience cheering.",
+  "sourceTitle": "Wikipedia: Symphony No. 9 (Beethoven)",
+  "sourceURL": "https://en.wikipedia.org/wiki/Symphony_No._9_(Beethoven)",
+  "quiz": {
+   "question": "In which city did the Ninth Symphony premiere?",
+   "options": [
+    "Vienna",
+    "Berlin",
+    "Bonn"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "art-011"
+ },
+ {
+  "category": "art",
+  "subcategory": "music",
+  "headline": "Four and a half minutes of nothing",
+  "body": "In 1952 the pianist David Tudor sat at a piano in Woodstock, New York, and performed a new piece by John Cage. He played no notes. The work, titled 4′33″ after its length, consists of three movements in which the performer makes no deliberate sound. Cage's point was that there is no such thing as silence: the piece is whatever the audience happens to hear in the room.",
+  "sourceTitle": "Wikipedia: 4′33″",
+  "sourceURL": "https://en.wikipedia.org/wiki/4%E2%80%B233%E2%80%B3",
+  "quiz": null,
+  "prompt": "Sit still for one minute and list every sound you can hear.",
+  "evergreen": false,
+  "version": 1,
+  "id": "art-012"
+ },
+ {
+  "category": "art",
+  "subcategory": "music",
+  "headline": "The first recorded words",
+  "body": "In 1877 Thomas Edison built the phonograph, the first machine that could both record sound and play it back. It worked by scratching a groove into tinfoil wrapped round a cylinder. For his first test, Edison recited the nursery rhyme \"Mary had a little lamb\" — and was reportedly astonished when the machine spoke the words back to him.",
+  "sourceTitle": "Wikipedia: Phonograph",
+  "sourceURL": "https://en.wikipedia.org/wiki/Phonograph",
+  "quiz": {
+   "question": "What did Edison recite in his first test?",
+   "options": [
+    "The alphabet",
+    "Mary had a little lamb",
+    "Twinkle, twinkle"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "art-013"
+ },
+ {
+  "category": "art",
+  "subcategory": "music",
+  "headline": "A concert on a roof",
+  "body": "On 30 January 1969 the Beatles carried their instruments up to the roof of their Apple headquarters in central London and played an unannounced lunchtime set. Office workers gathered in the street below and on neighbouring rooftops. After about forty minutes, the police asked them to turn the volume down, and the performance ended. It was the last time the band played live in public.",
+  "sourceTitle": "Wikipedia: The Beatles' rooftop concert",
+  "sourceURL": "https://en.wikipedia.org/wiki/The_Beatles%27_rooftop_concert",
+  "quiz": {
+   "question": "In which city was the rooftop concert?",
+   "options": [
+    "Hamburg",
+    "Liverpool",
+    "London"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "art-014"
+ },
+ {
+  "category": "art",
+  "subcategory": "music",
+  "headline": "Bach, plugged in",
+  "body": "In 1968 the composer Wendy Carlos released Switched-On Bach, an album of pieces by Johann Sebastian Bach performed entirely on a Moog synthesiser. The instrument could play only one note at a time, so every line had to be recorded separately and layered on tape. The album was a surprise hit, won three Grammy Awards, and convinced many listeners that the synthesiser was a serious musical instrument.",
+  "sourceTitle": "Wikipedia: Switched-On Bach",
+  "sourceURL": "https://en.wikipedia.org/wiki/Switched-On_Bach",
+  "quiz": {
+   "question": "Which instrument was used for Switched-On Bach?",
+   "options": [
+    "Theremin",
+    "Electric organ",
+    "Moog synthesiser"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "art-015"
+ },
+ {
+  "category": "art",
+  "subcategory": "designhistory",
+  "headline": "A style named after a fair",
+  "body": "Art Deco takes its name from an exhibition held in Paris in 1925, the International Exhibition of Modern Decorative and Industrial Arts. The style combined bold geometry, rich materials and a taste for speed and modernity. It shaped everything from jewellery and cinemas to ocean liners and skyscrapers, including the Chrysler Building in New York. The name itself only came into common use in the 1960s.",
+  "sourceTitle": "Wikipedia: Art Deco",
+  "sourceURL": "https://en.wikipedia.org/wiki/Art_Deco",
+  "quiz": {
+   "question": "Which city hosted the 1925 exhibition?",
+   "options": [
+    "Paris",
+    "New York",
+    "Milan"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "art-016"
+ },
+ {
+  "category": "art",
+  "subcategory": "designhistory",
+  "headline": "Useful or beautiful",
+  "body": "William Morris was a Victorian designer, poet and campaigner who disliked the shoddy factory goods of his age. His firm made wallpaper, textiles and furniture using traditional craft methods, with dense patterns drawn from plants and birds. \"Have nothing in your houses,\" he advised, \"that you do not know to be useful, or believe to be beautiful.\" He was a leading figure in the Arts and Crafts movement.",
+  "sourceTitle": "Wikipedia: William Morris",
+  "sourceURL": "https://en.wikipedia.org/wiki/William_Morris",
+  "quiz": null,
+  "prompt": "Look around the room. What here is both useful and beautiful?",
+  "evergreen": true,
+  "version": 1,
+  "id": "art-017"
+ },
+ {
+  "category": "art",
+  "subcategory": "designhistory",
+  "headline": "Only straight lines and primary colours",
+  "body": "De Stijl — Dutch for \"the style\" — was a movement founded in the Netherlands in 1917 by a group that included the painters Theo van Doesburg and Piet Mondrian. They reduced their work to essentials: horizontal and vertical lines, the three primary colours, and black, white and grey. The same approach was applied to furniture and buildings, most famously Gerrit Rietveld's Red and Blue Chair.",
+  "sourceTitle": "Wikipedia: De Stijl",
+  "sourceURL": "https://en.wikipedia.org/wiki/De_Stijl",
+  "quiz": {
+   "question": "What does \"De Stijl\" mean?",
+   "options": [
+    "The square",
+    "The style",
+    "The line"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "art-018"
+ },
+ {
+  "category": "art",
+  "subcategory": "designhistory",
+  "headline": "When Paris fell for Japanese prints",
+  "body": "After Japan reopened to foreign trade in the 1850s, its woodblock prints began arriving in Europe in large numbers. Artists in Paris were struck by their flat areas of colour, strong outlines and off-centre compositions. The resulting craze was called Japonisme. Van Gogh collected the prints and painted copies of them, and their influence can be seen in the work of Monet, Degas and Toulouse-Lautrec.",
+  "sourceTitle": "Wikipedia: Japonisme",
+  "sourceURL": "https://en.wikipedia.org/wiki/Japonisme",
+  "quiz": {
+   "question": "Which art form sparked Japonisme?",
+   "options": [
+    "Ink scrolls",
+    "Woodblock prints",
+    "Ceramics"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "art-019"
+ },
+ {
+  "category": "art",
+  "subcategory": "designhistory",
+  "headline": "The man who designed the first two minutes",
+  "body": "Before the 1950s, film title sequences were usually plain lists of names. The graphic designer Saul Bass changed that. His animated opening for The Man with the Golden Arm in 1955, built around a jagged paper-cut arm, set the mood of the film before it began. He went on to create titles for Vertigo, North by Northwest and Psycho, as well as a number of well-known corporate logos.",
+  "sourceTitle": "Wikipedia: Saul Bass",
+  "sourceURL": "https://en.wikipedia.org/wiki/Saul_Bass",
+  "quiz": null,
+  "prompt": "Next time a film starts, watch the titles. What do they tell you to expect?",
+  "evergreen": false,
+  "version": 1,
+  "id": "art-020"
+ },
+ {
+  "category": "sports",
+  "subcategory": "football",
+  "headline": "The first World Cup",
+  "body": "The first FIFA World Cup was held in Uruguay in July 1930. Thirteen teams took part, all by invitation, and only four made the long sea voyage from Europe. Every match was played in the capital, Montevideo. The hosts, who were also the reigning Olympic champions, beat Argentina 4–2 in the final after trailing at half-time, and the following day was declared a national holiday.",
+  "sourceTitle": "Wikipedia: 1930 FIFA World Cup",
+  "sourceURL": "https://en.wikipedia.org/wiki/1930_FIFA_World_Cup",
+  "quiz": {
+   "question": "Who won the first World Cup?",
+   "options": [
+    "Brazil",
+    "Argentina",
+    "Uruguay"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "sports-001"
+ },
+ {
+  "category": "sports",
+  "subcategory": "football",
+  "headline": "Cards inspired by traffic lights",
+  "body": "Red and yellow cards were first used at the 1970 World Cup in Mexico. They were the idea of Ken Aston, an English referee who had seen how confusion over language could inflame a match. The story goes that the solution came to him while driving in London, as a traffic light changed: yellow for take care, red for stop. No player was sent off during that first tournament.",
+  "sourceTitle": "Wikipedia: Penalty card",
+  "sourceURL": "https://en.wikipedia.org/wiki/Penalty_card",
+  "quiz": {
+   "question": "At which World Cup were cards first used?",
+   "options": [
+    "1970",
+    "1958",
+    "1982"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "sports-002"
+ },
+ {
+  "category": "sports",
+  "subcategory": "football",
+  "headline": "The day football got its rules",
+  "body": "In late 1863, representatives of a handful of London clubs met at the Freemasons' Tavern to agree a single set of rules for football. They formed the Football Association and published its first Laws of the Game that December. The main arguments were over carrying the ball and kicking opponents' shins. Clubs that wanted to keep both went their own way, and their game became rugby.",
+  "sourceTitle": "Wikipedia: Laws of the Game (association football)",
+  "sourceURL": "https://en.wikipedia.org/wiki/Laws_of_the_Game_(association_football)",
+  "quiz": {
+   "question": "In which year was the Football Association founded?",
+   "options": [
+    "1863",
+    "1901",
+    "1848"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "sports-003"
+ },
+ {
+  "category": "sports",
+  "subcategory": "football",
+  "headline": "A goalkeeper invented the penalty",
+  "body": "The penalty kick was proposed by William McCrum, a goalkeeper and businessman from Milford in what is now Northern Ireland. He suggested it in 1890 as a way to punish defenders who deliberately fouled to stop a certain goal. Many at the time thought it ungentlemanly to assume a player would cheat on purpose. Football's lawmakers adopted the idea the following year.",
+  "sourceTitle": "Wikipedia: Penalty kick (association football)",
+  "sourceURL": "https://en.wikipedia.org/wiki/Penalty_kick_(association_football)",
+  "quiz": {
+   "question": "What position did the inventor of the penalty play?",
+   "options": [
+    "Striker",
+    "Referee",
+    "Goalkeeper"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "sports-004"
+ },
+ {
+  "category": "sports",
+  "subcategory": "football",
+  "headline": "Everyone plays everywhere",
+  "body": "Total Football is a style of play in which any outfield player can take over the role of any other. When a defender runs forward, a team-mate drops into the space left behind, so the team's shape holds while the individuals move. It is most closely linked to the Dutch club Ajax and the Netherlands team of the early 1970s, coached by Rinus Michels with Johan Cruyff as its star.",
+  "sourceTitle": "Wikipedia: Total Football",
+  "sourceURL": "https://en.wikipedia.org/wiki/Total_Football",
+  "quiz": {
+   "question": "Which country is most associated with Total Football?",
+   "options": [
+    "Brazil",
+    "The Netherlands",
+    "Italy"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "sports-005"
+ },
+ {
+  "category": "sports",
+  "subcategory": "f1",
+  "headline": "The first championship race",
+  "body": "The Formula One World Championship began on 13 May 1950 at Silverstone, a former wartime airfield in England. The race was attended by King George VI. It was won by the Italian driver Giuseppe Farina in an Alfa Romeo, and Alfa Romeos filled the first three places. Farina went on to become the sport's first world champion at the end of that season.",
+  "sourceTitle": "Wikipedia: 1950 British Grand Prix",
+  "sourceURL": "https://en.wikipedia.org/wiki/1950_British_Grand_Prix",
+  "quiz": {
+   "question": "Where was the first championship race held?",
+   "options": [
+    "Monza",
+    "Silverstone",
+    "Monaco"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "sports-006"
+ },
+ {
+  "category": "sports",
+  "subcategory": "f1",
+  "headline": "Four tyres in two seconds",
+  "body": "A modern Formula One pit stop is a rehearsed routine for around twenty mechanics. The car stops on its marks, is lifted at both ends, and all four wheels are removed and replaced. The fastest crews regularly do this in a little over two seconds, and the quickest stops on record have taken less than two. Refuelling during races has been banned since 2010, which is one reason stops became so short.",
+  "sourceTitle": "Wikipedia: Pit stop",
+  "sourceURL": "https://en.wikipedia.org/wiki/Pit_stop",
+  "quiz": {
+   "question": "Since when has refuelling in races been banned?",
+   "options": [
+    "1994",
+    "2021",
+    "2010"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "sports-007"
+ },
+ {
+  "category": "sports",
+  "subcategory": "f1",
+  "headline": "Racing through city streets",
+  "body": "The Monaco Grand Prix was first run in 1929 and is held on the ordinary streets of Monte Carlo and La Condamine. The circuit is the shortest and slowest on the Formula One calendar, with tight corners, a tunnel and almost no room to overtake. Barriers stand where other tracks have run-off areas, so a small mistake usually ends a driver's race. A win here is counted among the sport's great prizes.",
+  "sourceTitle": "Wikipedia: Monaco Grand Prix",
+  "sourceURL": "https://en.wikipedia.org/wiki/Monaco_Grand_Prix",
+  "quiz": {
+   "question": "When was the Monaco Grand Prix first run?",
+   "options": [
+    "1966",
+    "1950",
+    "1929"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "sports-008"
+ },
+ {
+  "category": "sports",
+  "subcategory": "f1",
+  "headline": "The bar above the driver's head",
+  "body": "Since 2018 every Formula One car has carried a halo: a curved titanium bar that arches over the cockpit to protect the driver's head from debris and impacts. It was unpopular at first, with drivers and fans alike complaining about how it looked. Opinions changed quickly after a series of serious accidents in which the device was credited with protecting drivers from grave injury.",
+  "sourceTitle": "Wikipedia: Halo (safety device)",
+  "sourceURL": "https://en.wikipedia.org/wiki/Halo_(safety_device)",
+  "quiz": {
+   "question": "What is the halo made of?",
+   "options": [
+    "Carbon fibre only",
+    "Steel",
+    "Titanium"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "sports-009"
+ },
+ {
+  "category": "sports",
+  "subcategory": "f1",
+  "headline": "Why first place is worth 25",
+  "body": "Formula One has changed its scoring many times. In the first season, 1950, only the top five finishers scored, with eight points for a win. The present system dates from 2010: the top ten score, on a scale of 25, 18, 15, 12, 10, 8, 6, 4, 2 and 1. The large gap between first and second was intended to make drivers race for the win and not settle for a safe second place.",
+  "sourceTitle": "Wikipedia: List of Formula One World Championship points scoring systems",
+  "sourceURL": "https://en.wikipedia.org/wiki/List_of_Formula_One_World_Championship_points_scoring_systems",
+  "quiz": {
+   "question": "How many points does second place earn?",
+   "options": [
+    "20",
+    "18",
+    "15"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "sports-010"
+ },
+ {
+  "category": "sports",
+  "subcategory": "running",
+  "headline": "Four laps, under four minutes",
+  "body": "On 6 May 1954, at the Iffley Road track in Oxford, a 25-year-old medical student named Roger Bannister ran a mile in 3 minutes 59.4 seconds. He was the first person known to break four minutes, a mark some had thought beyond human reach. Two friends paced him through the early laps. His record stood for just forty-six days before the Australian John Landy ran faster.",
+  "sourceTitle": "Wikipedia: Four-minute mile",
+  "sourceURL": "https://en.wikipedia.org/wiki/Four-minute_mile",
+  "quiz": {
+   "question": "How long did Bannister's record stand?",
+   "options": [
+    "A decade",
+    "4 years",
+    "46 days"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "sports-011"
+ },
+ {
+  "category": "sports",
+  "subcategory": "running",
+  "headline": "Why a marathon is 42.195 km",
+  "body": "Early Olympic marathons were roughly 40 kilometres long, and no two were the same. At the London Games of 1908 the course was laid out from Windsor Castle to the stadium, finishing in front of the royal box: 26 miles and 385 yards. In 1921 the sport's governing body fixed that particular distance as the standard. It has been 42.195 kilometres ever since.",
+  "sourceTitle": "Wikipedia: Marathon",
+  "sourceURL": "https://en.wikipedia.org/wiki/Marathon",
+  "quiz": {
+   "question": "Which Olympics set the modern marathon distance?",
+   "options": [
+    "Paris 1924",
+    "Athens 1896",
+    "London 1908"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "sports-012"
+ },
+ {
+  "category": "sports",
+  "subcategory": "running",
+  "headline": "A marathon in under two hours",
+  "body": "On 12 October 2019, in a park in Vienna, the Kenyan runner Eliud Kipchoge covered the marathon distance in 1 hour 59 minutes 40 seconds. He was the first person to do so in under two hours. The run does not count as an official world record: it was a specially arranged event, with rotating teams of pacemakers and drinks handed over by bicycle, which the rules of open competition do not allow.",
+  "sourceTitle": "Wikipedia: Ineos 1:59 Challenge",
+  "sourceURL": "https://en.wikipedia.org/wiki/Ineos_1:59_Challenge",
+  "quiz": {
+   "question": "Why isn't Kipchoge's run an official record?",
+   "options": [
+    "It was run indoors",
+    "Rotating pacemakers were used",
+    "The course was too short"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "sports-013"
+ },
+ {
+  "category": "sports",
+  "subcategory": "running",
+  "headline": "Thirteen runners in a park",
+  "body": "On 2 October 2004, thirteen runners turned up in Bushy Park, south-west London, for a free, timed five-kilometre run organised by Paul Sinton-Hewitt. It was held again the following Saturday, and the one after that. The idea spread to other parks and then other countries, and became parkrun. It is still free, still run by volunteers, and open to walkers as much as runners.",
+  "sourceTitle": "Wikipedia: Parkrun",
+  "sourceURL": "https://en.wikipedia.org/wiki/Parkrun",
+  "quiz": {
+   "question": "How long is a parkrun?",
+   "options": [
+    "10 km",
+    "A mile",
+    "5 km"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "sports-014"
+ },
+ {
+  "category": "sports",
+  "subcategory": "running",
+  "headline": "Gold without shoes",
+  "body": "At the 1960 Olympic Games in Rome, the Ethiopian runner Abebe Bikila won the marathon running barefoot. He had been a late addition to the team, and the shoes available to him did not fit comfortably, so he ran as he had often trained. He finished in a world-record time under the torchlit Arch of Constantine. Four years later in Tokyo he won again — this time in shoes.",
+  "sourceTitle": "Wikipedia: Abebe Bikila",
+  "sourceURL": "https://en.wikipedia.org/wiki/Abebe_Bikila",
+  "quiz": {
+   "question": "In which city did Bikila win barefoot?",
+   "options": [
+    "Rome",
+    "Mexico City",
+    "Tokyo"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "sports-015"
+ },
+ {
+  "category": "sports",
+  "subcategory": "general",
+  "headline": "The Games begin again",
+  "body": "The first modern Olympic Games were held in Athens in April 1896, inspired by the ancient festival at Olympia and organised largely through the efforts of the Frenchman Pierre de Coubertin. Around 240 athletes took part, all of them men, from fourteen nations. Winners received a silver medal and an olive branch. Gold medals for first place were not introduced until later Games.",
+  "sourceTitle": "Wikipedia: 1896 Summer Olympics",
+  "sourceURL": "https://en.wikipedia.org/wiki/1896_Summer_Olympics",
+  "quiz": {
+   "question": "What did winners receive in 1896?",
+   "options": [
+    "A silver medal",
+    "A laurel crown only",
+    "A gold medal"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "sports-016"
+ },
+ {
+  "category": "sports",
+  "subcategory": "general",
+  "headline": "Five rings, six colours",
+  "body": "The Olympic rings were designed in 1913 by Pierre de Coubertin, founder of the modern Games. The five interlocking rings represent the five inhabited continents taking part, as they were then counted. No ring stands for a particular continent. The colours — blue, yellow, black, green and red, on a white background — were chosen because at least one of them appears in the flag of every nation.",
+  "sourceTitle": "Wikipedia: Olympic symbols",
+  "sourceURL": "https://en.wikipedia.org/wiki/Olympic_symbols",
+  "quiz": {
+   "question": "Who designed the Olympic rings?",
+   "options": [
+    "Carl Diem",
+    "Otl Aicher",
+    "Pierre de Coubertin"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "sports-017"
+ },
+ {
+  "category": "sports",
+  "subcategory": "general",
+  "headline": "A game invented for a cold winter",
+  "body": "In December 1891 James Naismith, an instructor at a training school in Springfield, Massachusetts, was asked to devise an indoor game to keep students active through the winter. He nailed two peach baskets to the gallery of the gymnasium and wrote thirteen rules. At first someone had to climb up and retrieve the ball after every score. Basketball spread quickly, and Naismith lived to see it played at the Olympics in 1936.",
+  "sourceTitle": "Wikipedia: James Naismith",
+  "sourceURL": "https://en.wikipedia.org/wiki/James_Naismith",
+  "quiz": {
+   "question": "What were the first basketball hoops?",
+   "options": [
+    "Barrel rings",
+    "Fishing nets",
+    "Peach baskets"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "sports-018"
+ },
+ {
+  "category": "sports",
+  "subcategory": "general",
+  "headline": "The oldest tennis tournament",
+  "body": "The first Wimbledon Championship was held in 1877 at the All England Croquet and Lawn Tennis Club, partly to raise money to repair the club's pony-drawn roller. Twenty-two men entered, and the title was won by Spencer Gore. About two hundred spectators paid a shilling each to watch the final. It is the oldest tennis tournament in the world, and is still played on grass.",
+  "sourceTitle": "Wikipedia: 1877 Wimbledon Championship",
+  "sourceURL": "https://en.wikipedia.org/wiki/1877_Wimbledon_Championship",
+  "quiz": {
+   "question": "On what surface is Wimbledon played?",
+   "options": [
+    "Grass",
+    "Hard court",
+    "Clay"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "sports-019"
+ },
+ {
+  "category": "sports",
+  "subcategory": "general",
+  "headline": "Why the leader wears yellow",
+  "body": "The Tour de France was created in 1903 by the sports newspaper L'Auto to boost its sales. In 1919 the organisers introduced a special jersey so that spectators could pick out the overall race leader as the riders passed. It was yellow, the colour of the paper on which L'Auto was printed. The newspaper is long gone; the maillot jaune remains cycling's most famous prize.",
+  "sourceTitle": "Wikipedia: Yellow jersey",
+  "sourceURL": "https://en.wikipedia.org/wiki/Yellow_jersey",
+  "quiz": {
+   "question": "Why is the leader's jersey yellow?",
+   "options": [
+    "It's the colour of the sun",
+    "Yellow dye was cheap",
+    "The newspaper's paper was yellow"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "sports-020"
+ },
+ {
+  "category": "nature",
+  "subcategory": null,
+  "headline": "Three hearts and blue blood",
+  "body": "An octopus has three hearts. Two pump blood through its gills, and the third sends it round the rest of the body. That blood is blue: it carries oxygen using a copper-based protein called haemocyanin, where ours uses iron-based haemoglobin. Most of an octopus's neurons are not in its head but in its eight arms, which can carry out some movements without detailed instructions from the brain.",
+  "sourceTitle": "Wikipedia: Octopus",
+  "sourceURL": "https://en.wikipedia.org/wiki/Octopus",
+  "quiz": {
+   "question": "How many hearts does an octopus have?",
+   "options": [
+    "Eight",
+    "One",
+    "Three"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "nature-001"
+ },
+ {
+  "category": "nature",
+  "subcategory": null,
+  "headline": "Directions given by dancing",
+  "body": "When a honey bee finds a good patch of flowers, she returns to the hive and performs a waggle dance on the comb. The angle of her run, relative to straight up, shows the direction of the food relative to the Sun. The length of the waggle shows how far away it is. The Austrian scientist Karl von Frisch decoded the dance, and shared a Nobel Prize in 1973.",
+  "sourceTitle": "Wikipedia: Waggle dance",
+  "sourceURL": "https://en.wikipedia.org/wiki/Waggle_dance",
+  "quiz": {
+   "question": "What does the length of the waggle show?",
+   "options": [
+    "Time of day",
+    "The type of flower",
+    "Distance to the food"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "nature-002"
+ },
+ {
+  "category": "nature",
+  "subcategory": null,
+  "headline": "A tree older than the pyramids",
+  "body": "In the White Mountains of California grows a Great Basin bristlecone pine known as Methuselah. Counting its growth rings showed it to be more than 4,800 years old, which means it was a seedling before the pyramids of Giza were built. Bristlecones grow extremely slowly in cold, dry, windy conditions, and their dense, resinous wood resists insects and rot. The tree's exact location is kept secret to protect it.",
+  "sourceTitle": "Wikipedia: Methuselah (pine tree)",
+  "sourceURL": "https://en.wikipedia.org/wiki/Methuselah_(pine_tree)",
+  "quiz": {
+   "question": "Why is Methuselah's location kept secret?",
+   "options": [
+    "It's on private land",
+    "To protect it",
+    "Nobody recorded it"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "nature-003"
+ },
+ {
+  "category": "nature",
+  "subcategory": null,
+  "headline": "The bird that sees two summers",
+  "body": "The Arctic tern breeds in the far north during the northern summer, then flies to the edge of Antarctica for the southern summer, and back again. It is the longest regular migration of any animal. Birds fitted with tiny tracking devices have been recorded travelling around 70,000 kilometres or more in a year. Because it follows the summer from pole to pole, the tern probably sees more daylight than any other creature.",
+  "sourceTitle": "Wikipedia: Arctic tern",
+  "sourceURL": "https://en.wikipedia.org/wiki/Arctic_tern",
+  "quiz": {
+   "question": "Between which regions does the Arctic tern migrate?",
+   "options": [
+    "Europe and Africa",
+    "Arctic and Antarctic",
+    "Asia and Australia"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "nature-004"
+ },
+ {
+  "category": "nature",
+  "subcategory": null,
+  "headline": "The salamander that regrows itself",
+  "body": "The axolotl is a salamander from the lakes around Mexico City. Unlike most amphibians, it normally keeps its feathery external gills and stays in the water for its whole life, becoming an adult without ever taking the usual land-living form. It can also regenerate lost limbs, and even parts of its heart and spinal cord. Common in laboratories and aquariums, it is critically endangered in the wild.",
+  "sourceTitle": "Wikipedia: Axolotl",
+  "sourceURL": "https://en.wikipedia.org/wiki/Axolotl",
+  "quiz": {
+   "question": "Where do wild axolotls come from?",
+   "options": [
+    "The Amazon",
+    "Japanese rivers",
+    "Lakes near Mexico City"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "nature-005"
+ },
+ {
+  "category": "nature",
+  "subcategory": null,
+  "headline": "A journey no single butterfly completes",
+  "body": "Each autumn, monarch butterflies from eastern North America fly up to several thousand kilometres to spend the winter clustered in mountain forests in central Mexico. In spring they head north again and lay eggs along the way. It takes several short-lived generations to finish the trip back. The butterflies that fly south the next autumn have never made the journey, yet find the same forests.",
+  "sourceTitle": "Wikipedia: Monarch butterfly migration",
+  "sourceURL": "https://en.wikipedia.org/wiki/Monarch_butterfly_migration",
+  "quiz": {
+   "question": "Where do eastern monarchs spend the winter?",
+   "options": [
+    "Florida",
+    "Cuba",
+    "Central Mexico"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "nature-006"
+ },
+ {
+  "category": "nature",
+  "subcategory": null,
+  "headline": "The only birds that fly backwards",
+  "body": "Hummingbirds can hover in still air, and they are the only birds able to fly backwards as a matter of course. Their wings rotate at the shoulder and trace a figure of eight, producing lift on both the forward and the backward stroke. Smaller species beat their wings dozens of times every second. Fuelling this is demanding: a hummingbird may visit hundreds of flowers in a day.",
+  "sourceTitle": "Wikipedia: Hummingbird",
+  "sourceURL": "https://en.wikipedia.org/wiki/Hummingbird",
+  "quiz": {
+   "question": "What shape do a hummingbird's wings trace?",
+   "options": [
+    "A figure of eight",
+    "A straight line",
+    "A circle"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "nature-007"
+ },
+ {
+  "category": "nature",
+  "subcategory": null,
+  "headline": "The network under the forest floor",
+  "body": "Most trees live in partnership with fungi. Fine fungal threads wrap around or enter the tree's roots and spread far into the soil, bringing back water and minerals; in return the tree supplies sugars. The same fungus can connect to many trees, forming what is called a mycorrhizal network. How much trees really exchange through these links is still actively debated among scientists.",
+  "sourceTitle": "Wikipedia: Mycorrhizal network",
+  "sourceURL": "https://en.wikipedia.org/wiki/Mycorrhizal_network",
+  "quiz": null,
+  "prompt": "On your next walk, look for mushrooms at the base of a tree. They're the visible tip of something larger.",
+  "evergreen": false,
+  "version": 1,
+  "id": "nature-008"
+ },
+ {
+  "category": "nature",
+  "subcategory": null,
+  "headline": "The toughest animal is half a millimetre long",
+  "body": "Tardigrades, also called water bears, are eight-legged animals usually less than a millimetre long. They live in moss, soil and water all over the world. When their surroundings dry out, they can curl into a dormant state and survive for years, then revive when water returns. In that state they have withstood extreme cold, intense radiation and even brief exposure to the vacuum of space.",
+  "sourceTitle": "Wikipedia: Tardigrade",
+  "sourceURL": "https://en.wikipedia.org/wiki/Tardigrade",
+  "quiz": {
+   "question": "What are tardigrades also called?",
+   "options": [
+    "Water bears",
+    "Moss mites",
+    "Sea monkeys"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "nature-009"
+ },
+ {
+  "category": "nature",
+  "subcategory": null,
+  "headline": "The largest animal that has ever lived",
+  "body": "The blue whale is the largest animal known to have existed, heavier than any dinosaur yet discovered. Adults can reach around thirty metres in length. For all its size, it feeds almost entirely on krill, shrimp-like animals a few centimetres long, which it strains from huge mouthfuls of seawater through plates of baleen. A blue whale's low-pitched calls can travel for hundreds of kilometres through the ocean.",
+  "sourceTitle": "Wikipedia: Blue whale",
+  "sourceURL": "https://en.wikipedia.org/wiki/Blue_whale",
+  "quiz": {
+   "question": "What do blue whales mainly eat?",
+   "options": [
+    "Squid",
+    "Krill",
+    "Fish"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "nature-010"
+ },
+ {
+  "category": "nature",
+  "subcategory": null,
+  "headline": "A crow that makes its own tools",
+  "body": "The New Caledonian crow, found on islands in the South Pacific, is one of very few animals that manufacture tools. It trims twigs into hooks and cuts strips from the barbed edges of leaves, then uses them to pull grubs out of holes in wood. In laboratory tests, these crows have solved puzzles that require several steps in the right order.",
+  "sourceTitle": "Wikipedia: New Caledonian crow",
+  "sourceURL": "https://en.wikipedia.org/wiki/New_Caledonian_crow",
+  "quiz": {
+   "question": "What do the crows use their tools for?",
+   "options": [
+    "Building nests",
+    "Extracting grubs",
+    "Cracking shells"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "nature-011"
+ },
+ {
+  "category": "nature",
+  "subcategory": null,
+  "headline": "The colours were there all along",
+  "body": "Leaves are green because of chlorophyll, the pigment that captures sunlight. They also contain yellow and orange pigments called carotenoids, hidden behind the green. In autumn, as days shorten, many trees stop making chlorophyll and break down what remains, and the yellows and oranges show through. Reds and purples are different: those pigments are newly made in autumn, from sugars trapped in the leaf.",
+  "sourceTitle": "Wikipedia: Autumn leaf color",
+  "sourceURL": "https://en.wikipedia.org/wiki/Autumn_leaf_color",
+  "quiz": {
+   "question": "Which autumn colours are newly made each year?",
+   "options": [
+    "Greens",
+    "Reds and purples",
+    "Yellows"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "nature-012"
+ },
+ {
+  "category": "nature",
+  "subcategory": null,
+  "headline": "The biggest tree on Earth",
+  "body": "General Sherman is a giant sequoia in Sequoia National Park, California. It is not the tallest tree in the world, nor the widest, nor the oldest. But measured by the volume of wood in its trunk, it is the largest single-stem tree known. It stands about 84 metres tall and is estimated to be more than two thousand years old.",
+  "sourceTitle": "Wikipedia: General Sherman (tree)",
+  "sourceURL": "https://en.wikipedia.org/wiki/General_Sherman_(tree)",
+  "quiz": {
+   "question": "By what measure is General Sherman the largest tree?",
+   "options": [
+    "Age",
+    "Trunk volume",
+    "Height"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "nature-013"
+ },
+ {
+  "category": "nature",
+  "subcategory": null,
+  "headline": "Cities of the sea",
+  "body": "Coral reefs are built over centuries by colonies of tiny animals called polyps, which lay down skeletons of limestone. Most reef-building corals depend on microscopic algae living inside their tissues, which supply food made from sunlight. Reefs cover well under one per cent of the ocean floor, yet they are home to roughly a quarter of all known marine species.",
+  "sourceTitle": "Wikipedia: Coral reef",
+  "sourceURL": "https://en.wikipedia.org/wiki/Coral_reef",
+  "quiz": {
+   "question": "What are corals?",
+   "options": [
+    "Animals",
+    "Rocks",
+    "Plants"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "nature-014"
+ },
+ {
+  "category": "nature",
+  "subcategory": null,
+  "headline": "Fathers on the ice",
+  "body": "Emperor penguins breed during the Antarctic winter, the coldest season in the coldest place on Earth. After the female lays a single egg, she returns to the sea to feed. The male balances the egg on his feet under a fold of skin for about two months, without eating. The males huddle together against the wind, taking turns to shuffle from the cold outer edge into the warmer middle.",
+  "sourceTitle": "Wikipedia: Emperor penguin",
+  "sourceURL": "https://en.wikipedia.org/wiki/Emperor_penguin",
+  "quiz": {
+   "question": "Who incubates the emperor penguin's egg?",
+   "options": [
+    "The male",
+    "The female",
+    "Both, in shifts"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "nature-015"
+ },
+ {
+  "category": "nature",
+  "subcategory": null,
+  "headline": "Grass that grows as you watch",
+  "body": "Bamboo is a giant grass, and some species are among the fastest-growing plants in the world. Under ideal conditions, certain kinds have been recorded growing around ninety centimetres in a single day. A new bamboo shoot emerges from the ground at its full width and reaches its full height in one growing season; after that the stem never gets any thicker or taller.",
+  "sourceTitle": "Wikipedia: Bamboo",
+  "sourceURL": "https://en.wikipedia.org/wiki/Bamboo",
+  "quiz": {
+   "question": "What kind of plant is bamboo?",
+   "options": [
+    "A tree",
+    "A grass",
+    "A fern"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "nature-016"
+ },
+ {
+  "category": "nature",
+  "subcategory": null,
+  "headline": "Young sunflowers follow the sun",
+  "body": "Growing sunflowers turn through the day, facing east at dawn and tracking the sun to the west, then swinging back overnight. The movement comes from uneven growth on opposite sides of the stem, timed by the plant's internal clock. Once a sunflower is mature and in bloom, it stops moving and settles facing east. East-facing flowers warm up faster in the morning and attract more pollinators.",
+  "sourceTitle": "Wikipedia: Helianthus",
+  "sourceURL": "https://en.wikipedia.org/wiki/Helianthus",
+  "quiz": {
+   "question": "Which way do mature sunflowers usually face?",
+   "options": [
+    "South",
+    "East",
+    "West"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "nature-017"
+ },
+ {
+  "category": "nature",
+  "subcategory": null,
+  "headline": "A forest that is one tree",
+  "body": "In Utah there is a stand of quaking aspen known as Pando, Latin for \"I spread\". Its roughly forty thousand trunks look like separate trees, but they are genetically identical and grow from a single shared root system. Pando covers about forty hectares, and is counted among the heaviest known living organisms. It is thought to be thousands of years old, although its exact age is uncertain.",
+  "sourceTitle": "Wikipedia: Pando (tree)",
+  "sourceURL": "https://en.wikipedia.org/wiki/Pando_(tree)",
+  "quiz": {
+   "question": "What does \"Pando\" mean?",
+   "options": [
+    "I spread",
+    "Many trunks",
+    "Old one"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "nature-018"
+ },
+ {
+  "category": "nature",
+  "subcategory": null,
+  "headline": "Two lives in one",
+  "body": "The grey-green crust on a rock or tree trunk is not a single organism. A lichen is a partnership between a fungus and an alga or cyanobacterium. The fungus provides structure and holds water; its partner makes food from sunlight. Together they can live where neither could alone, on bare rock, Arctic tundra and desert. Many lichens are sensitive to air pollution, so their presence can be a sign of clean air.",
+  "sourceTitle": "Wikipedia: Lichen",
+  "sourceURL": "https://en.wikipedia.org/wiki/Lichen",
+  "quiz": null,
+  "prompt": "Find a lichen on a wall, pavement or tree today. What colour is it?",
+  "evergreen": true,
+  "version": 1,
+  "id": "nature-019"
+ },
+ {
+  "category": "nature",
+  "subcategory": null,
+  "headline": "Lights in the dark",
+  "body": "Fireflies are beetles that make their own light through a chemical reaction in their abdomens. A substance called luciferin reacts with oxygen, helped by an enzyme, luciferase. Almost all of the energy is released as light and very little as heat. Each species flashes in its own pattern, which males and females use to find one another on summer evenings.",
+  "sourceTitle": "Wikipedia: Firefly",
+  "sourceURL": "https://en.wikipedia.org/wiki/Firefly",
+  "quiz": {
+   "question": "What kind of insect is a firefly?",
+   "options": [
+    "A fly",
+    "A beetle",
+    "A moth"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "nature-020"
+ },
+ {
+  "category": "health",
+  "subcategory": null,
+  "headline": "The 20-20-20 habit",
+  "body": "Long stretches at a screen can leave eyes feeling tired and dry, partly because people blink less while concentrating. Eye-care organisations suggest a simple habit: every twenty minutes, look at something about twenty feet away for twenty seconds. The break lets the focusing muscles of the eye relax. It is a comfort measure, not a treatment — persistent problems are worth raising with an optician.",
+  "sourceTitle": "American Optometric Association: Computer vision syndrome",
+  "sourceURL": "https://www.aoa.org/healthy-eyes/eye-and-vision-conditions/computer-vision-syndrome",
+  "quiz": null,
+  "prompt": "Try it now: find something across the room or out of a window and look at it for twenty seconds.",
+  "evergreen": true,
+  "version": 1,
+  "id": "health-001"
+ },
+ {
+  "category": "health",
+  "subcategory": null,
+  "headline": "How much movement is recommended",
+  "body": "The World Health Organization recommends that adults do at least 150 minutes of moderate-intensity physical activity across a week, or at least 75 minutes of vigorous activity, along with muscle-strengthening activity on two or more days. Moderate means your breathing quickens but you can still talk — a brisk walk counts. The guidance also stresses that any amount of activity is better than none.",
+  "sourceTitle": "WHO: Physical activity",
+  "sourceURL": "https://www.who.int/news-room/fact-sheets/detail/physical-activity",
+  "quiz": {
+   "question": "How much moderate activity does the WHO recommend weekly for adults?",
+   "options": [
+    "At least 600 minutes",
+    "At least 30 minutes",
+    "At least 150 minutes"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "health-002"
+ },
+ {
+  "category": "health",
+  "subcategory": null,
+  "headline": "Twenty seconds at the sink",
+  "body": "Washing hands with soap and water is one of the simplest ways to avoid spreading germs. Public-health guidance is to wet your hands, lather them with soap — including the backs, between the fingers and under the nails — and scrub for at least twenty seconds before rinsing and drying. Twenty seconds is about the time it takes to hum \"Happy Birthday\" twice.",
+  "sourceTitle": "CDC: About handwashing",
+  "sourceURL": "https://www.cdc.gov/clean-hands/about/index.html",
+  "quiz": {
+   "question": "How long should you scrub your hands?",
+   "options": [
+    "5 seconds",
+    "2 minutes",
+    "At least 20 seconds"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "health-003"
+ },
+ {
+  "category": "health",
+  "subcategory": null,
+  "headline": "The doctor who asked colleagues to wash",
+  "body": "In 1847 Ignaz Semmelweis, a doctor in Vienna, noticed that far more women died of fever in a maternity ward staffed by doctors than in one staffed by midwives. The doctors often came straight from carrying out autopsies. He required them to wash their hands in a chlorine solution, and deaths fell sharply. His findings were widely rejected at the time; germ theory would explain them only years later.",
+  "sourceTitle": "Wikipedia: Ignaz Semmelweis",
+  "sourceURL": "https://en.wikipedia.org/wiki/Ignaz_Semmelweis",
+  "quiz": {
+   "question": "What did Semmelweis ask doctors to do?",
+   "options": [
+    "Open windows",
+    "Wear masks",
+    "Wash their hands"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "health-004"
+ },
+ {
+  "category": "health",
+  "subcategory": null,
+  "headline": "Where 10,000 steps came from",
+  "body": "The target of ten thousand steps a day did not begin as medical advice. In the mid-1960s a Japanese company sold a pedometer called the manpo-kei, which translates roughly as \"ten-thousand-step meter\", and the round number caught on. Research since then suggests that benefits begin at step counts well below that figure, and that moving more than you currently do is what matters most.",
+  "sourceTitle": "Wikipedia: Pedometer",
+  "sourceURL": "https://en.wikipedia.org/wiki/Pedometer",
+  "quiz": {
+   "question": "Where did the 10,000-step target originate?",
+   "options": [
+    "A pedometer's name in Japan",
+    "A WHO guideline",
+    "An Olympic training plan"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "health-005"
+ },
+ {
+  "category": "health",
+  "subcategory": null,
+  "headline": "Sleep comes in cycles",
+  "body": "A night's sleep is not one even state. Sleepers pass repeatedly through stages of lighter sleep, deep sleep and rapid-eye-movement sleep, in which most vivid dreaming happens. Each cycle lasts very roughly ninety minutes, and a typical night contains four to six of them. Deep sleep is concentrated early in the night, while the periods of REM sleep grow longer towards morning.",
+  "sourceTitle": "Wikipedia: Sleep cycle",
+  "sourceURL": "https://en.wikipedia.org/wiki/Sleep_cycle",
+  "quiz": {
+   "question": "Roughly how long is one sleep cycle?",
+   "options": [
+    "4 hours",
+    "90 minutes",
+    "20 minutes"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "health-006"
+ },
+ {
+  "category": "health",
+  "subcategory": null,
+  "headline": "Your internal clock runs on light",
+  "body": "Most living things have a circadian rhythm, an internal cycle of roughly twenty-four hours that influences sleepiness, body temperature and hormone levels. In people, the master clock is a small cluster of cells in the brain that receives signals directly from the eyes. Light is the main cue that keeps it in step with the day, which is why crossing time zones leaves the body temporarily out of sync.",
+  "sourceTitle": "Wikipedia: Circadian rhythm",
+  "sourceURL": "https://en.wikipedia.org/wiki/Circadian_rhythm",
+  "quiz": null,
+  "prompt": "Step outside or stand by a window for a few minutes of daylight this morning.",
+  "evergreen": false,
+  "version": 1,
+  "id": "health-007"
+ },
+ {
+  "category": "health",
+  "subcategory": null,
+  "headline": "The eight-glasses idea",
+  "body": "The advice to drink eight glasses of water a day is widely repeated, but reviews of the evidence have found no solid scientific basis for that specific number. Water needs vary with body size, activity, climate and health, and a good deal of the water people take in comes from food and other drinks. For most healthy people, thirst is a reasonable guide. Medical conditions can change that, so individual advice matters.",
+  "sourceTitle": "Wikipedia: Drinking water",
+  "sourceURL": "https://en.wikipedia.org/wiki/Drinking_water",
+  "quiz": {
+   "question": "Is there strong evidence for exactly eight glasses a day?",
+   "options": [
+    "No",
+    "Yes",
+    "Only for athletes"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "health-008"
+ },
+ {
+  "category": "health",
+  "subcategory": null,
+  "headline": "Bathing in the forest",
+  "body": "In 1982 Japan's forestry ministry coined the term shinrin-yoku, or \"forest bathing\", to encourage people to spend unhurried time among trees. Nothing is required beyond walking slowly and paying attention with all the senses. Studies have linked time in green spaces with lower reported stress, though researchers are still working out how strong and lasting the effects are.",
+  "sourceTitle": "Wikipedia: Nature therapy",
+  "sourceURL": "https://en.wikipedia.org/wiki/Nature_therapy",
+  "quiz": null,
+  "prompt": "Find the nearest tree or patch of green and spend two unhurried minutes there.",
+  "evergreen": false,
+  "version": 1,
+  "id": "health-009"
+ },
+ {
+  "category": "health",
+  "subcategory": null,
+  "headline": "How long coffee stays with you",
+  "body": "Caffeine works largely by blocking the action of adenosine, a substance that builds up in the brain during waking hours and promotes sleepiness. Its effects fade slowly. In healthy adults it takes very roughly five hours for the body to clear half of a dose, with wide variation from person to person. That is why an afternoon coffee can still be at work at bedtime.",
+  "sourceTitle": "Wikipedia: Caffeine",
+  "sourceURL": "https://en.wikipedia.org/wiki/Caffeine",
+  "quiz": {
+   "question": "How does caffeine keep you alert?",
+   "options": [
+    "It adds sugar to the blood",
+    "It raises body temperature",
+    "It blocks adenosine"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "health-010"
+ },
+ {
+  "category": "health",
+  "subcategory": null,
+  "headline": "What the number on sunscreen means",
+  "body": "SPF stands for sun protection factor, and it describes protection against UVB, the rays mainly responsible for sunburn. In laboratory terms, SPF 30 lets through about one thirtieth of the burning radiation, which means it filters roughly 97 per cent; SPF 50 filters about 98 per cent. In practice, protection depends heavily on applying enough and reapplying it, especially after swimming or sweating.",
+  "sourceTitle": "Wikipedia: Sunscreen",
+  "sourceURL": "https://en.wikipedia.org/wiki/Sunscreen",
+  "quiz": {
+   "question": "What does SPF mainly measure protection against?",
+   "options": [
+    "Visible light",
+    "Heat",
+    "UVB rays"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "health-011"
+ },
+ {
+  "category": "health",
+  "subcategory": null,
+  "headline": "Two minutes, twice a day",
+  "body": "Dental guidance in many countries is consistent and simple: brush your teeth with fluoride toothpaste twice a day, for about two minutes each time. One of those should be last thing at night. After brushing, spit out the excess toothpaste but don't rinse with water straight away, since rinsing washes away the fluoride that helps protect the enamel.",
+  "sourceTitle": "NHS: How to keep your teeth clean",
+  "sourceURL": "https://www.nhs.uk/live-well/healthy-teeth-and-gums/how-to-keep-your-teeth-clean/",
+  "quiz": {
+   "question": "After brushing, the guidance is to…",
+   "options": [
+    "Spit, don't rinse",
+    "Rinse thoroughly",
+    "Brush again"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": true,
+  "version": 1,
+  "id": "health-012"
+ },
+ {
+  "category": "health",
+  "subcategory": null,
+  "headline": "The tomato timer",
+  "body": "In the late 1980s an Italian student, Francesco Cirillo, began using a tomato-shaped kitchen timer to help him study. He would work on one task for twenty-five minutes, then take a short break, with a longer rest after four rounds. He called each interval a pomodoro, the Italian for tomato. Many people find that a short, fixed stretch makes a daunting task easier to begin.",
+  "sourceTitle": "Wikipedia: Pomodoro Technique",
+  "sourceURL": "https://en.wikipedia.org/wiki/Pomodoro_Technique",
+  "quiz": {
+   "question": "What does \"pomodoro\" mean?",
+   "options": [
+    "Pause",
+    "Tomato",
+    "Timer"
+   ],
+   "answer": 1
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "health-013"
+ },
+ {
+  "category": "health",
+  "subcategory": null,
+  "headline": "Eight weeks of paying attention",
+  "body": "In 1979 Jon Kabat-Zinn started a programme at the University of Massachusetts Medical School for patients living with chronic pain and stress. Over eight weeks it taught them to pay deliberate attention to their breathing, body and thoughts, without judging what they noticed. It became known as mindfulness-based stress reduction. The course has since been widely studied and taught around the world.",
+  "sourceTitle": "Wikipedia: Mindfulness-based stress reduction",
+  "sourceURL": "https://en.wikipedia.org/wiki/Mindfulness-based_stress_reduction",
+  "quiz": null,
+  "prompt": "Take three slow breaths and notice where you feel each one.",
+  "evergreen": false,
+  "version": 1,
+  "id": "health-014"
+ },
+ {
+  "category": "health",
+  "subcategory": null,
+  "headline": "The runner's high",
+  "body": "Some people feel a brief lift in mood, with less anxiety and less sense of effort, after sustained exercise. This runner's high was long put down to endorphins. More recent research suggests that endocannabinoids, substances the body makes that can pass from the blood into the brain, may play a larger part. Not everyone experiences it, and it is not needed for exercise to be worthwhile.",
+  "sourceTitle": "Wikipedia: Neurobiological effects of physical exercise",
+  "sourceURL": "https://en.wikipedia.org/wiki/Neurobiological_effects_of_physical_exercise",
+  "quiz": {
+   "question": "Which substances are now thought to play a large part in the runner's high?",
+   "options": [
+    "Vitamin D",
+    "Caffeine",
+    "Endocannabinoids"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "health-015"
+ },
+ {
+  "category": "health",
+  "subcategory": null,
+  "headline": "Vitamin from sunlight",
+  "body": "Vitamin D is unusual among vitamins because the body can make it. When ultraviolet B rays from sunlight reach the skin, they convert a compound there into a form the body turns into vitamin D, which helps regulate calcium and keep bones healthy. How much is made depends on the season, latitude, time of day and skin tone. Food and supplements are the other sources.",
+  "sourceTitle": "Wikipedia: Vitamin D",
+  "sourceURL": "https://en.wikipedia.org/wiki/Vitamin_D",
+  "quiz": {
+   "question": "What does vitamin D help the body regulate?",
+   "options": [
+    "Calcium",
+    "Iron",
+    "Blood sugar"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "health-016"
+ },
+ {
+  "category": "health",
+  "subcategory": null,
+  "headline": "A short nap, on purpose",
+  "body": "A brief daytime nap can reduce sleepiness and improve alertness for a while afterwards. Naps of around ten to twenty minutes are often suggested, because they are over before the sleeper sinks into deep sleep. Waking from deep sleep tends to bring grogginess, known as sleep inertia. Napping late in the day can also make it harder to fall asleep at night.",
+  "sourceTitle": "Wikipedia: Nap",
+  "sourceURL": "https://en.wikipedia.org/wiki/Nap",
+  "quiz": {
+   "question": "What is the grogginess after waking called?",
+   "options": [
+    "Sleep inertia",
+    "Sleep debt",
+    "Microsleep"
+   ],
+   "answer": 0
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "health-017"
+ },
+ {
+  "category": "health",
+  "subcategory": null,
+  "headline": "Why we yawn is still a puzzle",
+  "body": "Everybody yawns, and so do many other animals, yet science has no settled explanation for it. The old idea that a yawn brings in extra oxygen has not held up in experiments. Another proposal is that yawning helps cool the brain. What is well established is that yawns are contagious: seeing, hearing or even reading about one can set off another.",
+  "sourceTitle": "Wikipedia: Yawn",
+  "sourceURL": "https://en.wikipedia.org/wiki/Yawn",
+  "quiz": null,
+  "prompt": "Did you yawn while reading this? Many people do.",
+  "evergreen": false,
+  "version": 1,
+  "id": "health-018"
+ },
+ {
+  "category": "health",
+  "subcategory": null,
+  "headline": "Fibre, the overlooked nutrient",
+  "body": "Dietary fibre is the part of plant foods that the body cannot fully digest. It is found in wholegrains, beans, lentils, vegetables, fruit, nuts and seeds. Health guidance in the United Kingdom is for adults to aim for about thirty grams a day, and most people eat considerably less. Increasing fibre gradually, and drinking enough fluid alongside it, tends to be more comfortable.",
+  "sourceTitle": "NHS: How to get more fibre into your diet",
+  "sourceURL": "https://www.nhs.uk/live-well/eat-well/digestive-health/how-to-get-more-fibre-into-your-diet/",
+  "quiz": {
+   "question": "About how much fibre a day does UK guidance suggest for adults?",
+   "options": [
+    "100 g",
+    "5 g",
+    "30 g"
+   ],
+   "answer": 2
+  },
+  "prompt": null,
+  "evergreen": false,
+  "version": 1,
+  "id": "health-019"
+ },
+ {
+  "category": "health",
+  "subcategory": null,
+  "headline": "Writing down what went well",
+  "body": "A gratitude journal is a simple practice: regularly noting a few things you are thankful for, however small. In studies, people asked to do this have tended to report somewhat higher wellbeing than comparison groups, although the effects are generally modest and vary between individuals. It costs a minute or two and a line of writing, and it asks only that you notice.",
+  "sourceTitle": "Wikipedia: Gratitude journal",
+  "sourceURL": "https://en.wikipedia.org/wiki/Gratitude_journal",
+  "quiz": null,
+  "prompt": "Name one thing from the last day that you're glad happened.",
+  "evergreen": false,
+  "version": 1,
+  "id": "health-020"
+ }
+]
