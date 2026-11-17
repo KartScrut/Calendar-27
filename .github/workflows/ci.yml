@@ -84,5 +84,5 @@ jobs:
       - name: Error summary
         if: failure()
         run: |
-          grep -E "error:|failed|fatal" build.log | sort -u | head -150 || true
-          tail -40 build.log
+          grep -E "error:|error -|XCTAssert|failed \(|Fatal|crash" build.log | cut -c1-600 | sort -u | head -200 || true
+          grep -E "Test Case .*failed|Executed [0-9]+ tests" build.log | cut -c1-300 | tail -40 || true

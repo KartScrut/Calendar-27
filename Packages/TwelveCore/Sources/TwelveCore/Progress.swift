@@ -30,6 +30,14 @@ public struct ChallengeProgress: Equatable, Sendable {
     /// Extra state for vocabulary: whether the recall quiz was passed.
     public let quizPassed: Bool
 
+    public init(value: Double, target: Double, isComplete: Bool, completedAt: Date?, quizPassed: Bool) {
+        self.value = value
+        self.target = target
+        self.isComplete = isComplete
+        self.completedAt = completedAt
+        self.quizPassed = quizPassed
+    }
+
     public var fraction: Double {
         guard target > 0 else { return 0 }
         return min(1, max(0, value / target))
