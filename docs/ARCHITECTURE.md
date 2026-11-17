@@ -90,7 +90,7 @@ One reusable module per kind of activity, chosen by the catalog entry:
 | `lime` | `#C8F23C` | same | Main buttons (dark text), completion, progress on blue |
 | `pop` | `#FF4D7E` | same | Accent: rings, toggles, highlights |
 | `ocean` | `#1F5BFF` | same | Strong blue fills |
-| `mint` | `#2BD47D` | same | Calm confirmation |
+| `leaf` | `#2BD47D` | same | Calm confirmation |
 | `accentText`, `limeText`, `mintText` | darker variants | lighter variants | Coloured text with enough contrast |
 
 **Type.** SF Rounded throughout, set heavy for headings and numerals, so the app feels bold and friendly. Text uses Dynamic Type styles; only display numerals use fixed sizes, with scaling limits.

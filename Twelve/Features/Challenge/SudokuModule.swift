@@ -502,7 +502,7 @@ private struct SudokuCell: View {
         if isHint { return Color.lime.opacity(0.35) }
         if isConflict { return Color.pop.opacity(0.22) }
         if sameDigit { return Color.lime.opacity(0.28) }
-        if isRelated { return Color.mint.opacity(0.2) }
+        if isRelated { return Color.leaf.opacity(0.2) }
         return .clear
     }
 }

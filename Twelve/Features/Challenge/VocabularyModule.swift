@@ -232,7 +232,7 @@ private struct RecallQuiz: View {
                             }
                             .foregroundStyle(Color.ink)
                             .padding(18)
-                            .background(reveal && isRight ? Color.mint.opacity(0.4) : (reveal && chosen == i ? Color.pop.opacity(0.22) : Color.card),
+                            .background(reveal && isRight ? Color.leaf.opacity(0.4) : (reveal && chosen == i ? Color.pop.opacity(0.22) : Color.card),
                                         in: RoundedRectangle(cornerRadius: 18, style: .continuous))
                             .overlay(RoundedRectangle(cornerRadius: 18, style: .continuous).strokeBorder(Color.hairline))
                         }

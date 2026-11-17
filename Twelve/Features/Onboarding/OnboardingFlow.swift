@@ -185,7 +185,7 @@ private struct ConceptStep: View {
                     if index < shown {
                         HStack(spacing: 16) {
                             MonthStamp(month: index + 1, state: item.3, symbol: index == 0 ? nil : (index == 1 ? "figure.walk" : "sparkles"),
-                                       accent: index == 1 ? .mint : .lime, showsName: false)
+                                       accent: index == 1 ? .leaf : .lime, showsName: false)
                                 .frame(width: 66)
                             VStack(alignment: .leading, spacing: 4) {
                                 Text(item.1).font(.editorial(.title3, weight: .medium)).foregroundStyle(Color.ink)

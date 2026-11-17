@@ -121,7 +121,7 @@ struct SudokuTutorial: View {
                     let isTarget = current.cell == index && !done
                     let lit = current.highlight.contains(index) && !done
                     ZStack {
-                        (isTarget ? Color.lime.opacity(0.6) : (lit ? Color.mint.opacity(0.28) : Color.clear))
+                        (isTarget ? Color.lime.opacity(0.6) : (lit ? Color.leaf.opacity(0.28) : Color.clear))
                         if values[index] != 0 {
                             Text("\(values[index])")
                                 .font(.numeral(cell * 0.5, weight: [2, 9, 15, 4].contains(index) ? .regular : .semibold))

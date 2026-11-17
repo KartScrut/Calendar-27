@@ -39,7 +39,7 @@ public extension Color {
     /// Lime: achievement, completion, the main button.
     static let lime = Color(hex: 0xC8F23C)
     /// Fresh green: calm confirmation.
-    static let mint = Color(hex: 0x2BD47D)
+    static let leaf = Color(hex: 0x2BD47D)
     /// Purple sparkle.
     static let grape = Color(hex: 0x9B5CFF)
     /// Sunshine yellow.
@@ -67,7 +67,7 @@ public extension Color {
         switch name {
         case "terracotta", "pop": return .pop
         case "gold", "lime": return .lime
-        case "sage", "mint": return .mint
+        case "sage", "mint": return .leaf
         case "walnut", "ocean": return .ocean
         default: return .pop
         }

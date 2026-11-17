@@ -103,7 +103,7 @@ struct SparkArticle: View {
                                 }
                                 .foregroundStyle(Color.ink)
                                 .padding(16)
-                                .background(reveal && isRight ? Color.mint.opacity(0.4) : (chosen == i ? Color.pop.opacity(0.2) : Color.card),
+                                .background(reveal && isRight ? Color.leaf.opacity(0.4) : (chosen == i ? Color.pop.opacity(0.2) : Color.card),
                                             in: RoundedRectangle(cornerRadius: 16, style: .continuous))
                                 .overlay(RoundedRectangle(cornerRadius: 16, style: .continuous).strokeBorder(Color.hairline))
                             }
