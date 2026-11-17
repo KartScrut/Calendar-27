@@ -33,13 +33,6 @@ enum TimerActivityBridge {
         return Date().addingTimeInterval(max(1, remaining))
     }
 
-    static func start(_ session: TimerSession, title: String) {
-        guard ActivityAuthorizationInfo().areActivitiesEnabled else { return }
-        let attributes = TimerActivityAttributes(title: title, kindRaw: session.kind.rawValue)
-        let content = ActivityContent(state: state(for: session), staleDate: staleDate(for: session))
-        _ = try? Activity<TimerActivityAttributes>.request(attributes: attributes, content: content, pushType: nil)
-    }
-
     static func update(_ session: TimerSession) async {
         let content = ActivityContent(state: state(for: session), staleDate: staleDate(for: session))
         for activity in Activity<TimerActivityAttributes>.activities {

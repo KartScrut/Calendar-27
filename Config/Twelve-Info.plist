@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.twelve.app</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>twelve</string>
+			</array>
+		</dict>
+	</array>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>com.twelve.app.spark</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Today's Spark</string>
+			<key>UIApplicationShortcutItemSymbolName</key>
+			<string>sparkles</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>com.twelve.app.challenge</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Current Challenge</string>
+			<key>UIApplicationShortcutItemSymbolName</key>
+			<string>seal</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>com.twelve.app.timer</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Start Activity Timer</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>When this month has one</string>
+			<key>UIApplicationShortcutItemSymbolName</key>
+			<string>timer</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>com.twelve.app.year</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>View My Year</string>
+			<key>UIApplicationShortcutItemSymbolName</key>
+			<string>calendar</string>
+		</dict>
+	</array>
+</dict>
+</plist>

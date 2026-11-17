@@ -1,0 +1,88 @@
+name: CI
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  core:
+    name: Core logic tests (Linux)
+    runs-on: ubuntu-latest
+    container: swift:6.2
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test TwelveCore
+        run: swift test --package-path Packages/TwelveCore
+
+  database:
+    name: Database schema and security tests
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_PASSWORD: postgres
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U postgres" --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      PGHOST: localhost
+      PGPORT: "5432"
+      PGUSER: postgres
+      PGPASSWORD: postgres
+      PGDATABASE: postgres
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply migrations, seed and run security tests
+        run: bash supabase/tests/apply_all.sh
+
+  content:
+    name: Content build and source links
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Rebuild content and check that generated files are up to date
+        run: |
+          python3 tools/build_content.py
+          git diff --exit-code -- Packages/TwelveCore/Sources/TwelveCore/Resources supabase/seed/content_seed.sql
+      - name: Check every source link resolves
+        continue-on-error: true
+        run: python3 tools/build_content.py --check-links
+
+  ios:
+    name: iOS build and tests
+    runs-on: macos-26
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Xcode version
+        run: xcodebuild -version
+      - name: Pick a simulator
+        id: sim
+        run: |
+          UDID=$(xcrun simctl list devices available -j | python3 -c "import json,sys; d=json.load(sys.stdin)['devices']; ids=[x['udid'] for k,v in d.items() if 'iOS' in k for x in v if 'iPhone' in x['name']]; print(ids[-1] if ids else '')")
+          echo "udid=$UDID" >> "$GITHUB_OUTPUT"
+          xcrun simctl list devices available | grep iPhone | head -5
+      - name: Build and test
+        run: |
+          set -o pipefail
+          xcodebuild test -project Twelve.xcodeproj -scheme Twelve \
+            -destination "id=${{ steps.sim.outputs.udid }}" \
+            CODE_SIGNING_ALLOWED=NO 2>&1 | tee build.log | grep -E "error:|warning: var|Test Case .*(passed|failed)|Executed|\*\* TEST|\*\* BUILD|Testing failed|fatal" || true
+          grep -q "\*\* TEST SUCCEEDED \*\*" build.log
+      - name: Error summary
+        if: failure()
+        run: |
+          grep -E "error:|failed|fatal" build.log | sort -u | head -150 || true
+          tail -40 build.log

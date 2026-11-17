@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Leave both empty to run in local guest mode (no account, no cloud).
+	     To enable sign-in and backup, paste your Supabase project's URL and its
+	     "anon" / "publishable" key. Both are designed to be public.
+	     NEVER put the "service_role" / "secret" key here. See docs/SETUP.md. -->
+	<key>SUPABASE_URL</key>
+	<string></string>
+	<key>SUPABASE_ANON_KEY</key>
+	<string></string>
+</dict>
+</plist>

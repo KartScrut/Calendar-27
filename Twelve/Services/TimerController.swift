@@ -1,3 +1,4 @@
+import ActivityKit
 import Foundation
 import Observation
 import TwelveCore
@@ -116,5 +117,16 @@ final class TimerController {
               let end = s.projectedDate(reaching: TimerKind.focus.maximumSeconds, from: AppClock.now) else { return }
         // Convert from the app clock to real time for the system trigger.
         app.notifications.scheduleFocusEnd(at: end.addingTimeInterval(-AppClock.offset))
+    }
+}
+
+extension TimerActivityBridge {
+    /// Starts the Live Activity. Only the app (never the widget extension)
+    /// may start one, so this lives in the app target.
+    static func start(_ session: TimerSession, title: String) {
+        guard ActivityAuthorizationInfo().areActivitiesEnabled else { return }
+        let attributes = TimerActivityAttributes(title: title, kindRaw: session.kind.rawValue)
+        let content = ActivityContent(state: state(for: session), staleDate: staleDate(for: session))
+        _ = try? Activity<TimerActivityAttributes>.request(attributes: attributes, content: content, pushType: nil)
     }
 }
