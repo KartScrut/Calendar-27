@@ -65,8 +65,8 @@ struct ReflectionModule: View {
                                 }
                             if allowsPhoto {
                                 HStack(spacing: 10) {
-                                    if let photo {
-                                        Image(uiImage: photo).resizable().scaledToFill()
+                                    if let chosenPhoto = photo {
+                                        Image(uiImage: chosenPhoto).resizable().scaledToFill()
                                             .frame(width: 56, height: 56)
                                             .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
                                             .accessibilityLabel("Chosen photo")
