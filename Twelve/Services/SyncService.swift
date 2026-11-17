@@ -108,10 +108,13 @@ final class SyncService {
     }
 
     private func sessionRow(_ e: ActivityEntry) -> [String: Any] {
-        let events = e.eventsData.flatMap { try? JSONSerialization.jsonObject(with: $0) } ?? [Any]()
+        let start = e.startedAt ?? e.date
+        let decoded = e.eventsData.flatMap { try? JSONDecoder().decode([TimerSession.Event].self, from: $0) } ?? []
+        let end = max(decoded.last?.at ?? start, start.addingTimeInterval(e.amount))
+        let events: [[String: Any]] = decoded.map { ["type": $0.type.rawValue, "at": ServerDate.string($0.at)] }
         return ["id": e.id.uuidString.lowercased(), "challenge_id": e.challengeID, "kind": e.kind,
-                "started_at": ServerDate.string(e.startedAt ?? e.date.addingTimeInterval(-e.amount)),
-                "ended_at": ServerDate.string(e.date), "elapsed_seconds": e.amount, "events": events,
+                "started_at": ServerDate.string(start), "ended_at": ServerDate.string(end),
+                "elapsed_seconds": e.amount, "events": events,
                 "local_day": e.dayKey, "variant": e.variant ?? NSNull(), "deleted": e.removed]
     }
 
@@ -298,7 +301,7 @@ final class SyncService {
             return
         }
         guard !deleted else { return }
-        let dateString = (timed ? row["ended_at"] : row["entry_at"]) as? String
+        let dateString = (timed ? row["started_at"] : row["entry_at"]) as? String
         guard let date = dateString.flatMap(ServerDate.parse) else { return }
         let amount = ((timed ? row["elapsed_seconds"] : row["amount"]) as? NSNumber)?.doubleValue ?? 1
         let entry = ActivityEntry(id: id, challengeID: challengeID, kind: kind, dayKey: day, date: date, amount: amount,

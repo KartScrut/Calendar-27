@@ -241,10 +241,15 @@ final class AppModel {
     @discardableResult
     func log(_ challenge: ChallengeDefinition, kind: String? = nil, amount: Double = 1, ref: String? = nil,
              title: String? = nil, text: String? = nil, photoFile: String? = nil, variant: String? = nil,
-             startedAt: Date? = nil, eventsData: Data? = nil, id: UUID = UUID()) -> ActivityEntry? {
+             startedAt: Date? = nil, eventsData: Data? = nil, id: UUID = UUID(), at: Date? = nil, allowBackdated: Bool = false) -> ActivityEntry? {
         let kind = kind ?? challenge.entryKind
-        let moment = AppClock.now
-        guard isOpen(challenge), calendar.currentMonth(at: moment) == challenge.month,
+        // Timed sessions are dated by when they began, so one that starts at
+        // 23:58 on the last day of a month still belongs to that month.
+        let current = AppClock.now
+        let moment = at.map { min($0, current) } ?? current
+        guard isOnboarded, challenge.year == Self.year, isOpen(challenge) || at != nil,
+              allowBackdated || current.timeIntervalSince(moment) < 12 * 3600,
+              calendar.currentMonth(at: moment) == challenge.month,
               ProgressCalculator.isPlausible(kind: kind, amount: amount) else { return nil }
         if store.entry(id: id) != nil { return nil } // the same event delivered twice
         let entry = ActivityEntry(id: id, challengeID: challenge.id, kind: kind, dayKey: calendar.dayKey(for: moment),
