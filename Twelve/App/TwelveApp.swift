@@ -13,7 +13,7 @@ struct TwelveApp: App {
         WindowGroup {
             RootView()
                 .environment(app)
-                .tint(.terracotta)
+                .tint(.pop)
                 .onOpenURL { url in
                     if let link = DeepLink(url: url) { app.open(link) }
                 }

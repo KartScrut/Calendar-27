@@ -47,7 +47,7 @@ struct SparkArticle: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
                 HStack {
-                    if let category { Tag(text: category.name, systemImage: category.symbol, tint: .sageText) }
+                    if let category { Tag(text: category.name, systemImage: category.symbol, tint: .mintText) }
                     Spacer()
                     Text(isToday ? "Today's Spark" : "Saved").capsLabel(.accentText)
                 }
@@ -103,7 +103,7 @@ struct SparkArticle: View {
                                 }
                                 .foregroundStyle(Color.ink)
                                 .padding(16)
-                                .background(reveal && isRight ? Color.sage.opacity(0.4) : (chosen == i ? Color.terracotta.opacity(0.2) : Color.card),
+                                .background(reveal && isRight ? Color.mint.opacity(0.4) : (chosen == i ? Color.pop.opacity(0.2) : Color.card),
                                             in: RoundedRectangle(cornerRadius: 16, style: .continuous))
                                 .overlay(RoundedRectangle(cornerRadius: 16, style: .continuous).strokeBorder(Color.hairline))
                             }
@@ -113,7 +113,7 @@ struct SparkArticle: View {
                         if answered {
                             Label(chosen == nil ? "You've answered this one." : (chosen == quiz.answer ? "That's right." : "Not quite — the answer is marked above."),
                                   systemImage: "sparkle")
-                                .font(.footnote.weight(.semibold)).foregroundStyle(Color.sageText)
+                                .font(.footnote.weight(.semibold)).foregroundStyle(Color.mintText)
                         }
                     }
                 } else if let prompt = card.prompt {
@@ -121,7 +121,7 @@ struct SparkArticle: View {
                         SectionLabel("Try this")
                         Text(prompt).font(.editorial(.title3, weight: .medium)).foregroundStyle(Color.ink)
                         if answered {
-                            Label("Done", systemImage: "checkmark.circle.fill").font(.footnote.weight(.semibold)).foregroundStyle(Color.sageText)
+                            Label("Done", systemImage: "checkmark.circle.fill").font(.footnote.weight(.semibold)).foregroundStyle(Color.mintText)
                         } else {
                             SecondaryButton(title: "I tried it", systemImage: "checkmark") {
                                 app.acknowledge(card)
@@ -176,34 +176,31 @@ struct SparkArticle: View {
     }
 }
 
-/// Abstract editorial artwork generated from the card's id.
+/// Sky-and-balloon artwork generated from the card's id: a big balloon with
+/// the category's symbol and two smaller ones, in colours chosen by the id.
 struct SparkIllustration: View {
     let seed: String
     let symbol: String
 
     var body: some View {
-        ZStack {
-            Color.feature
-            Canvas { context, size in
-                var rng = SeededGenerator(string: seed)
-                let palette: [Color] = [.terracotta, .gold, .sage, .cream]
-                for _ in 0..<7 {
-                    let w = CGFloat.random(in: 0.18...0.5, using: &rng) * size.width
-                    let h = CGFloat.random(in: 0.3...0.9, using: &rng) * size.height
-                    let x = CGFloat.random(in: -0.1...0.9, using: &rng) * size.width
-                    let y = CGFloat.random(in: -0.2...0.7, using: &rng) * size.height
-                    let color = palette[Int.random(in: 0..<palette.count, using: &rng)]
-                    let rect = CGRect(x: x, y: y, width: w, height: h)
-                    let path = Bool.random(using: &rng) ? Path(ellipseIn: rect) : Path(roundedRect: rect, cornerRadius: min(w, h) / 2)
-                    context.fill(path, with: .color(color.opacity(Double.random(in: 0.35...0.85, using: &rng))))
-                }
+        var rng = SeededGenerator(string: seed)
+        let months = (0..<3).map { _ in Int.random(in: 1...12, using: &rng) }
+        let tilt = Double.random(in: -12...12, using: &rng)
+        return ZStack {
+            SkyBackground(style: .vivid)
+            GeometryReader { geo in
+                FoilBalloon(symbol: symbol, month: months[0], size: min(geo.size.height * 0.72, 120))
+                    .rotationEffect(.degrees(tilt))
+                    .position(x: geo.size.width * 0.5, y: geo.size.height * 0.52)
+                FoilBalloon(symbol: "sparkles", month: months[1], size: 42)
+                    .rotationEffect(.degrees(-14))
+                    .position(x: geo.size.width * 0.16, y: geo.size.height * 0.3)
+                FoilBalloon(symbol: "star.fill", month: months[2], size: 36)
+                    .rotationEffect(.degrees(12))
+                    .position(x: geo.size.width * 0.85, y: geo.size.height * 0.68)
             }
-            PaperGrain(opacity: 0.08, seed: 5)
-            Image(systemName: symbol)
-                .font(.system(size: 54, weight: .ultraLight))
-                .foregroundStyle(Color.cream)
-                .shadow(color: .black.opacity(0.25), radius: 6, y: 2)
         }
+        .environment(\.colorScheme, .light)
         .accessibilityHidden(true)
     }
 }

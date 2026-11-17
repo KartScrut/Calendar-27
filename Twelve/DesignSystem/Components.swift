@@ -13,9 +13,9 @@ struct PaperCard<Content: View>: View {
         content
             .padding(padding)
             .frame(maxWidth: .infinity, alignment: .leading)
-            .background(Color.card, in: RoundedRectangle(cornerRadius: 24, style: .continuous))
-            .overlay(RoundedRectangle(cornerRadius: 24, style: .continuous).strokeBorder(Color.hairline, lineWidth: 1))
-            .shadow(color: .black.opacity(0.05), radius: 10, y: 4)
+            .background(Color.card, in: RoundedRectangle(cornerRadius: 26, style: .continuous))
+            .overlay(RoundedRectangle(cornerRadius: 26, style: .continuous).strokeBorder(Color.hairline, lineWidth: 1))
+            .shadow(color: Color.ocean.opacity(0.1), radius: 14, y: 6)
     }
 }
 
@@ -26,15 +26,16 @@ struct FeatureCard<Content: View>: View {
 
     var body: some View {
         content
+            // White text and light controls on the bright sky.
+            .environment(\.colorScheme, .dark)
             .padding(padding)
             .frame(maxWidth: .infinity, alignment: .leading)
             .background {
-                RoundedRectangle(cornerRadius: 28, style: .continuous)
-                    .fill(Color.feature)
-                    .overlay(PaperGrain(opacity: 0.07, seed: 12).clipShape(RoundedRectangle(cornerRadius: 28, style: .continuous)))
+                SkyBackground(style: .vivid, clouds: 0.45)
+                    .clipShape(RoundedRectangle(cornerRadius: 28, style: .continuous))
+                    .overlay(RoundedRectangle(cornerRadius: 28, style: .continuous).strokeBorder(Color.white.opacity(0.35), lineWidth: 1))
             }
-            .shadow(color: .black.opacity(0.18), radius: 16, y: 8)
-            .environment(\.colorScheme, .dark)
+            .shadow(color: Color.ocean.opacity(0.3), radius: 18, y: 10)
     }
 }
 
@@ -53,8 +54,8 @@ struct LiftButtonStyle: ButtonStyle {
 struct ProgressRing: View {
     var fraction: Double
     var lineWidth: CGFloat = 8
-    var tint: Color = .gold
-    var track: Color = Color.cream.opacity(0.16)
+    var tint: Color = .lime
+    var track: Color = Color.white.opacity(0.3)
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     var body: some View {
@@ -75,7 +76,7 @@ struct ProgressRing: View {
 /// A slim linear progress bar.
 struct ProgressBar: View {
     var fraction: Double
-    var tint: Color = .terracotta
+    var tint: Color = .pop
     var track: Color = .hairline
     var height: CGFloat = 6
 
@@ -98,15 +99,17 @@ struct ProgressBar: View {
 struct PrimaryButton: View {
     let title: String
     var systemImage: String?
-    var tint: Color = .terracotta
+    /// Lime by default, with dark text; any other tint gets white text.
+    var tint: Color = .lime
     let action: () -> Void
 
     var body: some View {
         Button(action: action) {
             HStack(spacing: 8) {
-                Text(title).font(.headline)
-                if let systemImage { Image(systemName: systemImage).font(.subheadline.weight(.semibold)) }
+                Text(title).font(.system(.headline, design: .rounded).weight(.heavy))
+                if let systemImage { Image(systemName: systemImage).font(.subheadline.weight(.bold)) }
             }
+            .foregroundStyle(tint == .lime ? Color.night : Color.white)
             .frame(maxWidth: .infinity)
             .padding(.vertical, 8)
         }
@@ -206,7 +209,7 @@ struct EmptyNote: View {
 struct InfoBanner: View {
     let symbol: String
     let text: String
-    var tint: Color = .sageText
+    var tint: Color = .mintText
     var body: some View {
         HStack(alignment: .firstTextBaseline, spacing: 10) {
             Image(systemName: symbol).foregroundStyle(tint)

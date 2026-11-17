@@ -14,25 +14,25 @@ struct TimerLiveActivity: Widget {
                 VStack(alignment: .leading, spacing: 2) {
                     Text(context.attributes.title)
                         .font(.system(size: 11, weight: .bold)).tracking(1.5).textCase(.uppercase)
-                        .foregroundStyle(Color.gold)
+                        .foregroundStyle(Color.lime)
                     TimerText(state: context.state)
-                        .font(.system(size: 40, weight: .medium, design: .serif))
-                        .foregroundStyle(Color.cream)
+                        .font(.system(size: 40, weight: .medium, design: .rounded))
+                        .foregroundStyle(Color.cloud)
                     Text(context.state.pausedElapsed == nil ? (context.state.goalSeconds == nil ? "In progress" : "Stay with it") : "Paused")
-                        .font(.system(size: 12, weight: .medium)).foregroundStyle(Color.cream.opacity(0.7))
+                        .font(.system(size: 12, weight: .medium)).foregroundStyle(Color.cloud.opacity(0.7))
                 }
                 Spacer()
                 ToggleButton(paused: context.state.pausedElapsed != nil, large: true)
             }
             .padding(16)
-            .activityBackgroundTint(Color.espresso)
-            .activitySystemActionForegroundColor(Color.cream)
+            .activityBackgroundTint(Color.ocean)
+            .activitySystemActionForegroundColor(Color.cloud)
             .widgetURL(DeepLink.timer.url)
         } dynamicIsland: { context in
             DynamicIsland {
                 DynamicIslandExpandedRegion(.leading) {
                     Label(context.attributes.title, systemImage: symbol(context.attributes.kindRaw))
-                        .font(.caption.weight(.semibold)).foregroundStyle(Color.gold)
+                        .font(.caption.weight(.semibold)).foregroundStyle(Color.lime)
                 }
                 DynamicIslandExpandedRegion(.trailing) {
                     Text(context.state.pausedElapsed == nil ? "Running" : "Paused")
@@ -40,19 +40,19 @@ struct TimerLiveActivity: Widget {
                 }
                 DynamicIslandExpandedRegion(.center) {
                     TimerText(state: context.state)
-                        .font(.system(size: 36, weight: .medium, design: .serif))
+                        .font(.system(size: 36, weight: .medium, design: .rounded))
                 }
                 DynamicIslandExpandedRegion(.bottom) {
                     ToggleButton(paused: context.state.pausedElapsed != nil, large: false)
                 }
             } compactLeading: {
-                Image(systemName: symbol(context.attributes.kindRaw)).foregroundStyle(Color.gold)
+                Image(systemName: symbol(context.attributes.kindRaw)).foregroundStyle(Color.lime)
             } compactTrailing: {
                 TimerText(state: context.state)
-                    .font(.system(size: 14, weight: .semibold, design: .serif))
+                    .font(.system(size: 14, weight: .semibold, design: .rounded))
                     .frame(maxWidth: 52)
             } minimal: {
-                Image(systemName: symbol(context.attributes.kindRaw)).foregroundStyle(Color.gold)
+                Image(systemName: symbol(context.attributes.kindRaw)).foregroundStyle(Color.lime)
             }
             .widgetURL(DeepLink.timer.url)
         }
@@ -98,6 +98,6 @@ private struct ToggleButton: View {
         }
         .buttonStyle(.borderedProminent)
         .buttonBorderShape(.capsule)
-        .tint(.terracotta)
+        .tint(.pop)
     }
 }

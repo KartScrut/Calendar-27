@@ -35,7 +35,7 @@ struct ReadingModule: View {
                         let reached = pages >= mark
                         VStack(spacing: 6) {
                             Image(systemName: reached ? "bookmark.fill" : "bookmark")
-                                .foregroundStyle(reached ? Color.goldText : Color.hairline)
+                                .foregroundStyle(reached ? Color.limeText : Color.hairline)
                             Text("\(mark)").font(.caption.weight(.semibold)).foregroundStyle(reached ? Color.ink : Color.inkSoft)
                         }
                         .frame(maxWidth: .infinity)

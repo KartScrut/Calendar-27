@@ -132,11 +132,11 @@ private struct MonthGrid: View {
                             VStack(spacing: 3) {
                                 Text("\(day)")
                                     .font(.numeral(19, weight: isToday ? .bold : .regular))
-                                    .foregroundStyle(isToday ? Color.cream : Color.ink)
+                                    .foregroundStyle(isToday ? Color.cloud : Color.ink)
                                 // A shape as well as a colour marks active days.
                                 Image(systemName: "diamond.fill")
                                     .font(.system(size: 5))
-                                    .foregroundStyle(isToday ? Color.gold : Color.accentText)
+                                    .foregroundStyle(isToday ? Color.lime : Color.accentText)
                                     .opacity(hasActivity ? 1 : 0)
                             }
                             .frame(maxWidth: .infinity, minHeight: 46)
@@ -144,7 +144,7 @@ private struct MonthGrid: View {
                                 if isToday {
                                     RoundedRectangle(cornerRadius: 12, style: .continuous).fill(Color.feature)
                                 } else if selectedDay == key {
-                                    RoundedRectangle(cornerRadius: 12, style: .continuous).fill(Color.gold.opacity(0.3))
+                                    RoundedRectangle(cornerRadius: 12, style: .continuous).fill(Color.lime.opacity(0.3))
                                 }
                             }
                         }
@@ -252,10 +252,10 @@ private struct MonthSummaryCard: View {
             PaperCard(padding: 16) {
                 HStack(spacing: 16) {
                     MonthStamp(month: month, state: state, symbol: challenge?.symbol,
-                               accent: challenge.map { Color.token($0.accent) } ?? .gold, showsName: false)
+                               accent: challenge.map { Color.token($0.accent) } ?? .lime, showsName: false)
                         .frame(width: 62)
                     VStack(alignment: .leading, spacing: 4) {
-                        Text(headline(state)).capsLabel(state == .completed ? .goldText : .inkSoft)
+                        Text(headline(state)).capsLabel(state == .completed ? .limeText : .inkSoft)
                         Text(title(state, challenge)).font(.editorial(.title3, weight: .medium)).foregroundStyle(Color.ink)
                             .multilineTextAlignment(.leading)
                         Text(detail(state, challenge)).font(.footnote).foregroundStyle(Color.inkSoft)
@@ -341,7 +341,7 @@ struct YearOverview: View {
                         }
                     } label: {
                         MonthStamp(month: m, state: state, symbol: challenge?.symbol,
-                                   accent: challenge.map { Color.token($0.accent) } ?? .gold)
+                                   accent: challenge.map { Color.token($0.accent) } ?? .lime)
                             .rotationEffect(.degrees(nudged == m && !reduceMotion ? -3 : 0))
                             .animation(.spring(response: 0.15, dampingFraction: 0.3), value: nudged)
                     }

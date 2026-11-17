@@ -39,7 +39,7 @@ struct CollectionScreen: View {
                                     } label: {
                                         VStack(spacing: 6) {
                                             MonthStamp(month: stamp.month, state: .completed, symbol: challenge?.symbol,
-                                                       accent: challenge.map { Color.token($0.accent) } ?? .gold)
+                                                       accent: challenge.map { Color.token($0.accent) } ?? .lime)
                                             if app.auth.isSignedIn && stamp.verifiedAt == nil {
                                                 Label("Waiting to back up", systemImage: "icloud.and.arrow.up")
                                                     .font(.caption2).foregroundStyle(Color.inkSoft)
@@ -93,7 +93,7 @@ struct CollectionScreen: View {
                         ForEach(stamps.filter { ($0.reflection ?? "").isEmpty == false }, id: \.month) { stamp in
                             PaperCard(padding: 16) {
                                 VStack(alignment: .leading, spacing: 6) {
-                                    Text("\(YearCalendar.monthName(stamp.month)) · reflection").capsLabel(.goldText)
+                                    Text("\(YearCalendar.monthName(stamp.month)) · reflection").capsLabel(.limeText)
                                     Text(stamp.reflection ?? "").font(.editorial(.body)).foregroundStyle(Color.ink)
                                 }
                             }
@@ -136,12 +136,12 @@ struct CollectionScreen: View {
                 HStack(spacing: 16) {
                     TwelveDots(completed: Set(app.store.stamps().map(\.month)), current: app.currentMonth).frame(width: 64, height: 64)
                     VStack(alignment: .leading, spacing: 4) {
-                        Text("Year in Review").font(.editorial(.title2, weight: .medium)).foregroundStyle(Color.cream)
+                        Text("Year in Review").font(.editorial(.title2, weight: .medium)).foregroundStyle(Color.cloud)
                         Text(available ? "Look back over what you actually did." : "Opens in December, built only from what you've really done.")
-                            .font(.subheadline).foregroundStyle(Color.cream.opacity(0.72)).multilineTextAlignment(.leading)
+                            .font(.subheadline).foregroundStyle(Color.cloud.opacity(0.72)).multilineTextAlignment(.leading)
                     }
                     Spacer(minLength: 0)
-                    Image(systemName: available ? "arrow.right" : "lock").foregroundStyle(Color.gold)
+                    Image(systemName: available ? "arrow.right" : "lock").foregroundStyle(Color.lime)
                 }
             }
         }

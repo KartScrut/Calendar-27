@@ -21,8 +21,14 @@ struct OnboardingFlow: View {
 
     var body: some View {
         ZStack {
-            (step == 0 || step == lastStep ? Color.espresso : Color.paper).ignoresSafeArea()
-            PaperGrain(opacity: 0.05).ignoresSafeArea()
+            if step == 0 || step == lastStep {
+                SkyBackground(style: .vivid).ignoresSafeArea()
+            } else {
+                PaperBackground()
+            }
+            if step == 0 {
+                FloatingBalloons().ignoresSafeArea()
+            }
 
             VStack(spacing: 0) {
                 if step > 0 && step < lastStep {
@@ -66,7 +72,7 @@ struct OnboardingFlow: View {
             .buttonBorderShape(.circle)
             .accessibilityLabel("Back")
 
-            ProgressBar(fraction: Double(step) / Double(lastStep), tint: .terracotta, height: 8)
+            ProgressBar(fraction: Double(step) / Double(lastStep), tint: .pop, height: 8)
                 .accessibilityLabel("Step \(step) of \(lastStep - 1)")
         }
         .padding(.horizontal, 20)
@@ -116,13 +122,14 @@ private struct WelcomeStep: View {
         VStack(spacing: 0) {
             Spacer(minLength: 20)
             ZStack {
-                TwelveDots(completed: appeared ? Set(1...12) : [], current: nil, on: .gold, off: Color.cream.opacity(0.18))
+                TwelveDots(completed: appeared ? Set(1...12) : [], current: nil, on: .lime, off: Color.white.opacity(0.35))
                     .frame(width: 280, height: 280)
                     .rotationEffect(.degrees(appeared || reduceMotion ? 0 : -40))
                     .animation(reduceMotion ? nil : .spring(response: 1.4, dampingFraction: 0.8), value: appeared)
                 Text("2027")
                     .font(.numeral(92, weight: .medium))
-                    .foregroundStyle(Color.cream)
+                    .foregroundStyle(Color.cloud)
+                    .shadow(color: Color.ocean.opacity(0.5), radius: 12, y: 4)
                     .scaleEffect(appeared || reduceMotion ? 1 : 0.8)
                     .opacity(appeared ? 1 : 0)
                     .animation(reduceMotion ? .easeIn : .spring(response: 0.9, dampingFraction: 0.75).delay(0.15), value: appeared)
@@ -132,10 +139,10 @@ private struct WelcomeStep: View {
             VStack(alignment: .leading, spacing: 12) {
                 Text("A year is a lot of days.")
                     .font(.editorial(.largeTitle, weight: .medium))
-                    .foregroundStyle(Color.cream)
+                    .foregroundStyle(Color.cloud)
                 Text("Let's give a few of them something to remember.")
                     .font(.title3)
-                    .foregroundStyle(Color.cream.opacity(0.75))
+                    .foregroundStyle(Color.cloud.opacity(0.75))
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .opacity(appeared ? 1 : 0)
@@ -178,7 +185,7 @@ private struct ConceptStep: View {
                     if index < shown {
                         HStack(spacing: 16) {
                             MonthStamp(month: index + 1, state: item.3, symbol: index == 0 ? nil : (index == 1 ? "figure.walk" : "sparkles"),
-                                       accent: index == 1 ? .sage : .gold, showsName: false)
+                                       accent: index == 1 ? .mint : .lime, showsName: false)
                                 .frame(width: 66)
                             VStack(alignment: .leading, spacing: 4) {
                                 Text(item.1).font(.editorial(.title3, weight: .medium)).foregroundStyle(Color.ink)
@@ -231,13 +238,13 @@ struct InterestGrid: View {
                         HStack {
                             Image(systemName: category.symbol)
                                 .font(.title2.weight(.light))
-                                .foregroundStyle(isOn ? Color.cream : Color.accentText)
+                                .foregroundStyle(isOn ? Color.cloud : Color.accentText)
                             Spacer()
                             Image(systemName: isOn ? "checkmark.circle.fill" : "circle")
-                                .foregroundStyle(isOn ? Color.gold : Color.hairline)
+                                .foregroundStyle(isOn ? Color.lime : Color.hairline)
                         }
-                        Text(category.name).font(.headline).foregroundStyle(isOn ? Color.cream : Color.ink)
-                        Text(category.blurb).font(.caption).foregroundStyle(isOn ? Color.cream.opacity(0.75) : Color.inkSoft)
+                        Text(category.name).font(.headline).foregroundStyle(isOn ? Color.cloud : Color.ink)
+                        Text(category.blurb).font(.caption).foregroundStyle(isOn ? Color.cloud.opacity(0.75) : Color.inkSoft)
                             .multilineTextAlignment(.leading)
                             .fixedSize(horizontal: false, vertical: true)
                     }
@@ -337,9 +344,9 @@ struct FlowChips: View {
                         Text(option.1).font(.body.weight(.medium))
                         Spacer()
                         Image(systemName: isOn ? "checkmark.circle.fill" : "circle")
-                            .foregroundStyle(isOn ? Color.gold : Color.hairline)
+                            .foregroundStyle(isOn ? Color.lime : Color.hairline)
                     }
-                    .foregroundStyle(isOn ? Color.cream : Color.ink)
+                    .foregroundStyle(isOn ? Color.cloud : Color.ink)
                     .padding(.horizontal, 16)
                     .padding(.vertical, 14)
                     .background(isOn ? Color.feature : Color.card, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
@@ -402,11 +409,11 @@ private struct FeelingStep: View {
                             } label: {
                                 HStack(spacing: 14) {
                                     Image(systemName: option.symbol).font(.title3).frame(width: 30)
-                                        .foregroundStyle(isOn ? Color.gold : Color.accentText)
+                                        .foregroundStyle(isOn ? Color.lime : Color.accentText)
                                     Text(option.title).font(.editorial(.title3, weight: .medium))
                                     Spacer()
                                 }
-                                .foregroundStyle(isOn ? Color.cream : Color.ink)
+                                .foregroundStyle(isOn ? Color.cloud : Color.ink)
                                 .padding(18)
                                 .background(isOn ? Color.feature : Color.card, in: RoundedRectangle(cornerRadius: 20, style: .continuous))
                                 .overlay(RoundedRectangle(cornerRadius: 20, style: .continuous).strokeBorder(isOn ? Color.clear : Color.hairline))
@@ -465,7 +472,7 @@ struct ReminderToggles: View {
                 Text(detail).font(.caption).foregroundStyle(Color.inkSoft)
             }
         }
-        .tint(.terracotta)
+        .tint(.pop)
         .padding(.horizontal, 18)
         .padding(.vertical, 14)
     }
@@ -562,12 +569,12 @@ private struct YearStartStep: View {
     var body: some View {
         VStack(spacing: 0) {
             VStack(alignment: .leading, spacing: 8) {
-                Text("2027").capsLabel(.gold)
+                Text("2027").capsLabel(.lime)
                 Text("Your year starts here.")
                     .font(.editorial(.largeTitle, weight: .medium))
-                    .foregroundStyle(Color.cream)
+                    .foregroundStyle(Color.cloud)
                     .accessibilityAddTraits(.isHeader)
-                Text(subtitle).font(.subheadline).foregroundStyle(Color.cream.opacity(0.75))
+                Text(subtitle).font(.subheadline).foregroundStyle(Color.cloud.opacity(0.75))
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.horizontal, 24)
@@ -578,7 +585,7 @@ private struct YearStartStep: View {
                     let state = app.summary.state(month: month)
                     MonthStamp(month: month, state: state == .beforeJoining || state == .archived ? .beforeJoining : state,
                                symbol: app.currentMonth == month ? "sparkle" : nil,
-                               accent: .gold)
+                               accent: .lime)
                         .opacity(appeared ? 1 : 0)
                         .offset(y: appeared || reduceMotion ? 0 : 18)
                         .animation(reduceMotion ? .easeIn : .spring(response: 0.5, dampingFraction: 0.8).delay(Double(month) * 0.045), value: appeared)

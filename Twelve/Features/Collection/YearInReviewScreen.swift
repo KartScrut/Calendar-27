@@ -78,7 +78,7 @@ struct YearInReviewScreen: View {
                         ForEach(1...12, id: \.self) { m in
                             let state = app.summary.state(month: m)
                             let c = state == .completed || state == .archived ? app.revealedChallenge(month: m) : nil
-                            MonthStamp(month: m, state: state, symbol: c?.symbol, accent: c.map { Color.token($0.accent) } ?? .gold, showsName: false)
+                            MonthStamp(month: m, state: state, symbol: c?.symbol, accent: c.map { Color.token($0.accent) } ?? .lime, showsName: false)
                         }
                     }
 
@@ -118,13 +118,13 @@ struct YearInReviewScreen: View {
                                 })) {
                                     Text("\(fact.value) \(fact.label)").font(.subheadline).foregroundStyle(Color.ink)
                                 }
-                                .tint(.terracotta)
+                                .tint(.pop)
                             }
                             if !app.profile.displayName.isEmpty {
                                 Toggle(isOn: $includeName) {
                                     Text("Include my name").font(.subheadline).foregroundStyle(Color.ink)
                                 }
-                                .tint(.terracotta)
+                                .tint(.pop)
                             }
 
                             let card = ShareCard(facts: chosen, completed: Set(app.store.stamps().map(\.month)),
@@ -139,7 +139,7 @@ struct YearInReviewScreen: View {
                                 }
                                 .buttonStyle(.glassProminent)
                                 .buttonBorderShape(.capsule)
-                                .tint(.terracotta)
+                                .tint(.pop)
                             }
                         }
                     }
@@ -175,10 +175,10 @@ struct ShareCard: View {
         VStack(alignment: .leading, spacing: 16) {
             HStack(alignment: .top) {
                 VStack(alignment: .leading, spacing: 2) {
-                    Text("2027").font(.numeral(54, weight: .medium)).foregroundStyle(Color.cream)
+                    Text("2027").font(.numeral(54, weight: .medium)).foregroundStyle(Color.cloud)
                     Text(name.map { "\($0)'s year" } ?? "A year made to count")
                         .font(.system(size: 13, weight: .semibold)).tracking(1.2).textCase(.uppercase)
-                        .foregroundStyle(Color.gold)
+                        .foregroundStyle(Color.lime)
                 }
                 Spacer()
                 TwelveDots(completed: completed, current: nil).frame(width: 64, height: 64)
@@ -186,19 +186,19 @@ struct ShareCard: View {
             VStack(alignment: .leading, spacing: 10) {
                 ForEach(facts) { fact in
                     HStack(alignment: .firstTextBaseline, spacing: 10) {
-                        Text(fact.value).font(.numeral(28, weight: .medium)).foregroundStyle(Color.cream)
+                        Text(fact.value).font(.numeral(28, weight: .medium)).foregroundStyle(Color.cloud)
                             .frame(minWidth: 44, alignment: .leading)
-                        Text(fact.label).font(.system(size: 15)).foregroundStyle(Color.cream.opacity(0.8))
+                        Text(fact.label).font(.system(size: 15)).foregroundStyle(Color.cloud.opacity(0.8))
                     }
                 }
             }
             Text("TWELVE · Make the year count")
                 .font(.system(size: 10, weight: .semibold)).tracking(1.4).textCase(.uppercase)
-                .foregroundStyle(Color.cream.opacity(0.5))
+                .foregroundStyle(Color.cloud.opacity(0.5))
         }
         .padding(24)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(Color.espresso)
+        .background(SkyBackground(style: .vivid, clouds: 0.4))
         .clipShape(RoundedRectangle(cornerRadius: 24, style: .continuous))
     }
 }

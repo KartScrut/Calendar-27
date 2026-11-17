@@ -67,12 +67,15 @@ struct CalendarWidget: Widget {
     }
 }
 
-/// The signature walnut surface with a hint of paper grain.
+/// The signature surface: a bright sky with a few clouds and film grain.
 struct WidgetPaper: View {
     var body: some View {
         ZStack {
-            LinearGradient(colors: [Color(hex: 0x533F34), Color.walnut, Color.espresso], startPoint: .topLeading, endPoint: .bottomTrailing)
-            PaperGrain(opacity: 0.07, seed: 2027)
+            LinearGradient(colors: [Color(hex: 0x0B4FE6), Color(hex: 0x2A74FF), Color(hex: 0x4F94FF)],
+                           startPoint: .topLeading, endPoint: .bottomTrailing)
+            // Clouds kept faint and low so white type stays readable.
+            Clouds(opacity: 0.3, seed: 5, band: 0.55...1)
+            PaperGrain(opacity: 0.08, seed: 2027)
         }
     }
 }
@@ -97,12 +100,12 @@ private struct CountLine: View {
     var body: some View {
         HStack(spacing: 5) {
             Text(snapshot.countLabel)
-                .font(.system(size: size, weight: .semibold, design: .serif))
-                .foregroundStyle(Color.cream)
+                .font(.system(size: size, weight: .semibold, design: .rounded))
+                .foregroundStyle(Color.cloud)
             if snapshot.completedCount > 0 {
                 Image(systemName: "checkmark")
                     .font(.system(size: size * 0.75, weight: .bold))
-                    .foregroundStyle(Color.gold)
+                    .foregroundStyle(Color.lime)
                     .widgetAccentable()
             }
         }
@@ -115,9 +118,9 @@ private struct CountLine: View {
 private struct Ornament: View {
     var body: some View {
         HStack(spacing: 6) {
-            Rectangle().fill(Color.gold.opacity(0.7)).frame(height: 1)
-            Image(systemName: "diamond.fill").font(.system(size: 5)).foregroundStyle(Color.gold)
-            Rectangle().fill(Color.gold.opacity(0.7)).frame(height: 1)
+            Rectangle().fill(Color.lime.opacity(0.7)).frame(height: 1)
+            Image(systemName: "diamond.fill").font(.system(size: 5)).foregroundStyle(Color.lime)
+            Rectangle().fill(Color.lime.opacity(0.7)).frame(height: 1)
         }
         .widgetAccentable()
         .accessibilityHidden(true)
@@ -129,19 +132,19 @@ private struct SmallCalendar: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             Text("\(entry.day)")
-                .font(.system(size: 64, weight: .medium, design: .serif))
-                .foregroundStyle(Color.cream)
+                .font(.system(size: 64, weight: .medium, design: .rounded))
+                .foregroundStyle(Color.cloud)
                 .minimumScaleFactor(0.6)
                 .lineLimit(1)
                 .padding(.top, -8)
             Text(entry.weekday)
                 .font(.system(size: 11, weight: .bold)).tracking(1.6).textCase(.uppercase)
-                .foregroundStyle(Color.gold)
+                .foregroundStyle(Color.lime)
                 .widgetAccentable()
                 .lineLimit(1).minimumScaleFactor(0.7)
             Text(entry.month)
                 .font(.system(size: 11, weight: .semibold)).tracking(1.6).textCase(.uppercase)
-                .foregroundStyle(Color.cream.opacity(0.75))
+                .foregroundStyle(Color.cloud.opacity(0.75))
                 .lineLimit(1).minimumScaleFactor(0.7)
             Spacer(minLength: 4)
             Ornament().frame(width: 54)
@@ -160,19 +163,19 @@ private struct MediumCalendar: View {
             VStack(alignment: .leading, spacing: 0) {
                 Text(String(entry.year))
                     .font(.system(size: 10, weight: .bold)).tracking(2)
-                    .foregroundStyle(Color.cream.opacity(0.6))
+                    .foregroundStyle(Color.cloud.opacity(0.6))
                 Text("\(entry.day)")
-                    .font(.system(size: 76, weight: .medium, design: .serif))
-                    .foregroundStyle(Color.cream)
+                    .font(.system(size: 76, weight: .medium, design: .rounded))
+                    .foregroundStyle(Color.cloud)
                     .minimumScaleFactor(0.6).lineLimit(1)
                     .padding(.vertical, -8)
                 Text(entry.weekday)
                     .font(.system(size: 11, weight: .bold)).tracking(1.6).textCase(.uppercase)
-                    .foregroundStyle(Color.gold).widgetAccentable()
+                    .foregroundStyle(Color.lime).widgetAccentable()
                     .lineLimit(1).minimumScaleFactor(0.7)
                 Text(entry.month)
                     .font(.system(size: 11, weight: .semibold)).tracking(1.6).textCase(.uppercase)
-                    .foregroundStyle(Color.cream.opacity(0.75))
+                    .foregroundStyle(Color.cloud.opacity(0.75))
                     .lineLimit(1).minimumScaleFactor(0.7)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
@@ -184,15 +187,15 @@ private struct MediumCalendar: View {
                         .widgetAccentable()
                     VStack(spacing: -2) {
                         Text("\(entry.snapshot.completedCount)")
-                            .font(.system(size: 30, weight: .medium, design: .serif)).foregroundStyle(Color.cream)
+                            .font(.system(size: 30, weight: .medium, design: .rounded)).foregroundStyle(Color.cloud)
                         Text("of 12").font(.system(size: 9, weight: .semibold)).tracking(1).textCase(.uppercase)
-                            .foregroundStyle(Color.cream.opacity(0.65))
+                            .foregroundStyle(Color.cloud.opacity(0.65))
                     }
                 }
                 .frame(width: 88, height: 88)
                 Text(statusLine)
-                    .font(.system(size: 10, weight: .medium, design: .serif)).italic()
-                    .foregroundStyle(Color.cream.opacity(0.8))
+                    .font(.system(size: 10, weight: .medium, design: .rounded)).italic()
+                    .foregroundStyle(Color.cloud.opacity(0.8))
                     .lineLimit(2).multilineTextAlignment(.center).minimumScaleFactor(0.8)
             }
             .frame(width: 118)
@@ -219,16 +222,16 @@ private struct LargeCalendar: View {
             Link(destination: DeepLink.today.url) {
                 HStack(alignment: .lastTextBaseline, spacing: 12) {
                     Text("\(entry.day)")
-                        .font(.system(size: 78, weight: .medium, design: .serif))
-                        .foregroundStyle(Color.cream).minimumScaleFactor(0.6).lineLimit(1)
+                        .font(.system(size: 78, weight: .medium, design: .rounded))
+                        .foregroundStyle(Color.cloud).minimumScaleFactor(0.6).lineLimit(1)
                         .padding(.vertical, -10)
                     VStack(alignment: .leading, spacing: 1) {
                         Text(entry.weekday)
                             .font(.system(size: 12, weight: .bold)).tracking(1.6).textCase(.uppercase)
-                            .foregroundStyle(Color.gold).widgetAccentable()
+                            .foregroundStyle(Color.lime).widgetAccentable()
                         Text("\(entry.month) \(String(entry.year))")
                             .font(.system(size: 12, weight: .semibold)).tracking(1.4).textCase(.uppercase)
-                            .foregroundStyle(Color.cream.opacity(0.75))
+                            .foregroundStyle(Color.cloud.opacity(0.75))
                     }
                     .padding(.bottom, 10)
                     Spacer(minLength: 0)
@@ -245,16 +248,16 @@ private struct LargeCalendar: View {
                         VStack(spacing: 3) {
                             ZStack {
                                 RoundedRectangle(cornerRadius: 4, style: .continuous)
-                                    .fill(done ? Color.gold : Color.cream.opacity(current ? 0.3 : 0.1))
+                                    .fill(done ? Color.lime : Color.cloud.opacity(current ? 0.3 : 0.1))
                                     .widgetAccentable(done)
                                 if done {
-                                    Image(systemName: "checkmark").font(.system(size: 8, weight: .heavy)).foregroundStyle(Color.espresso)
+                                    Image(systemName: "checkmark").font(.system(size: 8, weight: .heavy)).foregroundStyle(Color.night)
                                 }
                             }
                             .frame(height: 24)
                             Text(YearCalendar.twoDigit(month))
-                                .font(.system(size: 8, weight: .semibold, design: .serif))
-                                .foregroundStyle(Color.cream.opacity(current ? 1 : 0.55))
+                                .font(.system(size: 8, weight: .semibold, design: .rounded))
+                                .foregroundStyle(Color.cloud.opacity(current ? 1 : 0.55))
                         }
                         .frame(maxWidth: .infinity)
                     }
@@ -269,22 +272,22 @@ private struct LargeCalendar: View {
             Link(destination: DeepLink.challenge.url) {
                 VStack(alignment: .leading, spacing: 5) {
                     Text("This month").font(.system(size: 9, weight: .bold)).tracking(1.5).textCase(.uppercase)
-                        .foregroundStyle(Color.gold).widgetAccentable()
+                        .foregroundStyle(Color.lime).widgetAccentable()
                     Text(challengeTitle)
-                        .font(.system(size: 17, weight: .medium, design: .serif)).foregroundStyle(Color.cream).lineLimit(1)
+                        .font(.system(size: 17, weight: .medium, design: .rounded)).foregroundStyle(Color.cloud).lineLimit(1)
                     if entry.challengeIsCurrent, s.onboarded {
                         HStack(spacing: 8) {
                             GeometryReader { geo in
                                 ZStack(alignment: .leading) {
-                                    Capsule().fill(Color.cream.opacity(0.18))
-                                    Capsule().fill(Color.gold)
+                                    Capsule().fill(Color.cloud.opacity(0.18))
+                                    Capsule().fill(Color.lime)
                                         .frame(width: max(4, geo.size.width * min(1, max(0, s.challengeComplete ? 1 : s.challengeFraction))))
                                         .widgetAccentable()
                                 }
                             }
                             .frame(height: 4)
                             Text(s.challengeComplete ? "Complete" : (s.challengeProgressLabel ?? ""))
-                                .font(.system(size: 10, weight: .semibold)).foregroundStyle(Color.cream.opacity(0.8))
+                                .font(.system(size: 10, weight: .semibold)).foregroundStyle(Color.cloud.opacity(0.8))
                                 .lineLimit(1).fixedSize()
                         }
                     }
@@ -298,19 +301,19 @@ private struct LargeCalendar: View {
                 Link(destination: DeepLink.spark.url) {
                     VStack(alignment: .leading, spacing: 3) {
                         Text("Today's Spark").font(.system(size: 9, weight: .bold)).tracking(1.5).textCase(.uppercase)
-                            .foregroundStyle(Color.gold).widgetAccentable()
-                        Text(headline).font(.system(size: 14, weight: .regular, design: .serif)).italic()
-                            .foregroundStyle(Color.cream).lineLimit(2)
+                            .foregroundStyle(Color.lime).widgetAccentable()
+                        Text(headline).font(.system(size: 14, weight: .regular, design: .rounded)).italic()
+                            .foregroundStyle(Color.cloud).lineLimit(2)
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                 }
             }
             if entry.microAvailable, let id = s.microID, let title = s.microTitle {
                 HStack(spacing: 8) {
-                    Text(title).font(.system(size: 11, weight: .medium)).foregroundStyle(Color.cream.opacity(0.85)).lineLimit(1)
+                    Text(title).font(.system(size: 11, weight: .medium)).foregroundStyle(Color.cloud.opacity(0.85)).lineLimit(1)
                     Spacer(minLength: 4)
                     if entry.microDone {
-                        Label("Done", systemImage: "checkmark").font(.system(size: 10, weight: .bold)).foregroundStyle(Color.gold)
+                        Label("Done", systemImage: "checkmark").font(.system(size: 10, weight: .bold)).foregroundStyle(Color.lime)
                     } else {
                         Button(intent: CompleteMicroIntent(dayKey: entry.dayKey, microID: id)) {
                             Text("Done").font(.system(size: 11, weight: .bold))
@@ -318,7 +321,7 @@ private struct LargeCalendar: View {
                         .buttonStyle(.borderedProminent)
                         .buttonBorderShape(.capsule)
                         .controlSize(.mini)
-                        .tint(.terracotta)
+                        .tint(.pop)
                         .accessibilityLabel("Mark today's small challenge done")
                     }
                 }

@@ -28,7 +28,7 @@ struct LockScreenWidgetView: View {
                 Text("2027")
             } currentValueLabel: {
                 HStack(spacing: 1) {
-                    Text("\(count)").font(.system(size: 20, weight: .semibold, design: .serif))
+                    Text("\(count)").font(.system(size: 20, weight: .semibold, design: .rounded))
                     if count > 0 { Image(systemName: "checkmark").font(.system(size: 9, weight: .heavy)) }
                 }
             }
@@ -38,7 +38,7 @@ struct LockScreenWidgetView: View {
         case .accessoryRectangular:
             VStack(alignment: .leading, spacing: 2) {
                 Text("\(entry.shortWeekday) \(entry.day)")
-                    .font(.system(size: 17, weight: .bold, design: .serif)).textCase(.uppercase)
+                    .font(.system(size: 17, weight: .bold, design: .rounded)).textCase(.uppercase)
                     .widgetAccentable()
                 HStack(spacing: 4) {
                     Text(entry.snapshot.completeLabel).font(.system(size: 13, weight: .medium))

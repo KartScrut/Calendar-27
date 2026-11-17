@@ -54,7 +54,7 @@ struct CreativeModule: View {
     }
 
     private func numberColor(done: Bool, isNext: Bool) -> Color {
-        if done { return .goldText }
+        if done { return .limeText }
         return isNext ? .accentText : .inkSoft
     }
 
@@ -67,7 +67,7 @@ struct CreativeModule: View {
             Text(stage.title).font(.editorial(.title3, weight: .medium)).foregroundStyle(Color.ink)
             Spacer()
             if done {
-                Image(systemName: "checkmark.circle.fill").foregroundStyle(Color.sageText).accessibilityLabel("Done")
+                Image(systemName: "checkmark.circle.fill").foregroundStyle(Color.mintText).accessibilityLabel("Done")
             } else if !isNext {
                 Image(systemName: "lock").foregroundStyle(Color.inkSoft).accessibilityLabel("Not yet available")
             }

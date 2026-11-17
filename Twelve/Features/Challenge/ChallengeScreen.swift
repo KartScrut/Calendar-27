@@ -78,7 +78,7 @@ private struct SealedMonthView: View {
     var body: some View {
         VStack(spacing: 22) {
             Spacer()
-            MonthStamp(month: month, state: .sealed, symbol: nil, accent: .gold).frame(width: 150)
+            MonthStamp(month: month, state: .sealed, symbol: nil, accent: .lime).frame(width: 150)
             Text("Sealed until 1 \(YearCalendar.monthName(month))")
                 .font(.editorial(.title2, weight: .medium)).foregroundStyle(Color.ink)
             Text("Every challenge stays a surprise until its month begins.")
@@ -103,7 +103,7 @@ private struct RevealView: View {
             Spacer()
             Text(challenge.monthName).capsLabel(.accentText)
             ZStack {
-                MonthStamp(month: challenge.month, state: .sealed, symbol: nil, accent: .gold)
+                MonthStamp(month: challenge.month, state: .sealed, symbol: nil, accent: .lime)
                     .opacity(opened ? 0 : 1)
                 MonthStamp(month: challenge.month, state: .active, symbol: challenge.symbol, accent: .token(challenge.accent))
                     .opacity(opened ? 1 : 0)
@@ -198,18 +198,18 @@ private struct ChallengeDetail: View {
                     VStack(alignment: .leading, spacing: 16) {
                         HStack(spacing: 18) {
                             ZStack {
-                                ProgressRing(fraction: completed ? 1 : progress.fraction, lineWidth: 8, tint: .gold)
+                                ProgressRing(fraction: completed ? 1 : progress.fraction, lineWidth: 8, tint: .lime)
                                 Text("\(Int(((completed ? 1 : progress.fraction) * 100).rounded(.down)))%")
-                                    .font(.numeral(20, weight: .medium)).foregroundStyle(Color.cream)
+                                    .font(.numeral(20, weight: .medium)).foregroundStyle(Color.cloud)
                                     .contentTransition(.numericText())
                             }
                             .frame(width: 76, height: 76)
                             .accessibilityHidden(true)
                             VStack(alignment: .leading, spacing: 4) {
                                 RollingNumber(text: ProgressCalculator.label(for: challenge, progress: progress),
-                                              font: .editorial(.title3, weight: .medium), color: .cream)
+                                              font: .editorial(.title3, weight: .medium), color: .cloud)
                                 Text(statusLine(open: open, completed: completed, progress: progress))
-                                    .font(.footnote).foregroundStyle(Color.cream.opacity(0.72))
+                                    .font(.footnote).foregroundStyle(Color.cloud.opacity(0.72))
                             }
                         }
                         .accessibilityElement(children: .combine)
@@ -241,7 +241,7 @@ private struct ChallengeDetail: View {
                         SecondaryButton(title: "Play the one-minute tutorial", systemImage: "hand.tap") { showTutorial = true }
                     }
                     if let note = challenge.safetyNote {
-                        InfoBanner(symbol: "heart.text.square", text: note, tint: .sageText)
+                        InfoBanner(symbol: "heart.text.square", text: note, tint: .mintText)
                     }
                 }
 
@@ -255,7 +255,7 @@ private struct ChallengeDetail: View {
                                     Text(alt.title).font(.footnote).foregroundStyle(Color.inkSoft)
                                 }
                             }
-                            .tint(.terracotta)
+                            .tint(.pop)
                             Text(alt.detail).font(.footnote).foregroundStyle(Color.inkSoft)
                                 .fixedSize(horizontal: false, vertical: true)
                         }
@@ -328,11 +328,11 @@ struct CelebrationScreen: View {
 
     var body: some View {
         ZStack {
-            Color.espresso.ignoresSafeArea()
-            PaperGrain(opacity: 0.06).ignoresSafeArea()
+            SkyBackground(style: .vivid).ignoresSafeArea()
+            FloatingBalloons().ignoresSafeArea()
             ScrollView {
                 VStack(spacing: 22) {
-                    Text(challenge.monthName).capsLabel(.gold).padding(.top, 40)
+                    Text(challenge.monthName).capsLabel(.lime).padding(.top, 40)
                     MonthStamp(month: challenge.month, state: landed ? .completed : .active, symbol: challenge.symbol,
                                accent: .token(challenge.accent))
                         .frame(width: 200)
@@ -345,10 +345,10 @@ struct CelebrationScreen: View {
                         VStack(spacing: 10) {
                             Text("One more month made meaningful.")
                                 .font(.editorial(.largeTitle, weight: .medium))
-                                .foregroundStyle(Color.cream)
+                                .foregroundStyle(Color.cloud)
                                 .multilineTextAlignment(.center)
                             Text(challenge.completionLine)
-                                .font(.title3).foregroundStyle(Color.cream.opacity(0.75))
+                                .font(.title3).foregroundStyle(Color.cloud.opacity(0.75))
                                 .multilineTextAlignment(.center)
                             HStack(spacing: 26) {
                                 stat("\(app.summary.monthsCompleted)", "of 12 months")
@@ -359,13 +359,13 @@ struct CelebrationScreen: View {
                         .transition(.opacity.combined(with: .move(edge: .bottom)))
 
                         VStack(alignment: .leading, spacing: 10) {
-                            Text("If you'd like to reflect").capsLabel(.gold)
-                            Text(challenge.reflectionPrompt).font(.editorial(.title3)).foregroundStyle(Color.cream)
+                            Text("If you'd like to reflect").capsLabel(.lime)
+                            Text(challenge.reflectionPrompt).font(.editorial(.title3)).foregroundStyle(Color.cloud)
                             TextField("Optional", text: $reflection, axis: .vertical)
                                 .lineLimit(2...6)
                                 .padding(14)
-                                .foregroundStyle(Color.cream)
-                                .background(Color.cream.opacity(0.08), in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+                                .foregroundStyle(Color.cloud)
+                                .background(Color.night.opacity(0.22), in: RoundedRectangle(cornerRadius: 16, style: .continuous))
                         }
                         .padding(.top, 14)
                         .transition(.opacity)
@@ -398,8 +398,8 @@ struct CelebrationScreen: View {
 
     private func stat(_ value: String, _ label: String) -> some View {
         VStack(spacing: 2) {
-            Text(value).font(.numeral(40, weight: .medium)).foregroundStyle(Color.gold)
-            Text(label).font(.caption).foregroundStyle(Color.cream.opacity(0.7))
+            Text(value).font(.numeral(40, weight: .medium)).foregroundStyle(Color.cloud)
+            Text(label).font(.caption).foregroundStyle(Color.cloud.opacity(0.7))
         }
         .accessibilityElement(children: .combine)
     }

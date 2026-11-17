@@ -22,7 +22,7 @@ struct SignInPanel: View {
             if !app.auth.isAvailable {
                 InfoBanner(symbol: "icloud.slash",
                            text: "Cloud backup isn't set up in this build yet, so sign-in is unavailable. Everything works as a guest, and your progress is saved on this iPhone.",
-                           tint: .goldText)
+                           tint: .limeText)
             } else if app.auth.isSignedIn {
                 InfoBanner(symbol: "checkmark.icloud", text: "Signed in\(app.auth.email.map { " as \($0)" } ?? ""). Your progress is backed up.")
             } else {

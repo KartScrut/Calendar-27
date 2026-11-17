@@ -19,7 +19,7 @@ struct TodayScreen: View {
                             InfoBanner(symbol: "exclamationmark.triangle", text: "TWELVE couldn't open its storage, so changes won't be kept this session. Restarting the app usually fixes it.", tint: .accentText)
                         }
                         if app.isDemo {
-                            InfoBanner(symbol: "wand.and.stars", text: "Preview mode: a simulated date with separate demo data. Nothing here counts toward the real year.", tint: .goldText)
+                            InfoBanner(symbol: "wand.and.stars", text: "Preview mode: a simulated date with separate demo data. Nothing here counts toward the real year.", tint: .limeText)
                         }
                         ChallengeCard(month: month)
                         SparkCard()
@@ -71,7 +71,7 @@ private struct DateHeader: View {
             .accessibilityAddTraits(.isHeader)
 
             VStack(alignment: .leading, spacing: 6) {
-                ProgressBar(fraction: app.calendar.yearProgress(at: app.now), tint: .gold, height: 4)
+                ProgressBar(fraction: app.calendar.yearProgress(at: app.now), tint: .ocean, height: 5)
                 Text("Day \(dayOfYear) of \(app.calendar.daysInYear)")
                     .font(.caption).foregroundStyle(Color.inkSoft)
             }
@@ -99,51 +99,51 @@ private struct ChallengeCard: View {
                 FeatureCard {
                     VStack(alignment: .leading, spacing: 16) {
                         HStack {
-                            Text("\(YearCalendar.monthName(month)) · Challenge \(YearCalendar.twoDigit(month))").capsLabel(.gold)
+                            Text("\(YearCalendar.monthName(month)) · Challenge \(YearCalendar.twoDigit(month))").capsLabel(.lime)
                             Spacer()
-                            if done { Tag(text: "Complete", systemImage: "checkmark", tint: .gold) }
+                            if done { Tag(text: "Complete", systemImage: "checkmark", tint: .lime) }
                         }
                         if watched {
                             HStack(alignment: .center, spacing: 18) {
                                 VStack(alignment: .leading, spacing: 8) {
                                     Text(challenge.title)
                                         .font(.editorial(.title, weight: .medium))
-                                        .foregroundStyle(Color.cream)
+                                        .foregroundStyle(Color.cloud)
                                         .multilineTextAlignment(.leading)
                                     Text(challenge.tagline)
                                         .font(.subheadline)
-                                        .foregroundStyle(Color.cream.opacity(0.72))
+                                        .foregroundStyle(Color.cloud.opacity(0.72))
                                         .multilineTextAlignment(.leading)
                                 }
                                 Spacer(minLength: 0)
                                 ZStack {
-                                    ProgressRing(fraction: done ? 1 : progress.fraction, lineWidth: 7, tint: .gold)
+                                    ProgressRing(fraction: done ? 1 : progress.fraction, lineWidth: 7, tint: .lime)
                                     Image(systemName: done ? "checkmark" : challenge.symbol)
                                         .font(.title3.weight(done ? .bold : .light))
-                                        .foregroundStyle(Color.cream)
+                                        .foregroundStyle(Color.cloud)
                                 }
                                 .frame(width: 68, height: 68)
                             }
                             HStack {
                                 RollingNumber(text: done ? challenge.completionLine : ProgressCalculator.label(for: challenge, progress: progress),
-                                              font: .subheadline.weight(.semibold), color: .cream)
+                                              font: .subheadline.weight(.semibold), color: .cloud)
                                 Spacer()
-                                Image(systemName: "arrow.right").foregroundStyle(Color.gold)
+                                Image(systemName: "arrow.right").foregroundStyle(Color.lime)
                             }
                         } else {
                             HStack(spacing: 18) {
-                                MonthStamp(month: month, state: .sealed, symbol: nil, accent: .gold, showsName: false)
+                                MonthStamp(month: month, state: .sealed, symbol: nil, accent: .lime, showsName: false)
                                     .frame(width: 64)
                                 VStack(alignment: .leading, spacing: 6) {
                                     Text("\(YearCalendar.monthName(month)) has arrived.")
-                                        .font(.editorial(.title2, weight: .medium)).foregroundStyle(Color.cream)
+                                        .font(.editorial(.title2, weight: .medium)).foregroundStyle(Color.cloud)
                                     Text("Your next challenge is ready to open.")
-                                        .font(.subheadline).foregroundStyle(Color.cream.opacity(0.72))
+                                        .font(.subheadline).foregroundStyle(Color.cloud.opacity(0.72))
                                 }
                             }
                             HStack {
-                                Text("Reveal").font(.subheadline.weight(.semibold)).foregroundStyle(Color.gold)
-                                Image(systemName: "arrow.right").foregroundStyle(Color.gold)
+                                Text("Reveal").font(.subheadline.weight(.semibold)).foregroundStyle(Color.lime)
+                                Image(systemName: "arrow.right").foregroundStyle(Color.lime)
                             }
                         }
                     }
@@ -174,7 +174,7 @@ private struct SparkCard: View {
                         HStack {
                             SectionLabel("Today's Spark", color: .accentText)
                             Spacer()
-                            if let category { Tag(text: category.name, systemImage: category.symbol, tint: .sageText) }
+                            if let category { Tag(text: category.name, systemImage: category.symbol, tint: .mintText) }
                         }
                         Text(card.headline)
                             .font(.editorial(.title2, weight: .medium))
@@ -189,7 +189,7 @@ private struct SparkCard: View {
                             Text(answered ? "Read again" : "Read · about a minute").font(.footnote.weight(.semibold))
                             Image(systemName: "arrow.right").font(.footnote.weight(.semibold))
                             Spacer()
-                            if answered { Image(systemName: "checkmark.circle.fill").foregroundStyle(Color.sageText) }
+                            if answered { Image(systemName: "checkmark.circle.fill").foregroundStyle(Color.mintText) }
                         }
                         .foregroundStyle(Color.accentText)
                         .padding(.top, 2)
@@ -222,7 +222,7 @@ private struct MicroCard: View {
                     if app.microDone {
                         Label("Done today · +\(Points.microChallenge) discovery points", systemImage: "checkmark.circle.fill")
                             .font(.footnote.weight(.semibold))
-                            .foregroundStyle(Color.sageText)
+                            .foregroundStyle(Color.mintText)
                             .padding(.top, 4)
                     } else {
                         Button {
@@ -271,7 +271,7 @@ private struct CollectionStrip: View {
                         let challenge = app.hasWatchedReveal(month: month) || state == .completed || state == .archived
                             ? app.revealedChallenge(month: month) : nil
                         MonthStamp(month: month, state: state, symbol: challenge?.symbol,
-                                   accent: challenge.map { Color.token($0.accent) } ?? .gold, showsName: false)
+                                   accent: challenge.map { Color.token($0.accent) } ?? .lime, showsName: false)
                             .frame(width: 58)
                     }
                 }
@@ -338,11 +338,11 @@ private struct PrelaunchContent: View {
 
             FeatureCard {
                 VStack(alignment: .leading, spacing: 14) {
-                    Text("While you wait").capsLabel(.gold)
+                    Text("While you wait").capsLabel(.lime)
                     Text("Have a look around")
-                        .font(.editorial(.title2, weight: .medium)).foregroundStyle(Color.cream)
+                        .font(.editorial(.title2, weight: .medium)).foregroundStyle(Color.cloud)
                     Text("Try two of the tools you'll use during the year. These are demonstrations — nothing is recorded until 2027 begins.")
-                        .font(.subheadline).foregroundStyle(Color.cream.opacity(0.75))
+                        .font(.subheadline).foregroundStyle(Color.cloud.opacity(0.75))
                     VStack(spacing: 10) {
                         SecondaryButton(title: "Learn Sudoku in a minute", systemImage: "square.grid.3x3") { showTutorial = true }
                         SecondaryButton(title: "Try a one-minute focus", systemImage: "scope") { showFocus = true }
@@ -354,7 +354,7 @@ private struct PrelaunchContent: View {
                 SectionLabel("Twelve months, sealed")
                 LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 10), count: 4), spacing: 10) {
                     ForEach(1...12, id: \.self) { month in
-                        MonthStamp(month: month, state: .sealed, symbol: nil, accent: .gold)
+                        MonthStamp(month: month, state: .sealed, symbol: nil, accent: .lime)
                     }
                 }
             }
@@ -387,7 +387,7 @@ private struct DemoFocusView: View {
                 VStack(spacing: 28) {
                     Spacer()
                     ZStack {
-                        ProgressRing(fraction: elapsed / length, lineWidth: 10, tint: .terracotta, track: .hairline)
+                        ProgressRing(fraction: elapsed / length, lineWidth: 10, tint: .pop, track: .hairline)
                         Text(ProgressCalculator.clock(length - elapsed))
                             .font(.numeral(64, weight: .medium)).monospacedDigit()
                             .foregroundStyle(Color.ink)

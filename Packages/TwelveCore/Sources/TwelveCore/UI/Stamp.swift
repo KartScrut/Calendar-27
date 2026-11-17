@@ -39,43 +39,59 @@ struct MotifBlobs: View {
                 let y = CGFloat.random(in: -0.1...0.7, using: &rng) * size.height
                 var path = Path(ellipseIn: CGRect(x: x, y: y, width: w, height: h))
                 path = path.applying(CGAffineTransform(rotationAngle: CGFloat.random(in: -0.5...0.5, using: &rng)))
-                context.fill(path, with: .color(tint.opacity(i % 2 == 0 ? 0.22 : 0.12)))
+                context.fill(path, with: .color(tint.opacity(i % 2 == 0 ? 0.2 : 0.1)))
             }
         }
         .accessibilityHidden(true)
     }
 }
 
-/// A round postmark with a checkmark: the mark of a completed month.
+/// A diagonal band of light, so fills look glossy.
+struct Sheen: View {
+    var body: some View {
+        LinearGradient(stops: [.init(color: .white.opacity(0), location: 0.2),
+                               .init(color: .white.opacity(0.38), location: 0.36),
+                               .init(color: .white.opacity(0), location: 0.52)],
+                       startPoint: .topLeading, endPoint: .bottomTrailing)
+            .allowsHitTesting(false)
+            .accessibilityHidden(true)
+    }
+}
+
+/// The lime "done" badge pressed onto a completed month.
 public struct Postmark: View {
     let size: CGFloat
     let color: Color
-    public init(size: CGFloat, color: Color = .espresso) {
+    public init(size: CGFloat, color: Color = .lime) {
         self.size = size
         self.color = color
     }
     public var body: some View {
         ZStack {
-            Circle().strokeBorder(color, lineWidth: max(1, size * 0.06))
-            Circle().strokeBorder(color.opacity(0.7), style: StrokeStyle(lineWidth: max(0.5, size * 0.025), dash: [size * 0.05, size * 0.05]))
-                .padding(size * 0.11)
+            Circle().fill(color)
+            Circle().fill(LinearGradient(colors: [.white.opacity(0.55), .clear], startPoint: .top, endPoint: .center))
+                .padding(size * 0.08)
+            Circle().strokeBorder(Color.white, lineWidth: max(1.5, size * 0.09))
             Image(systemName: "checkmark")
-                .font(.system(size: size * 0.42, weight: .bold))
-                .foregroundStyle(color)
+                .font(.system(size: size * 0.44, weight: .black, design: .rounded))
+                .foregroundStyle(Color.night)
         }
         .frame(width: size, height: size)
-        .rotationEffect(.degrees(-14))
+        .rotationEffect(.degrees(-10))
+        .shadow(color: .black.opacity(0.25), radius: size * 0.08, y: size * 0.05)
         .accessibilityHidden(true)
     }
 }
 
-/// One collectible month tile. Draws nothing about a challenge that has not
-/// been revealed: sealed months show only their number.
+/// One collectible month tile: a glossy, brightly coloured stamp. Draws
+/// nothing about a challenge that has not been revealed: sealed months show
+/// only their number.
 public struct MonthStamp: View {
     public let month: Int
     public let state: MonthState
     /// SF Symbol for the revealed challenge. Pass nil for sealed months.
     public let symbol: String?
+    /// Kept for compatibility; each month now has its own palette.
     public let accent: Color
     public var showsName: Bool
 
@@ -87,57 +103,57 @@ public struct MonthStamp: View {
         self.showsName = showsName
     }
 
-    private var revealed: Bool { state == .active || state == .completed || state == .archived }
+    private var bright: Bool { state == .active || state == .completed }
     private var muted: Bool { state == .archived || state == .beforeJoining }
 
     public var body: some View {
         GeometryReader { geo in
             let w = geo.size.width, h = geo.size.height
-            let inset = w * 0.09
+            let palette = MonthPalette.colors(month)
             ZStack {
                 StampShape(notch: w * 0.045)
-                    .fill(state == .sealed ? Color.card : Color.cardRaised)
-                    .shadow(color: .black.opacity(state == .completed ? 0.16 : 0.07), radius: state == .completed ? 5 : 2, y: 2)
+                    .fill(Color.cardRaised)
+                    .shadow(color: (bright ? palette.deep : Color.black).opacity(state == .completed ? 0.4 : (bright ? 0.25 : 0.1)),
+                            radius: state == .completed ? 9 : 4, y: 4)
 
-                // Inner panel
                 ZStack {
-                    Rectangle().fill(panelColor)
-                    if revealed && !muted { MotifBlobs(month: month, tint: .cream) }
-                    PaperGrain(opacity: 0.06, seed: UInt64(month))
-                    if state == .sealed {
-                        Rectangle().strokeBorder(Color.inkSoft.opacity(0.35), style: StrokeStyle(lineWidth: 1, dash: [3, 3])).padding(w * 0.04)
+                    panel(palette)
+                    if bright {
+                        MotifBlobs(month: month, tint: .white)
+                        Sheen()
                     }
-                    VStack(spacing: h * 0.02) {
-                        if let symbol, revealed {
-                            Image(systemName: symbol)
-                                .font(.system(size: w * 0.26, weight: .light))
-                                .foregroundStyle(muted ? Color.inkSoft.opacity(0.7) : Color.cream)
-                                .frame(height: h * 0.3)
-                        } else {
-                            Image(systemName: state == .sealed ? "seal" : "minus")
-                                .font(.system(size: w * 0.2, weight: .light))
-                                .foregroundStyle(Color.inkSoft.opacity(0.55))
-                                .frame(height: h * 0.3)
-                        }
+                    PaperGrain(opacity: 0.07, seed: UInt64(month))
+                    if state == .sealed {
+                        RoundedRectangle(cornerRadius: w * 0.05, style: .continuous)
+                            .strokeBorder(Color.accentText.opacity(0.35), style: StrokeStyle(lineWidth: 1.2, dash: [3, 3]))
+                            .padding(w * 0.04)
+                    }
+                    VStack(spacing: h * 0.015) {
+                        Image(systemName: iconName)
+                            .font(.system(size: w * (bright ? 0.26 : 0.2), weight: .bold, design: .rounded))
+                            .foregroundStyle(bright ? Color.white : Color.inkSoft.opacity(0.6))
+                            .shadow(color: .black.opacity(bright ? 0.2 : 0), radius: 2, y: 1)
+                            .frame(height: h * 0.3)
                         Text(YearCalendar.twoDigit(month))
-                            .font(.numeral(w * 0.3, weight: .medium))
-                            .foregroundStyle(numeralColor)
+                            .font(.system(size: w * 0.32, weight: .heavy, design: .rounded))
+                            .foregroundStyle(bright ? Color.white : Color.inkSoft)
+                            .shadow(color: .black.opacity(bright ? 0.18 : 0), radius: 2, y: 1)
                             .minimumScaleFactor(0.5)
                         if showsName {
                             Text(String(YearCalendar.monthName(month).prefix(3)))
-                                .font(.system(size: max(7, w * 0.085), weight: .semibold))
+                                .font(.system(size: max(7, w * 0.09), weight: .heavy, design: .rounded))
                                 .textCase(.uppercase)
-                                .tracking(1.2)
-                                .foregroundStyle(numeralColor.opacity(0.8))
+                                .tracking(1.1)
+                                .foregroundStyle(bright ? Color.white.opacity(0.92) : Color.inkSoft.opacity(0.8))
                         }
                     }
                 }
-                .padding(inset)
+                .clipShape(RoundedRectangle(cornerRadius: w * 0.06, style: .continuous))
+                .padding(w * 0.08)
 
                 if state == .completed {
-                    Postmark(size: w * 0.42, color: .espresso)
-                        .background(Circle().fill(Color.cream.opacity(0.85)).padding(w * 0.02))
-                        .position(x: w * 0.74, y: h * 0.24)
+                    Postmark(size: w * 0.38)
+                        .position(x: w * 0.8, y: h * 0.16)
                 }
             }
         }
@@ -146,19 +162,19 @@ public struct MonthStamp: View {
         .accessibilityLabel(accessibilityText)
     }
 
-    private var panelColor: Color {
-        switch state {
-        case .sealed: return Color.paper
-        case .active: return accent
-        case .completed: return accent
-        case .archived, .beforeJoining: return Color.hairline.opacity(0.6)
-        }
+    private var iconName: String {
+        if bright { return symbol ?? "gift.fill" }
+        return state == .sealed ? "lock.fill" : "minus"
     }
 
-    private var numeralColor: Color {
-        switch state {
-        case .active, .completed: return .espresso
-        default: return .inkSoft
+    @ViewBuilder
+    private func panel(_ palette: (deep: Color, light: Color)) -> some View {
+        if bright {
+            LinearGradient(colors: [palette.light, palette.deep], startPoint: .topLeading, endPoint: .bottomTrailing)
+        } else if state == .sealed {
+            LinearGradient(colors: [Color.skyPale, Color.paper], startPoint: .top, endPoint: .bottom)
+        } else {
+            Color.hairline.opacity(0.7)
         }
     }
 
@@ -180,7 +196,7 @@ public struct TwelveDots: View {
     let current: Int?
     let on: Color
     let off: Color
-    public init(completed: Set<Int>, current: Int?, on: Color = .gold, off: Color = Color.cream.opacity(0.22)) {
+    public init(completed: Set<Int>, current: Int?, on: Color = .lime, off: Color = Color.white.opacity(0.3)) {
         self.completed = completed
         self.current = current
         self.on = on
@@ -190,7 +206,7 @@ public struct TwelveDots: View {
         GeometryReader { geo in
             let side = min(geo.size.width, geo.size.height)
             let radius = side / 2
-            let dot = side * 0.13
+            let dot = side * 0.14
             ZStack {
                 ForEach(1...12, id: \.self) { m in
                     let angle = Angle.degrees(Double(m - 1) * 30 - 90)
@@ -199,7 +215,7 @@ public struct TwelveDots: View {
                         if done {
                             Circle().fill(on)
                         } else if current == m {
-                            Circle().strokeBorder(on, lineWidth: max(1, dot * 0.18))
+                            Circle().strokeBorder(on, lineWidth: max(1, dot * 0.2))
                         } else {
                             Circle().fill(off)
                         }

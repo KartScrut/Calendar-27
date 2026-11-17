@@ -38,7 +38,7 @@ struct TimerModule: View {
                 }
 
                 if let name = variant {
-                    Tag(text: name, systemImage: "figure.seated.side.left", tint: .sageText)
+                    Tag(text: name, systemImage: "figure.seated.side.left", tint: .mintText)
                 }
 
                 if open {
@@ -145,7 +145,7 @@ struct TimerModule: View {
         let sessionsDone = Int(app.progress(for: challenge).value)
 
         ZStack {
-            ProgressRing(fraction: fraction, lineWidth: 12, tint: .terracotta, track: .hairline)
+            ProgressRing(fraction: fraction, lineWidth: 12, tint: .pop, track: .hairline)
             VStack(spacing: 4) {
                 Text(kind == .focus ? (session == nil ? "Ten minutes" : (session?.isPaused == true ? "Paused" : "Stay with it"))
                                     : (session == nil ? "This month" : (session?.isPaused == true ? "Paused" : kind.displayName)))
@@ -184,7 +184,7 @@ struct TimerModule: View {
                     if session.isPaused {
                         PrimaryButton(title: "Resume", systemImage: "play.fill") { app.timer.resume() }
                     } else {
-                        PrimaryButton(title: "Pause", systemImage: "pause.fill", tint: .walnut) { app.timer.pause() }
+                        PrimaryButton(title: "Pause", systemImage: "pause.fill", tint: .ocean) { app.timer.pause() }
                     }
                     if kind != .focus {
                         PrimaryButton(title: "Finish", systemImage: "checkmark") { app.timer.finish() }
@@ -277,7 +277,7 @@ struct TimerModule: View {
                         }
                     }
                 }
-                if let importNote { Text(importNote).font(.footnote).foregroundStyle(Color.sageText) }
+                if let importNote { Text(importNote).font(.footnote).foregroundStyle(Color.mintText) }
             }
         }
     }

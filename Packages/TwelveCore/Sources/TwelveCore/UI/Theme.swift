@@ -3,6 +3,8 @@ import SwiftUI
 import UIKit
 
 // Design tokens shared by the app and its widgets.
+// The look: a bright sky with clouds and film grain, white cards, glossy
+// foil-balloon accents, and pops of lime, hot pink and electric blue.
 
 public extension Color {
     init(hex: UInt32, opacity: Double = 1) {
@@ -24,63 +26,85 @@ public extension Color {
     }
 
     // Fixed brand colours.
-    static let espresso = Color(hex: 0x30231E)
-    static let walnut = Color(hex: 0x49372E)
-    static let cream = Color(hex: 0xF5EEE3)
-    static let terracotta = Color(hex: 0xCC8062)
-    static let gold = Color(hex: 0xD5B47A)
-    static let sage = Color(hex: 0xA2B09B)
-    static let softInk = Color(hex: 0x282522)
+    /// Deepest navy, for text on bright fills.
+    static let night = Color(hex: 0x0B1B3A)
+    /// Electric blue.
+    static let ocean = Color(hex: 0x1F5BFF)
+    /// Mid sky blue.
+    static let sky = Color(hex: 0x4DA3FF)
+    /// Pure white: text and shapes on the sky.
+    static let cloud = Color(hex: 0xFFFFFF)
+    /// Hot pink: the primary accent (rings, toggles, highlights).
+    static let pop = Color(hex: 0xFF4D7E)
+    /// Lime: achievement, completion, the main button.
+    static let lime = Color(hex: 0xC8F23C)
+    /// Fresh green: calm confirmation.
+    static let mint = Color(hex: 0x2BD47D)
+    /// Purple sparkle.
+    static let grape = Color(hex: 0x9B5CFF)
+    /// Sunshine yellow.
+    static let sunny = Color(hex: 0xFFC83D)
+    static let softInk = Color(hex: 0x0E1B2E)
 
-    // Adaptive surfaces. Dark mode is its own palette — a lamp-lit study — not an inversion.
-    static let paper = Color(light: 0xF5EEE3, dark: 0x1C1512)
-    static let card = Color(light: 0xFCF8F1, dark: 0x2A201B)
-    static let cardRaised = Color(light: 0xFFFFFF, dark: 0x35291F)
-    static let ink = Color(light: 0x282522, dark: 0xF2EADD)
-    static let inkSoft = Color(light: 0x6E6157, dark: 0xB8AB9B)
-    static let hairline = Color(light: 0xDDD2C2, dark: 0x45372E)
-    /// The dark "feature" surface: espresso by day, a lifted walnut at night.
-    static let feature = Color(light: 0x30231E, dark: 0x3A2B23)
-    /// Accents tuned for contrast on each background.
-    static let accentText = Color(light: 0xA85A3C, dark: 0xE09A7C)
-    static let goldText = Color(light: 0x8A6A2C, dark: 0xD5B47A)
-    static let sageText = Color(light: 0x5C6E55, dark: 0xB4C2AD)
+    // Adaptive surfaces. Dark mode is a night sky, not an inversion.
+    static let paper = Color(light: 0xEAF4FF, dark: 0x0A1730)
+    static let card = Color(light: 0xFFFFFF, dark: 0x13254A)
+    static let cardRaised = Color(light: 0xFFFFFF, dark: 0x1A3060)
+    static let ink = Color(light: 0x0E1B2E, dark: 0xF4F8FF)
+    static let inkSoft = Color(light: 0x5B6B82, dark: 0xA9B8D0)
+    static let hairline = Color(light: 0xD8E6F7, dark: 0x24406E)
+    static let skyPale = Color(light: 0xD3E7FF, dark: 0x183262)
+    /// Selected and featured fills.
+    static let feature = Color(light: 0x2F6BFF, dark: 0x2A5BE0)
+    /// Accent-coloured text with enough contrast on light and dark surfaces.
+    static let accentText = Color(light: 0x1F56E8, dark: 0x8DB6FF)
+    static let limeText = Color(light: 0x3F7A08, dark: 0xD4F75A)
+    static let mintText = Color(light: 0x0F7A43, dark: 0x6EE7A0)
+    static let popText = Color(light: 0xD92B5C, dark: 0xFF8FB0)
 
     /// Resolves a design-token name used in the challenge catalog.
     static func token(_ name: String) -> Color {
         switch name {
-        case "terracotta": return .terracotta
-        case "gold": return .gold
-        case "sage": return .sage
-        case "walnut": return .walnut
-        default: return .terracotta
+        case "terracotta", "pop": return .pop
+        case "gold", "lime": return .lime
+        case "sage", "mint": return .mint
+        case "walnut", "ocean": return .ocean
+        default: return .pop
         }
     }
 }
 
 public extension Font {
-    /// The editorial serif (New York) at a text style, so it scales with Dynamic Type.
+    /// Display type: SF Rounded, a little heavier than asked for, so headings
+    /// feel bold and friendly. Scales with Dynamic Type.
     static func editorial(_ style: Font.TextStyle, weight: Font.Weight = .regular) -> Font {
-        .system(style, design: .serif).weight(weight)
+        .system(style, design: .rounded).weight(punchy(weight))
     }
 
-    /// Large display numerals and statements.
+    /// Large display numerals.
     static func numeral(_ size: CGFloat, weight: Font.Weight = .regular) -> Font {
-        .system(size: size, weight: weight, design: .serif)
+        .system(size: size, weight: punchy(weight), design: .rounded)
     }
 
     /// Small tracked capitals for labels.
-    static let label: Font = .system(.caption, design: .default).weight(.semibold)
-}
+    static let label: Font = .system(.caption, design: .rounded).weight(.bold)
 
-public extension View {
-    /// Small-caps style label: tracked, uppercase, quiet.
-    func capsLabel(_ color: Color = .inkSoft) -> some View {
-        self.font(.label).textCase(.uppercase).tracking(1.4).foregroundStyle(color)
+    private static func punchy(_ weight: Font.Weight) -> Font.Weight {
+        if weight == .regular || weight == .light || weight == .thin || weight == .ultraLight { return .medium }
+        if weight == .medium { return .bold }
+        if weight == .semibold { return .heavy }
+        return weight
     }
 }
 
-/// A faint, static paper grain. Drawn once into a Canvas; no animation.
+public extension View {
+    /// Small-caps style label: tracked, uppercase.
+    func capsLabel(_ color: Color = .inkSoft) -> some View {
+        self.font(.label).textCase(.uppercase).tracking(1.2).foregroundStyle(color)
+    }
+}
+
+/// A faint, static film grain. Drawn once into a Canvas; no animation.
 public struct PaperGrain: View {
     let opacity: Double
     let seed: UInt64
@@ -91,7 +115,7 @@ public struct PaperGrain: View {
     public var body: some View {
         Canvas(rendersAsynchronously: false) { context, size in
             var rng = SeededGenerator(seed: seed)
-            let count = Int(min(900, (size.width * size.height) / 260))
+            let count = Int(min(1400, (size.width * size.height) / 180))
             for _ in 0..<max(count, 0) {
                 let x = CGFloat.random(in: 0...max(size.width, 1), using: &rng)
                 let y = CGFloat.random(in: 0...max(size.height, 1), using: &rng)
@@ -106,11 +130,11 @@ public struct PaperGrain: View {
     }
 }
 
-/// The paper background used behind most screens.
+/// The background behind most screens: a soft, light sky.
 public struct PaperBackground: View {
     public init() {}
     public var body: some View {
-        Color.paper.overlay(PaperGrain(opacity: 0.045)).ignoresSafeArea()
+        SkyBackground(style: .soft).ignoresSafeArea()
     }
 }
 #endif

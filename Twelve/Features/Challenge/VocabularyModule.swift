@@ -79,7 +79,7 @@ struct VocabularyModule: View {
             VStack(spacing: 20) {
                 ModuleProgressHeader(challenge: challenge, progress: progress)
                 HStack {
-                    Tag(text: language.name, systemImage: "character.bubble", tint: .sageText)
+                    Tag(text: language.name, systemImage: "character.bubble", tint: .mintText)
                     Spacer()
                     if learned.isEmpty {
                         Button("Change language") { app.updateProfile { $0.vocabularyLanguage = nil } }
@@ -103,7 +103,7 @@ struct VocabularyModule: View {
                                 .minimumScaleFactor(0.5).lineLimit(2).multilineTextAlignment(.center)
                             Text("Tap to see what it means").font(.footnote).foregroundStyle(Color.inkSoft)
                         }
-                        if isLearned { Tag(text: "Learned", systemImage: "checkmark", tint: .sageText) }
+                        if isLearned { Tag(text: "Learned", systemImage: "checkmark", tint: .mintText) }
                     }
                     .frame(maxWidth: .infinity, minHeight: 240)
                     .padding(24)
@@ -197,7 +197,7 @@ private struct RecallQuiz: View {
                 let passed = Vocabulary.passed(correct: correct, total: questions.count)
                 Spacer()
                 Image(systemName: passed ? "checkmark.seal.fill" : "arrow.triangle.2.circlepath")
-                    .font(.system(size: 52, weight: .light)).foregroundStyle(passed ? Color.goldText : Color.accentText)
+                    .font(.system(size: 52, weight: .light)).foregroundStyle(passed ? Color.limeText : Color.accentText)
                 Text("\(correct) of \(questions.count)").font(.numeral(56, weight: .medium)).foregroundStyle(Color.ink)
                 Text(passed ? "You remembered them. That's the recall exercise passed."
                             : "Nearly. You need \(Vocabulary.passMark) to pass — another look at the cards, then try again.")
@@ -209,7 +209,7 @@ private struct RecallQuiz: View {
                 SecondaryButton(title: "Back to the cards", systemImage: nil, action: close)
             } else if questions.indices.contains(position) {
                 let q = questions[position]
-                ProgressBar(fraction: Double(position) / Double(questions.count), tint: .terracotta, height: 6)
+                ProgressBar(fraction: Double(position) / Double(questions.count), tint: .pop, height: 6)
                 VStack(spacing: 8) {
                     Text("Which word means").capsLabel()
                     Text(q.meaning).font(.editorial(.largeTitle, weight: .medium)).foregroundStyle(Color.ink)
@@ -232,7 +232,7 @@ private struct RecallQuiz: View {
                             }
                             .foregroundStyle(Color.ink)
                             .padding(18)
-                            .background(reveal && isRight ? Color.sage.opacity(0.4) : (reveal && chosen == i ? Color.terracotta.opacity(0.22) : Color.card),
+                            .background(reveal && isRight ? Color.mint.opacity(0.4) : (reveal && chosen == i ? Color.pop.opacity(0.22) : Color.card),
                                         in: RoundedRectangle(cornerRadius: 18, style: .continuous))
                             .overlay(RoundedRectangle(cornerRadius: 18, style: .continuous).strokeBorder(Color.hairline))
                         }

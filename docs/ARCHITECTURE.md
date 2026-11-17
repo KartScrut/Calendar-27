@@ -77,26 +77,27 @@ One reusable module per kind of activity, chosen by the catalog entry:
 
 ## Design system
 
+**Look.** A bright sky: blue gradients with soft clouds and film grain, white cards, glossy foil-balloon accents, and pops of lime, hot pink and electric blue. Each month has its own bright colour pair for its stamp (`MonthPalette`).
+
 **Colour tokens** (`TwelveCore/UI/Theme.swift`)
 
 | Token | Light | Dark | Use |
 |---|---|---|---|
-| `paper` | `#F5EEE3` | `#1C1512` | Screen background |
-| `card` | `#FCF8F1` | `#2A201B` | Reading surfaces |
-| `feature` | `#30231E` | `#3A2B23` | The most important card on a screen |
-| `ink` / `inkSoft` | `#282522` / `#6E6157` | `#F2EADD` / `#B8AB9B` | Text |
-| `terracotta` | `#CC8062` | same | Primary accent, calls to action |
-| `gold` | `#D5B47A` | same | Achievement, progress |
-| `sage` | `#A2B09B` | same | Calm confirmation |
-| `accentText` etc. | darker variants | lighter variants | Accent-coloured text with sufficient contrast |
+| `paper` + `PaperBackground` | pale sky `#EAF4FF` with clouds | night sky `#0A1730` | Screen background |
+| `SkyBackground(.vivid)` | `#0B4FE6` → `#4F94FF` | deeper blues | Welcome, celebration, featured cards, widgets |
+| `card` | `#FFFFFF` | `#13254A` | Reading surfaces |
+| `ink` / `inkSoft` | `#0E1B2E` / `#5B6B82` | `#F4F8FF` / `#A9B8D0` | Text |
+| `lime` | `#C8F23C` | same | Main buttons (dark text), completion, progress on blue |
+| `pop` | `#FF4D7E` | same | Accent: rings, toggles, highlights |
+| `ocean` | `#1F5BFF` | same | Strong blue fills |
+| `mint` | `#2BD47D` | same | Calm confirmation |
+| `accentText`, `limeText`, `mintText` | darker variants | lighter variants | Coloured text with enough contrast |
 
-Dark mode is its own palette (a lamp-lit study), not an inversion.
+**Type.** SF Rounded throughout, set heavy for headings and numerals, so the app feels bold and friendly. Text uses Dynamic Type styles; only display numerals use fixed sizes, with scaling limits.
 
-**Type.** Two voices: the system serif (New York) for numerals, months, titles and statements; San Francisco for controls, labels and explanation. Text uses Dynamic Type styles; only display numerals use fixed sizes, with scaling limits.
+**Materials.** Paper-white cards for content. Liquid Glass only for things that float above content: the tab bar, buttons, toolbars and control clusters.
 
-**Materials.** Paper for content. Liquid Glass only for things that float above content: the tab bar, buttons, toolbars and control clusters.
-
-**Components** (`Twelve/DesignSystem/Components.swift`, `TwelveCore/UI/Stamp.swift`): `PaperCard`, `FeatureCard`, `PrimaryButton`, `SecondaryButton`, `ProgressRing`, `ProgressBar`, `SectionLabel`, `Tag`, `RollingNumber`, `EmptyNote`, `InfoBanner`, `MonthStamp`, `Postmark`, `TwelveDots`, `PaperGrain`.
+**Components** (`Twelve/DesignSystem/Components.swift`, `TwelveCore/UI/Stamp.swift`): `PaperCard`, `FeatureCard`, `SkyBackground`, `Clouds`, `FoilBalloon`, `FloatingBalloons`, `PrimaryButton`, `SecondaryButton`, `ProgressRing`, `ProgressBar`, `SectionLabel`, `Tag`, `RollingNumber`, `EmptyNote`, `InfoBanner`, `MonthStamp`, `Postmark`, `TwelveDots`, `PaperGrain`.
 
 **Motion.** Springs for navigation and progress; a card flip for the monthly reveal; a pressed stamp for completion; a page slide between months. Every animation has a Reduce Motion alternative, and nothing animates continuously.
 

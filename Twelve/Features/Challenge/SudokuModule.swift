@@ -185,7 +185,7 @@ struct SudokuBoardScreen: View {
                         .foregroundStyle(Color.ink)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(12)
-                        .background(Color.gold.opacity(0.22), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+                        .background(Color.lime.opacity(0.22), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
                         .transition(.opacity)
                 } else if !conflicts.isEmpty {
                     Label("A number repeats in a row, column or square. The marked cells clash.", systemImage: "exclamationmark.circle")
@@ -193,7 +193,7 @@ struct SudokuBoardScreen: View {
                         .foregroundStyle(Color.accentText)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(12)
-                        .background(Color.terracotta.opacity(0.12), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+                        .background(Color.pop.opacity(0.12), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
                         .transition(.opacity)
                 }
             }
@@ -238,7 +238,7 @@ struct SudokuBoardScreen: View {
                     .frame(maxWidth: .infinity, minHeight: 44)
                 }
                 .buttonStyle(.glass)
-                .tint(notesMode ? .terracotta : nil)
+                .tint(notesMode ? .pop : nil)
                 .accessibilityLabel("Pencil notes")
                 .accessibilityValue(notesMode ? "On" : "Off")
                 tool("Hint", "lightbulb", enabled: true, action: hint)
@@ -289,7 +289,7 @@ struct SudokuBoardScreen: View {
         let taken = Set(app.store.sudokuSaves().map(\.puzzleID))
         let next = SudokuLibrary.next(difficulty: puzzle.difficulty, excluding: taken)
         return VStack(spacing: 12) {
-            Image(systemName: "checkmark.seal.fill").font(.system(size: 40)).foregroundStyle(Color.goldText)
+            Image(systemName: "checkmark.seal.fill").font(.system(size: 40)).foregroundStyle(Color.limeText)
             Text("Solved.").font(.editorial(.largeTitle, weight: .medium)).foregroundStyle(Color.ink)
             if app.isOpen(challenge) || app.summary.state(month: challenge.month) == .completed {
                 Text(count >= target ? "That's all \(target). February is complete." : "\(count) of \(target) puzzles done. \(target - count) to go.")
@@ -465,7 +465,7 @@ private struct SudokuCell: View {
     var body: some View {
         ZStack {
             background
-            Color.gold.opacity(wave ? 0.5 : 0)
+            Color.lime.opacity(wave ? 0.5 : 0)
                 .animation(.easeInOut(duration: 0.35).delay(waveDelay), value: wave)
             if value != 0 {
                 Text("\(value)")
@@ -474,7 +474,7 @@ private struct SudokuCell: View {
                     .transition(.scale(scale: 0.6).combined(with: .opacity))
                 if isConflict {
                     // A mark as well as a colour, so clashes don't rely on colour alone.
-                    Circle().fill(Color.terracotta).frame(width: size * 0.14, height: size * 0.14)
+                    Circle().fill(Color.pop).frame(width: size * 0.14, height: size * 0.14)
                         .offset(x: size * 0.32, y: -size * 0.32)
                 }
             } else if notes != 0 {
@@ -498,11 +498,11 @@ private struct SudokuCell: View {
     }
 
     private var background: Color {
-        if isSelected { return Color.gold.opacity(0.55) }
-        if isHint { return Color.gold.opacity(0.35) }
-        if isConflict { return Color.terracotta.opacity(0.22) }
-        if sameDigit { return Color.gold.opacity(0.28) }
-        if isRelated { return Color.sage.opacity(0.2) }
+        if isSelected { return Color.lime.opacity(0.55) }
+        if isHint { return Color.lime.opacity(0.35) }
+        if isConflict { return Color.pop.opacity(0.22) }
+        if sameDigit { return Color.lime.opacity(0.28) }
+        if isRelated { return Color.mint.opacity(0.2) }
         return .clear
     }
 }

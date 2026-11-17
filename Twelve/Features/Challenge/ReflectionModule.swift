@@ -89,7 +89,7 @@ struct ReflectionModule: View {
                             }
                             if countedToday {
                                 Text("Today is already counted. You're welcome to write more — one observation counts per day.")
-                                    .font(.footnote).foregroundStyle(Color.sageText)
+                                    .font(.footnote).foregroundStyle(Color.mintText)
                             }
                             PrimaryButton(title: "Save", systemImage: "checkmark", action: save)
                                 .disabled(!canSave)
@@ -167,7 +167,7 @@ struct ModuleProgressHeader: View {
         let done = app.summary.state(month: challenge.month) == .completed
         HStack(spacing: 16) {
             ZStack {
-                ProgressRing(fraction: done ? 1 : progress.fraction, lineWidth: 6, tint: .terracotta, track: .hairline)
+                ProgressRing(fraction: done ? 1 : progress.fraction, lineWidth: 6, tint: .pop, track: .hairline)
                 Image(systemName: done ? "checkmark" : challenge.symbol)
                     .font(.body.weight(done ? .bold : .regular))
                     .foregroundStyle(Color.accentText)

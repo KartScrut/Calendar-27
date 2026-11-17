@@ -47,7 +47,7 @@ struct SudokuTutorial: View {
     var body: some View {
         let current = steps[min(step, steps.count - 1)]
         VStack(spacing: 20) {
-            ProgressBar(fraction: done ? 1 : Double(step) / Double(steps.count), tint: .terracotta, height: 6)
+            ProgressBar(fraction: done ? 1 : Double(step) / Double(steps.count), tint: .pop, height: 6)
                 .padding(.top, 8)
 
             VStack(alignment: .leading, spacing: 8) {
@@ -121,7 +121,7 @@ struct SudokuTutorial: View {
                     let isTarget = current.cell == index && !done
                     let lit = current.highlight.contains(index) && !done
                     ZStack {
-                        (isTarget ? Color.gold.opacity(0.6) : (lit ? Color.sage.opacity(0.28) : Color.clear))
+                        (isTarget ? Color.lime.opacity(0.6) : (lit ? Color.mint.opacity(0.28) : Color.clear))
                         if values[index] != 0 {
                             Text("\(values[index])")
                                 .font(.numeral(cell * 0.5, weight: [2, 9, 15, 4].contains(index) ? .regular : .semibold))
